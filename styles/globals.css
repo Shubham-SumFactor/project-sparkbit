@@ -97,7 +97,7 @@ a {
 body {
   position: relative;
   overflow-x: hidden;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* Prevent horizontal scroll if lines overflow */
 }
 

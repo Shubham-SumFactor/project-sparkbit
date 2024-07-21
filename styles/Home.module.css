@@ -47,7 +47,7 @@
   width: 100%;
   height: calc(100vh - 80px);
   margin-bottom: 3rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .title {
@@ -56,7 +56,6 @@
   letter-spacing: 5px;
   font-weight: 350;
   white-space: nowrap;
-  /* border:1px solid pink; */
 
 }
 
@@ -67,9 +66,9 @@
   background-size: contain;
   width: 92%;
   height: 33%;
-  /* border: 2px solid purple; */
   z-index: 1;
   position: absolute;
+
 
 }
 
@@ -99,7 +98,6 @@
   font-weight: normal;
   line-height: 1.2;
   color: #000;
-  /* border: 1px solid yellow; */
 
 }
 
@@ -111,14 +109,12 @@
   grid-template-columns: 1fr 3fr;
   gap: 2rem;
   margin-bottom: 5rem;
-  border: 1px solid purple;
 
 }
 
 .caseStudiesList {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   width: 80%;
   padding-top: 28%;
 }
@@ -139,7 +135,6 @@
 .caseStudyContent {
   display: flex;
   flex-direction: column;
-  border : 1px solid blue;
 }
 
 .caseStudyContent h2 {
@@ -161,6 +156,155 @@
 
 /* case stidy pics and title ends */
 
+/* services section satrts  */
+
+.servicesImage {
+  margin-top: 8%;
+  width: 100%;
+  height: 60%;
+  /* object-fit: cover; */
+  display: flex;
+  justify-content: center;
+}
+
+.serviceSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* gap: 2rem; */
+  /* padding: 2rem; */
+  margin-left: 25%;
+  margin-bottom: 2rem;
+  /* max-width: 1000px; */
+  /* margin: 0 auto; */
+  /* align-self: center; */
+}
+
+.serviceCard {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceCard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.serviceCard p {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.serviceButton {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.serviceButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* services section ends */
+
+
+/* challenges section starts */
+.challenges {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+}
+
+.challenges p {
+  margin: 2rem 0rem;
+  width: 70%;
+
+}
+
+.challenges h3 {
+  font-size: 80px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #000;
+  width: 70%;
+
+}
+
+.contactUsButton {
+  align-self: flex-start;
+  margin: 2rem 0;
+  background: none;
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contactUsButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* challenges section ends */
+
+
+/* our approcah starst */
+
+.ourApproach {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  /* border: 1px solid black; */
+  background-color: #f8f8f8;
+
+}
+
+.containerStrength {
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.sideHeading {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #888;
+}
+
+.content {
+  display: grid;
+  gap: 1rem;
+}
+
+.mainHeading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subHeading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  /* border: 1px solid gold; */
+  width: 70%;
+  /* max-width: 600px; */
+
+
+}
 
 
 
@@ -211,7 +355,7 @@
   .caseStudies {
     margin-bottom: 5rem;
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
   }
 
 
@@ -224,7 +368,7 @@
     font-weight: 350;
   }
 
-/* case stidy pics and title starts */
+  /* case stidy pics and title starts */
 
   .caseStudiesSection {
     grid-template-columns: 1fr;
@@ -238,6 +382,68 @@
   .caseStudyContent h2 {
     font-size: 1.5rem;
   }
-/* case stidy pics and title ends */
 
+  /* case stidy pics and title ends */
+
+  .serviceSection {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .serviceCard {
+    padding-left: 0;
+
+  }
+
+  /* challenge starts */
+  .challenges h3 {
+    font-size: 20px;
+  }
+
+  .challenges {
+    grid-template-columns: 1fr;
+  }
+
+  .challenges p {
+    margin: 1rem 0rem;
+    width: 100%;
+  }
+
+
+  .contactUsButton {
+    margin: 0 0;
+  }
+
+  /*  challenge ends */
+
+
+  /* our strength starts  */
+  .containerStrength {
+    grid-template-columns: 1fr;
+  }
+
+  .sideHeading {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 1rem;
+
+  }
+
+  .mainHeading {
+    font-size: 2rem;
+    width: 100%;
+
+  }
+
+  .content p {
+    width: 100%;
+  }
+
+  .subHeading {
+    font-size: 2rem;
+  }
+
+  /* our strength ends */
 }
