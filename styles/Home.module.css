@@ -12,6 +12,7 @@
   align-items: flex-start;
   min-height: 100vh;
   border: 1px solid black;
+  border-bottom: none;
   padding-left: 2%;
   padding-right: 2%;
   /* overflow: hidden; */
@@ -35,9 +36,23 @@
 .menu {
   display: flex;
   gap: 1rem;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
   width: 76%;
   justify-content: space-around;
 
+
+}
+
+.menu a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: black;
+  cursor: pointer;
 }
 
 .hero {
@@ -52,10 +67,11 @@
 
 .title {
   line-height: 1.2;
-  font-size: clamp(3rem, 5vw + 2rem, 7rem);
+  font-size: clamp(4rem, 5vw + 3rem, 8rem);
   letter-spacing: 5px;
   font-weight: 350;
   white-space: nowrap;
+  font-family: serif;
 
 }
 
@@ -65,11 +81,9 @@
   background-position: right;
   background-size: contain;
   width: 92%;
-  height: 33%;
+  height: 10%;
   z-index: 1;
   position: absolute;
-
-
 }
 
 .about,
@@ -82,22 +96,28 @@
 
 .about h2,
 .caseStudies h2 {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 14px;
+  color: #737373;
+  font-weight: 700;
+  line-height: 15.4px;
   margin-bottom: 1rem;
 }
 
 .about p {
   font-size: 28px;
+  line-height: 39.2px;
+  font-weight: 350;
   line-height: 1.5;
-  color: #333;
+  color: #000000;
+  font-weight: 350;
 }
 
 .caseStudies h3 {
   font-size: 80px;
-  font-weight: normal;
-  line-height: 1.2;
-  color: #000;
+  font-weight: 350;
+  line-height: 88px;
+  letter-spacing: -3px;
+  color: #000000;
 
 }
 
@@ -120,7 +140,10 @@
 }
 
 .caseStudyTitle {
-  font-size: 0.9rem;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+  line-height: 15.4px;
   color: #666;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -138,20 +161,27 @@
 }
 
 .caseStudyContent h2 {
-  font-size: 2rem;
+  font-size: 36px;
+  font-weight: 350;
+  letter-spacing: -1px;
+  line-height: 39.6px;
   margin-bottom: 1rem;
 }
 
 .caseStudyContent p {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 350;
+  line-height: 30px;
   margin-bottom: 1rem;
+  width: 60%;
 }
 
 .caseStudyContent img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  margin-top: 1rem;
+
 }
 
 /* case stidy pics and title ends */
@@ -170,13 +200,8 @@
 .serviceSection {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* gap: 2rem; */
-  /* padding: 2rem; */
   margin-left: 25%;
   margin-bottom: 2rem;
-  /* max-width: 1000px; */
-  /* margin: 0 auto; */
-  /* align-self: center; */
 }
 
 .serviceCard {
@@ -188,11 +213,16 @@
 }
 
 .serviceCard h2 {
-  font-size: 1.5rem;
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 39.6px;
   margin-bottom: 1rem;
 }
 
 .serviceCard p {
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 24px;
   flex-grow: 1;
   margin-bottom: 1rem;
 }
@@ -201,16 +231,17 @@
   align-self: flex-start;
   background: none;
   border: 1px solid #000;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
+  padding: 10px 20px 10px 20px;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 350;
+  line-height: 20px;
 }
 
-.serviceButton:hover {
-  background-color: #000;
-  color: #fff;
-}
 
 /* services section ends */
 
@@ -218,44 +249,76 @@
 /* challenges section starts */
 .challenges {
   margin-bottom: 5rem;
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 100%;
 }
 
 .challenges p {
-  margin: 2rem 0rem;
+  margin: 3rem 0rem;
   width: 70%;
+  font-size: 26px;
+  font-weight: 350;
+  line-height: 30px;
 
 }
 
 .challenges h3 {
-  font-size: 80px;
+  font-size: 76px;
   font-weight: normal;
-  line-height: 1.2;
+  letter-spacing: -3px;
+  line-height: 59.4px;
   color: #000;
   width: 70%;
 
 }
 
 .contactUsButton {
-  align-self: flex-start;
   margin: 2rem 0;
+  align-self: flex-start;
   background: none;
   border: 1px solid #000;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px 10px 20px;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-}
-
-.contactUsButton:hover {
-  background-color: #000;
-  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 350;
+  line-height: 20px;
 }
 
 /* challenges section ends */
 
+/* team */
+
+.team {
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+}
+
+.team p {
+  margin: 1rem 0rem;
+  width: 70%;
+  font-size: 26px;
+  font-weight: 350;
+  line-height: 30px;
+
+}
+
+.team h3 {
+  font-size: 76px;
+  font-weight: normal;
+  letter-spacing: -3px;
+  color: #000;
+  width: 70%;
+  margin-bottom: 1rem;
+
+}
 
 /* our approcah starst */
 
@@ -287,25 +350,31 @@
 }
 
 .mainHeading {
-  font-size: 3rem;
   margin-bottom: 1rem;
+  font-size: 54px;
+  font-weight: 350;
+  line-height: 59.4px;
 }
 
 .subHeading {
-  font-size: 2.5rem;
+  font-size: 54px;
+  font-weight: 350;
+  line-height: 59.4px;
   margin-bottom: 1rem;
 }
 
 .content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  /* border: 1px solid gold; */
   width: 70%;
-  /* max-width: 600px; */
-
-
+  font-size: 20px;
+  font-weight: 350;
+  line-height: 30px;
 }
 
+
+
+/* testiomial css start */
+
+/* testiomial css end */
 
 
 
@@ -328,14 +397,8 @@
 
   }
 
-
-  .main {
-    /* padding-left: 1%; */
-    /* padding-right: 1%; */
-  }
-
-  .title h1 {
-    font-size: 3rem;
+  .title {
+    font-size: 3.5rem;
     /* white-space: wrap; */
     align-items: center;
     display: flex;
@@ -346,7 +409,7 @@
 
   .graphicElement {
     width: 100%;
-    height: 45%;
+    height: 10%;
     background-position: center;
     background-size: cover;
   }
@@ -354,6 +417,7 @@
   .about,
   .caseStudies {
     margin-bottom: 5rem;
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -391,6 +455,13 @@
     text-align: left;
   }
 
+  .whatWeDoText {
+    font-size: 53px;
+    font-weight: 350;
+    letter-spacing: -3px;
+    line-height: 59.4px;
+  }
+
   .serviceCard {
     padding-left: 0;
 
@@ -398,7 +469,11 @@
 
   /* challenge starts */
   .challenges h3 {
-    font-size: 20px;
+    font-size: 30px;
+    letter-spacing: normal;
+    width: 100%;
+
+
   }
 
   .challenges {
@@ -417,6 +492,21 @@
 
   /*  challenge ends */
 
+
+  .team h3 {
+    font-size: 30px;
+    letter-spacing: normal;
+
+  }
+
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+  .team p {
+    margin: 1rem 0rem;
+    width: 100%;
+  }
 
   /* our strength starts  */
   .containerStrength {

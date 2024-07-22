@@ -2,6 +2,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react';
+import TestimonialSlider from './components/testimonial/testimonial';
+import ContactUs from './components/contactUs/ContactUs';
+import Link from 'next/link';
 
 const caseStudies = [
   {
@@ -25,7 +28,7 @@ const caseStudies = [
     image: "/military.webp"
   },
   {
-    title: "SUPPORTING BUSINESS SCALABILITY WITH MACHINE LEARNING scalability",
+    title: "SUPPORTING BUSINESS SCALABILITY WITH MACHINE LEARNING SCALABILITY",
     description: "Cutting the development and operations costs by implementing ML-heavy automation and introducing modern system architecture",
     image: "/supportingBusiness.webp"
   },
@@ -68,9 +71,9 @@ export default function Home() {
         <nav className={styles.nav}>
           <div className={styles.logo}>SPARKBIT</div>
           <div className={styles.menu}>
-            <span>CASE STUDIES</span>
-            <span>SERVICES</span>
-            <span>MEET US</span>
+            <Link href="/caseStudies">CASE STUDIES</Link>
+            <Link href="/caseStudies">SERVICES</Link>
+            <Link href="/caseStudies">MEET US</Link>
           </div>
         </nav>
         {/* nav bar ends  */}
@@ -120,11 +123,11 @@ export default function Home() {
             <img src={caseStudies[activeIndex].image} alt={caseStudies[activeIndex].title} />
 
             <div style={{ display: 'flex', justifyContent: 'space-between', padding: "3rem 0" }}>
-              <span>
-                Read this case
+              <span style={{fontSize : '16px', fontStyle : 'italic', fontWeight : '350',lineHeight : '20px'}}>
+                Read this case →
               </span>
-              <button style={{ border: "1px solid black", borderRadius: "20px", padding: "12px 4px" }}>
-                See all case studies
+              <button className={styles.serviceButton}style={{ border: "1px solid black", borderRadius: "20px", padding: "12px 4px" }}>
+                See all case studies →
               </button>
             </div>
 
@@ -135,7 +138,7 @@ export default function Home() {
         <section className={styles.caseStudies} style={{ marginBottom: "10px" }} >
           <h2>SERVICES</h2>
           <span style={{ display: "flex", flexDirection: "column" }}>
-            <h3>
+            <h3 className={styles.whatWeDoText}>
               What we do
             </h3>
             <img className={styles.servicesImage} src="/3circles.svg" alt="whatwedo" />
@@ -199,7 +202,7 @@ export default function Home() {
 
 
         {/* the team section starts */}
-        <section className={styles.challenges} style={{ marginBottom: "10px" }} >
+        <section className={styles.team} style={{ marginBottom: "10px" }} >
           <h2></h2>
           <span style={{ display: "flex", flexDirection: "column" }}>
             <h3>
@@ -214,9 +217,12 @@ export default function Home() {
         {/* the team section ends */}
 
 
-        {/* testimonail section */}
-        
+        {/* testimonail section  starts*/}
+        <TestimonialSlider />
+        {/* testimonail section  ends*/}
       </main>
+      <ContactUs />
+
     </div>
   )
 }
