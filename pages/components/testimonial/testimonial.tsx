@@ -50,7 +50,7 @@ const testimonials = [
 const TestimonialSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
-    const videoRef = useRef(null);
+    const videoRef = useRef<HTMLVideoElement>(null);
 
     const nextSlide = () => {
         setCurrentSlide((prev) => (prev + 1) % testimonials.length);
