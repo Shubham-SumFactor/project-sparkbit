@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    width: 76%;
+    justify-content: space-around;
+  
+  
+  }
+  
+  .menu a {
+    color: #737373;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    color: black;
+    cursor: pointer;
+  }
