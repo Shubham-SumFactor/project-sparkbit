@@ -1,0 +1,77 @@
+.teamSlider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.sliderContainer {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.teamMember {
+  width: 23%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.memberImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.memberName {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.memberRole {
+  color: #666;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .teamMember {
+    width: 48%;
+  }
+
+  .slide {
+    /* display: flex; */
+    flex-wrap: nowrap;
+    /* flex: 100%; */
+    /* flex-direction: column; */
+  }
+}
+
+@media (max-width: 480px) {
+  .teamMember {
+    width: 100%;
+  }
+}
