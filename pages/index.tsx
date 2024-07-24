@@ -69,11 +69,11 @@ export default function Home() {
 
         {/* navbar starts here */}
         <nav className={styles.nav}>
-          <div className={styles.logo}>SPARKBIT</div>
+          <div className={styles.logo}>  <Link href="/">SPARKBIT</Link></div>
           <div className={styles.menu}>
             <Link href="/caseStudies">CASE STUDIES</Link>
             <Link href="/caseStudies">SERVICES</Link>
-            <Link href="/caseStudies">MEET US</Link>
+            <Link href="/meetus">MEET US</Link>
           </div>
         </nav>
         {/* nav bar ends  */}
@@ -122,8 +122,8 @@ export default function Home() {
             <p>{caseStudies[activeIndex].description}</p>
             <img src={caseStudies[activeIndex].image} alt={caseStudies[activeIndex].title} />
 
-            <div style={{ display: 'flex', justifyContent: 'space-between', padding: "3rem 0" }}>
-              <span style={{fontSize : '16px', fontStyle : 'italic', fontWeight : '350',lineHeight : '20px'}}>
+            <div className={styles.readThisAndServiceButton}>
+              <span className={styles.readThisButton}>
                 Read this case →
               </span>
               <button className={styles.serviceButton}style={{ border: "1px solid black", borderRadius: "20px", padding: "12px 4px" }}>
@@ -135,9 +135,9 @@ export default function Home() {
         </section>
 
 
-        <section className={styles.caseStudies} style={{ marginBottom: "10px" }} >
+        <section className={styles.caseStudies} style={{ marginBottom: "0px" }} >
           <h2>SERVICES</h2>
-          <span style={{ display: "flex", flexDirection: "column" }}>
+          <span style={{ display: "flex", flexDirection: "column", position:'relative' }}>
             <h3 className={styles.whatWeDoText}>
               What we do
             </h3>

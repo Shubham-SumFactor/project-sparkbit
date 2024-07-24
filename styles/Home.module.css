@@ -2,7 +2,7 @@
 .container {
   min-height: 100vh;
   padding: 0 2rem;
-  background-color: #fbfbfb;
+  background-color: white;
 }
 
 .main {
@@ -13,9 +13,9 @@
   min-height: 100vh;
   border: 1px solid black;
   border-bottom: none;
-  padding-left: 2%;
-  padding-right: 2%;
-  /* overflow: hidden; */
+  padding-left: 1%;
+  padding-right: 1%;
+  overflow: hidden;
 }
 
 .nav {
@@ -25,12 +25,13 @@
   width: 100%;
   padding: 1rem 0;
   /* border: 1px solid yellow; */
-
+  position: fixed;
+  overflow: hidden;
 }
 
 .logo {
-  font-weight: bold;
-
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .menu {
@@ -41,8 +42,6 @@
   font-weight: 700;
   width: 76%;
   justify-content: space-around;
-
-
 }
 
 .menu a {
@@ -56,13 +55,15 @@
 }
 
 .hero {
+  margin-top: 2.5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 620px;
+  position: relative;
   margin-bottom: 3rem;
-  /* border: 1px solid red; */
+  overflow: hidden;
 }
 
 .title {
@@ -80,10 +81,12 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  width: 92%;
-  height: 10%;
+  width: 100%;
+  height: 104%;
   z-index: 1;
   position: absolute;
+  /* margin-top: 4rem; */
+
 }
 
 .about,
@@ -184,18 +187,26 @@
 
 }
 
+.readThisButton {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 350;
+  line-height: 20px;
+}
+
 /* case stidy pics and title ends */
 
 /* services section satrts  */
 
 .servicesImage {
-  margin-top: 8%;
-  width: 100%;
+  margin-top: 5%;
+  width: 93%;
   height: 60%;
   /* object-fit: cover; */
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
+
 
 .serviceSection {
   display: grid;
@@ -205,8 +216,9 @@
 }
 
 .serviceCard {
-  background-color: #f8f8f8;
+  background-color: white;
   padding: 2rem;
+  padding-top: 0;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -214,7 +226,7 @@
 
 .serviceCard h2 {
   font-size: 33px;
-  font-weight: 500;
+  font-weight: 900;
   line-height: 39.6px;
   margin-bottom: 1rem;
 }
@@ -226,6 +238,15 @@
   flex-grow: 1;
   margin-bottom: 1rem;
 }
+
+
+
+.readThisAndServiceButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
 
 .serviceButton {
   align-self: flex-start;
@@ -240,6 +261,7 @@
   font-style: italic;
   font-weight: 350;
   line-height: 20px;
+  margin-left: 10%;
 }
 
 
@@ -325,8 +347,7 @@
 .ourApproach {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  /* border: 1px solid black; */
-  background-color: #f8f8f8;
+  background-color: white;
 
 }
 
@@ -342,6 +363,7 @@
   font-size: 1rem;
   font-weight: bold;
   color: #888;
+
 }
 
 .content {
@@ -388,36 +410,40 @@
 
 @media (max-width: 768px) {
   .hero {
+    margin-top: 0;
+    margin-bottom: 0;
     grid-template-columns: 1fr;
+    height: 600px;
   }
 
   .container {
     padding-right: 0;
-    padding-left: 0rem;
+    padding-left: 8px;
 
   }
 
   .title {
-    font-size: 3.5rem;
-    /* white-space: wrap; */
+    font-size: 4rem;
+    white-space: normal;
     align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    padding-top: 21%;
+    text-align: left;
 
   }
 
   .graphicElement {
     width: 100%;
-    height: 10%;
+    height: 82%;
     background-position: center;
     background-size: cover;
   }
 
   .about,
   .caseStudies {
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    /* margin-bottom: 5rem; */
+    /* margin-top: 5rem; */
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -428,14 +454,17 @@
   }
 
   .caseStudies h3 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 350;
+    letter-spacing: 0;
+    line-height: normal;
   }
 
   /* case stidy pics and title starts */
 
   .caseStudiesSection {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .caseStudiesList {
@@ -445,6 +474,24 @@
 
   .caseStudyContent h2 {
     font-size: 1.5rem;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+
+  .caseStudyContent p {
+    font-size: 20px;
+    font-weight: 350;
+    line-height: normal;
+    width: 100%;
+  }
+
+  .readThisButton {
+    display: none;
+  }
+
+  .serviceButton {
+    align-self: center;
+    margin-left: 0;
   }
 
   /* case stidy pics and title ends */
@@ -467,7 +514,25 @@
 
   }
 
+  .readThisAndServiceButton {
+    justify-content: center;
+    padding: 3rem 0;
+  }
+
+
+  .serviceCard p {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 24px;
+    /* flex-grow: 1; */
+    /* margin-bottom: 1rem; */
+  }
+
   /* challenge starts */
+
+  .ourApproach{
+    margin-bottom: 3rem;
+  }
   .challenges h3 {
     font-size: 30px;
     letter-spacing: normal;
@@ -501,11 +566,14 @@
 
   .team {
     grid-template-columns: 1fr;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
   }
 
   .team p {
     margin: 1rem 0rem;
     width: 100%;
+    font-size: 24px;
   }
 
   /* our strength starts  */
@@ -517,7 +585,6 @@
     font-size: 1rem;
     font-weight: bold;
     color: #888;
-    margin-bottom: 1rem;
 
   }
 
@@ -533,6 +600,7 @@
 
   .subHeading {
     font-size: 2rem;
+    margin-bottom: 0;
   }
 
   /* our strength ends */
