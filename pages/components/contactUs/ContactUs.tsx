@@ -51,24 +51,30 @@ export default function ContactUs() {
                                 required
                             />
                         </div>
-                        <textarea
-                            name="message"
-                            placeholder="START TYPING HERE"
-                            value={formData.message}
-                            onChange={handleChange}
-                            rows={6}
-                            className={styles.textarea}
-                            required
-                        ></textarea>
-                        <div className={styles.fileUpload}>
+
+                        <div className={styles.textareaContainer}>
+                            <textarea
+                                name="message"
+                                placeholder="START TYPING HERE"
+                                value={formData.message}
+                                onChange={handleChange}
+                                rows={10}
+                                className={styles.textarea}
+                                required
+                            ></textarea>
+                            <label htmlFor="file-input" className={styles.fileLabel}>
+                                <img src="/uploadIcon.svg" alt="Upload" className={styles.uploadIcon} />
+                                Upload your file
+                            </label>
                             <input
                                 type="file"
                                 name="file"
+                                id="file-input"
                                 onChange={handleChange}
                                 className={styles.fileInput}
                             />
-                            <span className={styles.fileLabel}>Upload your file</span>
                         </div>
+
 
                         <div className={styles.msgContent}>
                             <button type="submit" className={styles.submitButton}>
@@ -94,31 +100,31 @@ export default function ContactUs() {
                     </form>
                 </div>
 
-   
+
 
             </div>
 
             <footer className={styles.footer}>
-                    <div className={styles.fullInfo}>
-                        <div>CONTACT@SPARKBIT.PL</div>
-                        <div>
-                            MELCHIORA WANKOWICZA 5/30<br />
-                            02-796 WARSZAWA
-                        </div>
-                        <div>
-                            CLUTCH<br />
-                            PANGEA<br />
-                            LINKEDIN<br />
-                            FACEBOOK
-                        </div>
-                        <div>AI CONSULTATION</div>
-                        <div>PRIVACY POLICY</div>
+                <div className={styles.fullInfo}>
+                    <div>CONTACT@SPARKBIT.PL</div>
+                    <div>
+                        MELCHIORA WANKOWICZA 5/30<br />
+                        02-796 WARSZAWA
                     </div>
-                    <div className={styles.mobileInfo}>
-                        <div>DESIGNED BY BALSAMSTUDIO.COM</div>
-                        <div>© 2024 SPARKBIT. ALL RIGHTS RESERVED.</div>
+                    <div>
+                        CLUTCH<br />
+                        PANGEA<br />
+                        LINKEDIN<br />
+                        FACEBOOK
                     </div>
-                </footer>
+                    <div>AI CONSULTATION</div>
+                    <div>PRIVACY POLICY</div>
+                </div>
+                <div className={styles.mobileInfo}>
+                    <div>DESIGNED BY BALSAMSTUDIO.COM</div>
+                    <div>© 2024 SPARKBIT. ALL RIGHTS RESERVED.</div>
+                </div>
+            </footer>
 
         </section>
     );

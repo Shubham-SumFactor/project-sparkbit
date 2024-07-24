@@ -45,8 +45,9 @@
 }
 
 .inputGroup {
-    display: grid;
-    gap: 1.5rem;
+    /* display: grid; */
+    display: flex;
+    gap: 1rem;
 }
 
 .input,
@@ -165,6 +166,49 @@
 
 
 
+.fileUpload {
+    position: relative;
+    display: inline-block;
+    border: 1px solid red;
+}
+
+.textareaContainer {
+    position: relative;
+}
+
+.textarea {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.fileLabel {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+.uploadIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.fileInput {
+    display: none;
+}
+
+
+/* images one slide starts*/
+
+/* images one slide ends */
+
+
+
 @media (max-width: 768px) {
 
     .title {
@@ -175,7 +219,9 @@
         letter-spacing: normal;
         line-height: 59.4px;
     }
+
     .inputGroup {
+        display: grid;
         grid-template-columns: 1fr;
     }
 
