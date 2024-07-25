@@ -78,7 +78,10 @@ export default function ContactUs() {
 
                         <div className={styles.msgContent}>
                             <button type="submit" className={styles.submitButton}>
-                                Send your message →
+                                Send your message
+                                <span style={{ alignSelf: "center", marginLeft: '10px', marginTop: "10px" }}>
+                                    <img src="/rightArrow.svg" alt="whatwedo" height="12px" width='15px' />
+                                </span>
 
                             </button>
                             <div className={styles.checkbox}>
