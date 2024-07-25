@@ -117,6 +117,7 @@ const TestimonialSlider = () => {
                                 <p className={styles.testimonialContent2}>{testimonial.content}</p>
                                 <p className={styles.author}>{testimonial.author}</p>
                                 <p className={styles.position}>{testimonial.position}</p>
+                                <p className={styles.company}>{testimonial.company}</p>
                             </div>
                         ) : null}
 

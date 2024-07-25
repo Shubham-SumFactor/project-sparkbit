@@ -135,11 +135,22 @@ export default function Home() {
             <img src={caseStudies[activeIndex].image} alt={caseStudies[activeIndex].title} />
 
             <div className={styles.readThisAndServiceButton}>
-              <span className={styles.readThisButton}>
-                Read this case →
-              </span>
-              <button className={styles.serviceButton} style={{ border: "1px solid black", borderRadius: "20px", padding: "12px 4px" }}>
-                See all case studies →
+              <div style={{ display: 'flex', alignContent: "center", alignItems: 'center' }}>
+                <span className={styles.readThisButton}>
+                  Read this case
+                </span>
+                <span style={{ alignSelf: 'center', alignItems: "center", marginLeft: '15px', paddingBottom: "5px" }}>
+                  <img src="/rightArrow.svg" alt="whatwedo" height="1px" width='1px' />
+                </span>
+              </div>
+
+              <button className={styles.serviceButton}>
+                <div style={{ alignSelf: "center" }}>
+                  See all case studies
+                </div>
+                <div style={{ alignSelf: "center", paddingBottom: "10px", marginLeft: '15px' }}>
+                  <img src="/rightArrow.svg" alt="whatwedo" height="1px" width='1px' />
+                </div>
               </button>
             </div>
 
@@ -147,7 +158,7 @@ export default function Home() {
         </section>
 
 
-        <section className={styles.caseStudies} style={{ marginBottom: "0px" }} >
+        <section className={styles.caseStudies} style={{ marginBottom: "0", marginTop: "0px" }} >
           <h2>SERVICES</h2>
           <span style={{ display: "flex", flexDirection: "column", position: 'relative' }}>
             <h3 className={styles.whatWeDoText}>
@@ -169,15 +180,22 @@ export default function Home() {
             <p>Systems for data analysis and processing, including high-frequency data, time-series or IoT data. Focusing on reliability and scalability of solutions while maintaining low operating costs.</p>
           </div>
           <div className={styles.serviceCard}>
-            <h2>R&amp;D Prototypes</h2>
+            <h2>R&amp;D <br></br>Prototypes</h2>
             <p>Unique problems requiring the development of new techniques or algorithms and excellent programming skills. Some of these problems will prove unsolvable, others will lead to the best innovations.</p>
           </div>
 
-          <span>
-            <button className={styles.serviceButton}>Our services →</button>
-          </span>
+          <button className={styles.serviceButton2}>
+            <div >
+              Our services
+            </div>
+            <div style={{ alignSelf: "center", marginLeft: '15px', paddingTop: "1px" }}>
+              <img src="/rightArrow.svg" alt="whatwedo" height="15px" width='15px' />
+            </div>
+          </button>
 
         </section>
+
+
         {/* services section */}
 
         {/* challenges section */}
@@ -188,7 +206,13 @@ export default function Home() {
               Facing other challenges?
             </h3>
             <p>There's a technical challenge in a different area you can't quite label? Contact us and work it out together.</p>
-            <button className={styles.contactUsButton}>Contact us →</button>
+
+            <button className={styles.contactUsButton}>
+              Contact us
+              <span style={{ alignSelf: "center", marginLeft: '15px', marginTop: "10px" }}>
+                <img src="/rightArrow.svg" alt="whatwedo" height="12px" width='18px' />
+              </span>
+            </button>
           </span>
         </section>
         {/* challenges section ends*/}
@@ -222,7 +246,12 @@ export default function Home() {
             </h3>
             <p>We have an experienced team of developers with PhDs and Masters in Mathematics and Computer Science.</p>
             <p>We possess a solid mindset shaped by algorithmic and mathematical education based on the renowned Polish scientific school.</p>
-            <button className={styles.contactUsButton}>Meet us →</button>
+            <button className={styles.contactUsButton}>
+              Meet us
+              <span style={{ alignSelf: "center", marginLeft: '10px', marginTop: "10px" }}>
+                <img src="/rightArrow.svg" alt="whatwedo" height="12px" width='15px' />
+              </span>
+            </button>
 
           </span>
         </section>
