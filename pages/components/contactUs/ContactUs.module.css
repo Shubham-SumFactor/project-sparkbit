@@ -12,15 +12,17 @@
 }
 
 .sideHeading {
-    font-size: 14px;
-    font-weight: 700;
-    /* letter-spacing: 0.14px; */
-    line-height: 15.4px;
-    color: #737373;
     display: flex;
     padding-left: 35px;
-    padding-top: 10rem;
+    padding-top: 16.5rem;
     /* justify-content: center; */
+    font-family: serif;
+    font-size: 16px;
+    color: #737373;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05rem;
 
 }
 
@@ -31,11 +33,14 @@
 .title {
     font-weight: bold;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     text-align: center;
     font-size: 54px;
     font-weight: 350;
     /* letter-spacing: -3px; */
     line-height: 1.2;
+    word-break: normal;
+    text-align: left;
 }
 
 .form {
@@ -56,6 +61,7 @@
     padding: 0.5rem 0.75rem;
     border: 1px solid #d1d5db;
     border-radius: 0.25rem;
+    background-color: white;
 }
 
 .textarea {

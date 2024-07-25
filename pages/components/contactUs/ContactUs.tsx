@@ -29,7 +29,7 @@ export default function ContactUs() {
                 <h3 className={styles.sideHeading}>CONTACT FORM</h3>
 
                 <div className={styles.wrapper}>
-                    <h2 className={styles.title}>There's an innovation on your mind? Contact us!</h2>
+                    <h2 className={styles.title}>There's an innovation on your mind? <br></br>Contact us!</h2>
                     <form onSubmit={handleSubmit} className={styles.form}>
                         <div className={styles.inputGroup}>
                             <input
