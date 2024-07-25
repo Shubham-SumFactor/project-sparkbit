@@ -67,6 +67,10 @@
 
 
   @media (max-width: 768px) {
+    .nav{
+      /* width: 96%; */
+      border: none;
+    }
     .menu {
       display: none;
       flex-direction: column;

@@ -1,7 +1,7 @@
 // pages/index.js
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import TestimonialSlider from './components/testimonial/testimonial';
 import ContactUs from './components/contactUs/ContactUs';
 import Link from 'next/link';
@@ -57,9 +57,19 @@ export default function Home() {
     setActiveIndex(index);
   };
 
+  const aboutRef = useRef<HTMLDivElement | null>(null);
+
   const scrollToAbout = () => {
-    const aboutSection: any = document.querySelector(`.${styles.about}`);
-    aboutSection.scrollIntoView({ behavior: 'smooth' });
+    if (aboutRef.current) {
+      const offset = 80; 
+      const elementPosition = aboutRef.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -100,7 +110,7 @@ export default function Home() {
         {/* hero or banner end here */}
 
         {/* about and case study starts*/}
-        <section className={styles.about}>
+        <section className={styles.about} ref={aboutRef}>
           <h2>ABOUT</h2>
           <p>
             At Sparkbit, we leverage our solid engineering background and
@@ -161,9 +171,9 @@ export default function Home() {
         <section className={styles.caseStudies} style={{ marginBottom: "0", marginTop: "0px" }} >
           <h2>SERVICES</h2>
           <span style={{ display: "flex", flexDirection: "column", position: 'relative' }}>
-            <h3 className={styles.whatWeDoText}>
+            <h4 className={styles.whatWeDoText}>
               What we do
-            </h3>
+            </h4>
             <img className={styles.servicesImage} src="/3circles.svg" alt="whatwedo" />
           </span>
 
@@ -208,10 +218,10 @@ export default function Home() {
             <p>There's a technical challenge in a different area you can't quite label? Contact us and work it out together.</p>
 
             <button className={styles.contactUsButton}>
-              Contact us
-              <span style={{ alignSelf: "center", marginLeft: '15px', marginTop: "10px" }}>
+              Contact us <span style={{ marginLeft: '15px', width:'10px', height:"10px"}}>↓</span>
+              {/* <span style={{ alignSelf: "center", marginLeft: '15px', marginTop: "10px" }}>
                 <img src="/rightArrow.svg" alt="whatwedo" height="12px" width='18px' />
-              </span>
+              </span> */}
             </button>
           </span>
         </section>
