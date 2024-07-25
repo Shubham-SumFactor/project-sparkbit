@@ -5,35 +5,36 @@ import { useEffect, useState } from 'react';
 import TestimonialSlider from './components/testimonial/testimonial';
 import ContactUs from './components/contactUs/ContactUs';
 import Link from 'next/link';
+import NavBar from './components/navBar/NavBar';
 
 const caseStudies = [
   {
-    title: "AUTOMATED HUMAN BODY ASSESSMENT",
+    title: "Automated human body assessment",
     description: "Recognizing postural disorders and assigning corrective exercises based on a 3D scan",
     image: "/humanAssesment.webp"
   },
   {
-    title: "AI CAMERA-BASED DRIVING ANALYSIS TOOL",
+    title: "AI camera-based driving analysis tool",
     description: "Analyzing a high volume of multi-sensorial time-series data to detect hazardous driver behavior",
     image: "/driving.webp"
   },
   {
-    title: "UNIQUE E-COMMERCE SYSTEM",
+    title: "Unique E-commerce system",
     description: "Migration and development of a luxury Italian brands E-commerce to support global sales and shipping",
     image: "/Ecommerce.webp"
   },
   {
-    title: "MILITARY-GRADE COMMUNICATION TOOL",
+    title: "Military-grade communication tool",
     description: "Distributed system to support maritime missions operating offline at sea with data exchange based on custom military protocols",
     image: "/military.webp"
   },
   {
-    title: "SUPPORTING BUSINESS SCALABILITY WITH MACHINE LEARNING SCALABILITY",
+    title: "Supporting business scalability with machine learning",
     description: "Cutting the development and operations costs by implementing ML-heavy automation and introducing modern system architecture",
     image: "/supportingBusiness.webp"
   },
   {
-    title: "MACHINE LEARNING FOR RECEIPE RECOMMENDATION",
+    title: "Machine Learning for receipe recommendation",
     description: "Building an NLP-based system to understand cooking ingredients and refine users’ dishes",
     image: "/receipe.webp"
   },
@@ -56,6 +57,11 @@ export default function Home() {
     setActiveIndex(index);
   };
 
+  const scrollToAbout = () => {
+    const aboutSection: any = document.querySelector(`.${styles.about}`);
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
 
     <div className={styles.container}>
@@ -65,17 +71,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <NavBar />
       <main className={styles.main}>
 
         {/* navbar starts here */}
-        <nav className={styles.nav}>
+        {/* <nav className={styles.nav}>
           <div className={styles.logo}>  <Link href="/">SPARKBIT</Link></div>
           <div className={styles.menu}>
             <Link href="/caseStudies">CASE STUDIES</Link>
             <Link href="/caseStudies">SERVICES</Link>
             <Link href="/meetus">MEET US</Link>
           </div>
-        </nav>
+        </nav> */}
         {/* nav bar ends  */}
 
         {/* hero or banner here */}
@@ -84,6 +91,11 @@ export default function Home() {
             Your partner<br />in challenging<br />projects
           </h1>
           <div className={styles.graphicElement}></div>
+
+          <button className={styles.scrollButton} onClick={scrollToAbout}>
+            <img src="/down-arrow.svg" alt="whatwedo" height="55px" width='55px' />
+          </button>
+
         </section>
         {/* hero or banner end here */}
 
@@ -126,7 +138,7 @@ export default function Home() {
               <span className={styles.readThisButton}>
                 Read this case →
               </span>
-              <button className={styles.serviceButton}style={{ border: "1px solid black", borderRadius: "20px", padding: "12px 4px" }}>
+              <button className={styles.serviceButton} style={{ border: "1px solid black", borderRadius: "20px", padding: "12px 4px" }}>
                 See all case studies →
               </button>
             </div>
@@ -137,7 +149,7 @@ export default function Home() {
 
         <section className={styles.caseStudies} style={{ marginBottom: "0px" }} >
           <h2>SERVICES</h2>
-          <span style={{ display: "flex", flexDirection: "column", position:'relative' }}>
+          <span style={{ display: "flex", flexDirection: "column", position: 'relative' }}>
             <h3 className={styles.whatWeDoText}>
               What we do
             </h3>
