@@ -97,6 +97,7 @@ a {
 body {
   position: relative;
   overflow-x: hidden;
+  font-family: 'Playfair Display', serif;
   /* border: 1px solid red; */
   /* Prevent horizontal scroll if lines overflow */
 }
@@ -129,6 +130,23 @@ body {
 
 .line:nth-child(3) {
   left: 75%;
+}
+
+.rotate-button {
+  background: none;
+  border: none; 
+  cursor: pointer; 
+  z-index: 1;
+}
+
+.down-arrow {
+  width: 20px; 
+  height: 20px; 
+  transform: rotate(90deg); 
+}
+
+.down-arrow:hover {
+  transform: rotate(90deg) scale(1.1); 
 }
 
 @media (max-width: 768px) {
