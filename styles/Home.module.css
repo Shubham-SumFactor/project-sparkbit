@@ -540,6 +540,9 @@
   .readThisButton {
     display: none;
   }
+  .readThisButtonArrow {
+    display: none;
+  }
 
   .serviceButton {
     align-self: center;
@@ -653,6 +656,13 @@
   .subHeading {
     font-size: 2rem;
     margin-bottom: 0;
+  }
+
+  .serviceButton2{
+    align-self: flex-start;
+    margin-left: 0%;
+    width: 40%;
+
   }
 
   /* our strength ends */

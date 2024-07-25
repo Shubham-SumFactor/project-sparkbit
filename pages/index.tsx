@@ -139,7 +139,7 @@ export default function Home() {
                 <span className={styles.readThisButton}>
                   Read this case
                 </span>
-                <span style={{ alignSelf: 'center', alignItems: "center", marginLeft: '15px', paddingBottom: "5px" }}>
+                <span className={styles.readThisButtonArrow} style={{ alignSelf: 'center', alignItems: "center", marginLeft: '15px', paddingBottom: "5px" }}>
                   <img src="/rightArrow.svg" alt="whatwedo" height="1px" width='1px' />
                 </span>
               </div>
