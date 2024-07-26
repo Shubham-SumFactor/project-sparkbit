@@ -73,18 +73,18 @@
 }
 
 .title {
-  line-height: 1.1;
+  line-height: 1;
   /* font-size: clamp(4rem, 5vw + 3rem, 8rem); */
   letter-spacing: 2px;
-  font-size: 114px;
-  font-weight: 250;
+  font-size: 125px;
+  font-weight: 100;
   white-space: nowrap;
   bottom: 10%;
   left: 0%;
   position: absolute;
   color: #000000 !important;
-  letter-spacing: 10px;
-    z-index: 2;
+  letter-spacing: 4px;
+  z-index: 2;
 
 }
 
@@ -526,6 +526,7 @@
     display: none;
 
   }
+
   .scrollCircle {
     display: none;
 
@@ -540,7 +541,7 @@
     justify-content: center; */
     padding-top: 21%;
     text-align: left;
-    
+
 
   }
 
