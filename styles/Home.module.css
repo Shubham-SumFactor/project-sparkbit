@@ -4,7 +4,7 @@
   padding: 0 2rem;
   background-color: white;
   overflow-x: hidden;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
 
 .main {
@@ -65,7 +65,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 100%;
-  height: 670px;
+  height: 690px;
   position: relative;
   margin-bottom: 3rem;
   overflow: hidden;
@@ -79,11 +79,10 @@
   font-size: 114px;
   font-weight: 250;
   white-space: nowrap;
-  bottom: 25%;
+  bottom: 10%;
   left: 0%;
   position: absolute;
   color: #000000 !important;
-
 
 }
 
@@ -92,24 +91,36 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  width: 46.25rem;
+  height: 39rem;
+  z-index: 2;
   position: absolute;
-  margin-bottom: 3rem;
+  right: 0%;
+  /* margin-bottom: 4rem; */
+  margin-top: 1rem;
 
 }
 
 .scrollButton {
   position: absolute;
-  bottom: 10%;
+  bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
   background: none;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease;
-  z-index: 2;
+  z-index: 99;
+}
+
+.scrollCircle {
+  position: absolute;
+  bottom: 1%;
+  left: 48.3%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
 }
 
 .scrollButton:hover {
@@ -658,7 +669,7 @@
     font-size: 30px;
     letter-spacing: normal;
     color: #000000;
-    
+
   }
 
   .team {

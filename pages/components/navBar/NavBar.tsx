@@ -20,8 +20,8 @@ const NavBar = () => {
       </div> */}
       <div className={`${styles.menu} ${isMenuOpen ? styles.showMenu : ''}`}>
         <Link href="/">
-          <img src="/sumfactor-logo.png" alt="sumfactor" height="55px" width='55px' />
-
+          {/* <img src="/sumfactor-logo.png" alt="sumfactor" height="55px" width='55px' /> */}
+          SUMFACTOR
         </Link>
         <Link href="/caseStudies">CASE STUDIES</Link>
         <Link href="/services">SERVICES</Link>

@@ -61,7 +61,7 @@ export default function Home() {
 
   const scrollToAbout = () => {
     if (aboutRef.current) {
-      const offset = 80; 
+      const offset = 80;
       const elementPosition = aboutRef.current.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -102,9 +102,14 @@ export default function Home() {
           </h1>
           <div className={styles.graphicElement}></div>
 
-          <button className={styles.scrollButton} onClick={scrollToAbout}>
-            <img src="/down-arrow.svg" alt="whatwedo" height="55px" width='55px' />
-          </button>
+          <div  className={styles.scrollCircle}>
+            <img src="/circle.svg" alt="whatwedo" height="50px" width='50px' />
+          </div>
+          <div className={styles.scrollButton} onClick={scrollToAbout}>
+
+            <img src="/down-arrow1.svg" alt="whatwedo" height="20px" width='40px' />
+          </div>
+
 
         </section>
         {/* hero or banner end here */}
@@ -218,7 +223,7 @@ export default function Home() {
             <p>There's a technical challenge in a different area you can't quite label? Contact us and work it out together.</p>
 
             <button className={styles.contactUsButton}>
-              Contact us <span style={{ marginLeft: '15px', width:'10px', height:"10px"}}>↓</span>
+              Contact us <span style={{ marginLeft: '15px', width: '10px', height: "10px" }}>↓</span>
               {/* <span style={{ alignSelf: "center", marginLeft: '15px', marginTop: "10px" }}>
                 <img src="/rightArrow.svg" alt="whatwedo" height="12px" width='18px' />
               </span> */}
