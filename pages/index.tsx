@@ -78,7 +78,7 @@ export default function Home() {
       <Head>
         <title>Sumfactor</title>
         <meta name="description" content="Sumfactor created with Next.js" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/faviconSumfactor.ico" />
       </Head>
 
       <NavBar />
