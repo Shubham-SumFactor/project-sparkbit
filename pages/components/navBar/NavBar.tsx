@@ -19,7 +19,7 @@ const NavBar = () => {
         <Link href="/">SPARKBIT</Link>
       </div> */}
       <div className={`${styles.menu} ${isMenuOpen ? styles.showMenu : ''}`}>
-        <Link href="/">
+        <Link href="/" style={{fontSize:'1.2rem', fontWeight:'900', color:"black"}}>
           {/* <img src="/sumfactor-logo.png" alt="sumfactor" height="55px" width='55px' /> */}
           SUMFACTOR
         </Link>

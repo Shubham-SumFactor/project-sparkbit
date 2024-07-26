@@ -83,6 +83,8 @@
   left: 0%;
   position: absolute;
   color: #000000 !important;
+  letter-spacing: 10px;
+    z-index: 2;
 
 }
 
@@ -99,6 +101,7 @@
   /* margin-bottom: 4rem; */
   margin-top: 1rem;
 
+
 }
 
 .scrollButton {
@@ -110,7 +113,7 @@
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease;
-  z-index: 99;
+  z-index: 200;
 }
 
 .scrollCircle {
@@ -120,7 +123,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 99;
+  z-index: 200;
 }
 
 .scrollButton:hover {
@@ -523,6 +526,11 @@
     display: none;
 
   }
+  .scrollCircle {
+    display: none;
+
+  }
+
 
   .title {
     font-size: 4rem;
@@ -532,6 +540,7 @@
     justify-content: center; */
     padding-top: 21%;
     text-align: left;
+    
 
   }
 
