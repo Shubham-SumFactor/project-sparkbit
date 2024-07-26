@@ -37,6 +37,7 @@
     font-weight: 350;
     line-height: 1;
     margin-bottom: 1rem;
+    color: #000;
 }
 
 .navigation {
@@ -63,9 +64,11 @@
 .testimonialContentContainer {
     width: 30%;
     padding-left: 8px;
+    color: #000;
 }
 
 .testimonialContentContainer2 {
+    color: #000;
     width: 80%;
     padding-left: 8px;
 }
