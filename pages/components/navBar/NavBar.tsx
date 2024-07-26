@@ -12,22 +12,25 @@ const NavBar = () => {
 
 
   return (
-    <nav className={styles.nav}>
- 
-      <div className={styles.logo}>
+    <header className={styles.nav}>
+      {/* <nav > */}
+
+        {/* <div className={styles.logo}>
         <Link href="/">SPARKBIT</Link>
-      </div>
-      <div className={`${styles.menu} ${isMenuOpen ? styles.showMenu : ''}`}>
-        <Link href="/caseStudies">CASE STUDIES</Link>
-        <Link href="/services">SERVICES</Link>
-        <Link href="/meetus">MEET US</Link>
-      </div>
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
+      </div> */}
+        <div className={`${styles.menu} ${isMenuOpen ? styles.showMenu : ''}`}>
+          <Link href="/">SUMFACTOR</Link>
+          <Link href="/caseStudies">CASE STUDIES</Link>
+          <Link href="/services">SERVICES</Link>
+          <Link href="/meetus">MEET US</Link>
+        </div>
+        <div className={styles.hamburger} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      {/* </nav> */}
+    </header>
   );
 };
 

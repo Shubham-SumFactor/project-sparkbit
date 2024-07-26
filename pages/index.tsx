@@ -76,8 +76,8 @@ export default function Home() {
 
     <div className={styles.container}>
       <Head>
-        <title>Sparkbit Clone</title>
-        <meta name="description" content="Sparkbit clone created with Next.js" />
+        <title>Sumfactor</title>
+        <meta name="description" content="Sumfactor created with Next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -86,7 +86,7 @@ export default function Home() {
 
         {/* navbar starts here */}
         {/* <nav className={styles.nav}>
-          <div className={styles.logo}>  <Link href="/">SPARKBIT</Link></div>
+          <div className={styles.logo}>  <Link href="/">Sumfactor</Link></div>
           <div className={styles.menu}>
             <Link href="/caseStudies">CASE STUDIES</Link>
             <Link href="/caseStudies">SERVICES</Link>
@@ -113,7 +113,7 @@ export default function Home() {
         <section className={styles.about} ref={aboutRef}>
           <h2>ABOUT</h2>
           <p>
-            At Sparkbit, we leverage our solid engineering background and
+            At Sumfactor, we leverage our solid engineering background and
             conceptual work capabilities rooted in academia to partner with
             innovative companies and develop advanced data-processing systems.
           </p>
