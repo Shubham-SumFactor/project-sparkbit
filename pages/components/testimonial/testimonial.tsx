@@ -76,7 +76,7 @@ const TestimonialSlider = () => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             nextSlide();
-        }, 7000);
+        }, 3000);
 
         return () => clearInterval(intervalId);
     }, []);
