@@ -26,7 +26,7 @@ const MeetUs = () => {
                 <section className={styles.about}>
                     <h2>ABOUT</h2>
                     <p>
-                        We're software development experts that support your ambitious business goals with knowledge and proactivity. Meet the Sparkbit team.
+                        We're software development experts that support your ambitious business goals with knowledge and proactivity. Meet the Sumfactor team.
                     </p>
                 </section>
 
@@ -35,7 +35,7 @@ const MeetUs = () => {
                     <span className={styles.founderContent}>
                         <h3>OUR FOUNDERS</h3>
                         <p>
-                            The idea of Sparkbit came from our founders - alumni of top technical universities in Poland and software engineers with two decades of professional experience. Complementing each other in areas of interest - organizing processes, scientific research, and delivery - they allowed Sparkbit to become a friendly workplace for exceptional developers.
+                            The idea of Sumfactor came from our founders - alumni of top technical universities in Poland and software engineers with two decades of professional experience. Complementing each other in areas of interest - organizing processes, scientific research, and delivery - they allowed Sumfactor to become a friendly workplace for exceptional developers.
                         </p>
                         <p>
                             Through the last eight years, they have run numerous challenging projects for various clients, from ML scaleups to one of the Big Four companies, telematics enterprises, blockchain startups, and governmental military organizations.
@@ -48,7 +48,7 @@ const MeetUs = () => {
 
 
                 <section className={styles.founder}>
-                    <h2>SPARKBIT TEAM</h2>
+                    <h2>Sumfactor TEAM</h2>
                     <span >
                         <h3>Our Team</h3>
                         <p>
@@ -65,7 +65,7 @@ const MeetUs = () => {
                 <section className={styles.founder}>
                     <h2>FELLOWSHIP</h2>
                     <span >
-                        <h3>Sparkbit Fellowship</h3>
+                        <h3>Sumfactor Fellowship</h3>
                         <p>
                             We're very serious about professional development and investing in the team. We believe that working in a knowledgeable and cordial environment is the best way to earn competence. That's why we have a defined and structured 10-month training plan to help our talented but less experienced colleagues achieve self-sufficiency.
                         </p>
@@ -86,7 +86,7 @@ const MeetUs = () => {
                     <h2>OUR CULTURE</h2>
                     <span >
 
-                        {/* <h3>Sparkbit Fellowship</h3> */}
+                        {/* <h3>Sumfactor Fellowship</h3> */}
                         <p>
                         We do serious engineering work but <br /> always try to keep a cozy, informal <br /> atmosphere with room for focus on the <br /> creative side and sharing knowledge with <br /> our teammates.
                         </p>

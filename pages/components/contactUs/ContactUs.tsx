@@ -93,7 +93,7 @@ export default function ContactUs() {
                                     required
                                 />
                                 <span className={styles.checkboxLabel}>
-                                    I declare that I give my permission to Sparkbit sp z.o. for the processing of my personal data in order to receive an answer to this inquiry.
+                                    I declare that I give my permission to Sumfactor sp z.o. for the processing of my personal data in order to receive an answer to this inquiry.
                                 </span>
                             </div>
 
@@ -109,7 +109,7 @@ export default function ContactUs() {
 
             <footer className={styles.footer}>
                 <div className={styles.fullInfo}>
-                    <div>CONTACT@SPARKBIT.PL</div>
+                    <div>CONTACT@Sumfactor.PL</div>
                     <div>
                         MELCHIORA WANKOWICZA 5/30<br />
                         02-796 WARSZAWA
@@ -125,7 +125,7 @@ export default function ContactUs() {
                 </div>
                 <div className={styles.mobileInfo}>
                     <div>DESIGNED BY BALSAMSTUDIO.COM</div>
-                    <div>© 2024 SPARKBIT. ALL RIGHTS RESERVED.</div>
+                    <div>© 2024 Sumfactor. ALL RIGHTS RESERVED.</div>
                 </div>
             </footer>
 
