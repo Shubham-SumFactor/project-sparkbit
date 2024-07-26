@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './testimonial.module.css';
 
 const testimonials = [
@@ -72,6 +72,14 @@ const TestimonialSlider = () => {
             setIsPlaying(!isPlaying);
         }
     };
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            nextSlide();
+        }, 7000);
+
+        return () => clearInterval(intervalId);
+    }, []);
 
     const testimonial = testimonials[currentSlide];
 
