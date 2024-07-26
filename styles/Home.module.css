@@ -77,6 +77,8 @@
   bottom: 25%;
   left: 0%;
   position: absolute;
+  color: #000000 !important; 
+
 
 }
 
@@ -293,6 +295,7 @@
 
 
 .serviceButton {
+  color: #000000 !important; 
   align-self: center;
   background: none;
   border: 1px solid #000;
@@ -365,6 +368,7 @@
   font-style: italic;
   font-weight: 350;
   line-height: 20px;
+  color: #000000 !important; 
 }
 
 /* challenges section ends */

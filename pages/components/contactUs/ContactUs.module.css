@@ -108,6 +108,7 @@
     align-self: flex-start;
     background: none;
     border: 1px solid #000;
+    color: #000000 !important;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
     cursor: pointer;
@@ -258,7 +259,7 @@
         display: none;
     }
 
-    .sideHeading{
+    .sideHeading {
         padding-top: 1rem;
         padding-left: 0;
     }
