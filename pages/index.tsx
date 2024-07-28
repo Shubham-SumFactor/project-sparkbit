@@ -102,13 +102,14 @@ export default function Home() {
           </h1>
           <div className={styles.graphicElement}></div>
 
-          <div  className={styles.scrollCircle}>
-            <img src="/circle.svg" alt="whatwedo" height="50px" width='50px' />
-          </div>
-          <div className={styles.scrollButton} onClick={scrollToAbout}>
+          <div className={styles.scrollCircle}>
+            {/* <img src="/circle.svg" alt="whatwedo" height="50px" width='50px' /> */}
+            <div className={styles.scrollButton} onClick={scrollToAbout}>
+              <img src="/down-arrow1.svg" alt="whatwedo" height="20px" width='40px' />
+            </div>
 
-            <img src="/down-arrow1.svg" alt="whatwedo" height="20px" width='40px' />
           </div>
+
 
 
         </section>
