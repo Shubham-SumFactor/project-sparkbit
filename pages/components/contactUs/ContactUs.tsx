@@ -23,6 +23,14 @@ export default function ContactUs() {
         console.log(formData);
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+
     return (
         <section className={styles.contactSection}>
             <div className={styles.container}>
@@ -76,14 +84,26 @@ export default function ContactUs() {
                         </div>
 
 
-                        <div className={styles.msgContent}>
-                            <button type="submit" className={styles.submitButton}>
-                                Send your message
-                                <span style={{ alignSelf: "center", marginLeft: '10px', marginTop: "10px" }}>
-                                    <img src="/rightArrow.svg" alt="whatwedo" height="12px" width='15px' />
-                                </span>
+                        <div className={styles.msgContent} >
+                            <div style={{ display: "flex", justifyContent: "space-between", width: "60%" }}>
+                                <div>
+                                    <button type="submit" className={styles.submitButton}>
+                                        Send your message
+                                        <span style={{ alignSelf: "center", marginLeft: '10px', marginTop: "5px" }}>
+                                            <img src="/rightArrow.svg" alt="sendyourmsg" height="15px" width='15px' />
+                                        </span>
 
-                            </button>
+                                    </button>
+                                </div>
+
+                                <div className={styles.scrollCircle} onClick={scrollToTop}>
+                                    <div className={styles.scrollArrow} >
+                                        <img src="/down-arrow1.svg" alt="whatwedo" height="15px" width='40px' />
+                                    </div>
+                                </div>
+
+                            </div>
+
                             <div className={styles.checkbox}>
                                 <input
                                     type="checkbox"
