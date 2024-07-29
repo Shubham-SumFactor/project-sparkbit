@@ -7,7 +7,7 @@ import ContactUs from './components/contactUs/ContactUs';
 
 const MeetUs = () => {
 
- 
+
 
     return (
 
@@ -15,6 +15,11 @@ const MeetUs = () => {
 
             <main className={styles.main}>
 
+                <div className="vertical-lines">
+                    <div className="line1"></div>
+                    <div className="line2"></div>
+                    <div className="line3"></div>
+                </div>
                 <NavBar />
                 <div className={styles.hero}>
                     <h1 className={styles.title}>
@@ -48,7 +53,7 @@ const MeetUs = () => {
 
 
                 <section className={styles.founder}>
-                    <h2>Sumfactor TEAM</h2>
+                    <h2>SUMFACTOR TEAM</h2>
                     <span >
                         <h3>Our Team</h3>
                         <p>
@@ -88,14 +93,14 @@ const MeetUs = () => {
 
                         {/* <h3>Sumfactor Fellowship</h3> */}
                         <p>
-                        We do serious engineering work but <br /> always try to keep a cozy, informal <br /> atmosphere with room for focus on the <br /> creative side and sharing knowledge with <br /> our teammates.
+                            We do serious engineering work but <br /> always try to keep a cozy, informal <br /> atmosphere with room for focus on the <br /> creative side and sharing knowledge with <br /> our teammates.
                         </p>
-                        
+
                     </span>
 
                 </section>
 
-                <ContactUs /> 
+                <ContactUs />
             </main>
 
         </div>
