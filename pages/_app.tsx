@@ -14,11 +14,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Sumfactor created with Next.js" />
         <link rel="icon" href="/faviconSumfactor.ico" />
       </Head>
-      <div className="vertical-lines">
+      {/* <div className="vertical-lines">
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>
-      </div>
+      </div> */}
       <Component {...pageProps} />
     </>
   );
