@@ -81,37 +81,31 @@ export default function Home() {
         <link rel="icon" href="/faviconSumfactor.ico" />
       </Head>
 
-      <NavBar />
       <main className={styles.main}>
+        <NavBar />
 
-        {/* navbar starts here */}
-        {/* <nav className={styles.nav}>
-          <div className={styles.logo}>  <Link href="/">Sumfactor</Link></div>
-          <div className={styles.menu}>
-            <Link href="/caseStudies">CASE STUDIES</Link>
-            <Link href="/caseStudies">SERVICES</Link>
-            <Link href="/meetus">MEET US</Link>
-          </div>
-        </nav> */}
-        {/* nav bar ends  */}
+        {/* <div className={styles.gridContainer}> */}
 
+        <div className="vertical-lines">
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
         {/* hero or banner here */}
+
         <section className={styles.hero}>
           <h1 className={styles.title}>
             Your partner<br />in challenging<br />projects
           </h1>
-          <div className={styles.graphicElement}></div>
-
-          <div className={styles.scrollCircle}>
-            {/* <img src="/circle.svg" alt="whatwedo" height="50px" width='50px' /> */}
-            <div className={styles.scrollButton} onClick={scrollToAbout}>
-              <img src="/down-arrow1.svg" alt="whatwedo" height="20px" width='40px' />
-            </div>
+          <div className={styles.graphicElement}>
 
           </div>
 
-
-
+          <div className={styles.scrollCircle}>
+            <div className={styles.scrollButton} onClick={scrollToAbout}>
+              <img src="/down-arrow1.svg" alt="whatwedo" height="15px" width='40px' />
+            </div>
+          </div>
         </section>
         {/* hero or banner end here */}
 
@@ -156,7 +150,7 @@ export default function Home() {
                   Read this case
                 </span>
                 <span className={styles.readThisButtonArrow} style={{ alignSelf: 'center', alignItems: "center", marginLeft: '15px', paddingBottom: "5px" }}>
-                  <img src="/rightArrow.svg" alt="whatwedo" height="1px" width='1px' />
+                  <img src="/rightArrow.svg" alt="whatwedo" height="16px" width='20px' />
                 </span>
               </div>
 
@@ -164,10 +158,11 @@ export default function Home() {
                 <div style={{ alignSelf: "center" }}>
                   See all case studies
                 </div>
-                <div style={{ alignSelf: "center", paddingBottom: "10px", marginLeft: '15px' }}>
-                  <img src="/rightArrow.svg" alt="whatwedo" height="1px" width='1px' />
-                </div>
+                <span className={styles.ourServicesArrow} style={{ alignSelf: "center", marginLeft: '15px', paddingBottom: "6px" }}>
+                  <img src="/rightArrow.svg" alt="whatwedo" height="16px" width='20px' />
+                </span>
               </button>
+
             </div>
 
           </div>
@@ -201,11 +196,9 @@ export default function Home() {
           </div>
 
           <button className={styles.serviceButton2}>
-            <div >
-              Our services
-            </div>
-            <div style={{ alignSelf: "center", marginLeft: '15px', paddingTop: "1px" }}>
-              <img src="/rightArrow.svg" alt="whatwedo" height="15px" width='15px' />
+            <div>Our services</div>
+            <div style={{ marginLeft: '15px' }} className={styles.ourServicesArrow}>
+              <img src="/rightArrow.svg" alt="whatwedo" height="20px" width="20px" />
             </div>
           </button>
 
@@ -224,10 +217,11 @@ export default function Home() {
             <p>There's a technical challenge in a different area you can't quite label? Contact us and work it out together.</p>
 
             <button className={styles.contactUsButton}>
-              Contact us <span style={{ marginLeft: '15px', width: '10px', height: "10px" }}>↓</span>
-              {/* <span style={{ alignSelf: "center", marginLeft: '15px', marginTop: "10px" }}>
-                <img src="/rightArrow.svg" alt="whatwedo" height="12px" width='18px' />
-              </span> */}
+              Contact us
+              <span style={{ marginLeft: '15px' }} className={styles.contactUsArrow}>
+                <img src="/down-arrow1.svg" alt="whatwedo" height="16px" width='20px' />
+
+              </span>
             </button>
           </span>
         </section>
@@ -260,12 +254,14 @@ export default function Home() {
             <h3>
               The team
             </h3>
-            <p>We have an experienced team of developers with PhDs and Masters in Mathematics and Computer Science.</p>
+            <p>We have an experienced team see developers with PhDs and Masters in Mathematics and Computer Science.</p>
             <p>We possess a solid mindset shaped by algorithmic and mathematical education based on the renowned Polish scientific school.</p>
-            <button className={styles.contactUsButton}>
+
+
+            <button className={styles.contactUsButton} style={{ marginTop: '2rem' }}>
               Meet us
-              <span style={{ alignSelf: "center", marginLeft: '10px', marginTop: "10px" }}>
-                <img src="/rightArrow.svg" alt="whatwedo" height="12px" width='15px' />
+              <span style={{ marginLeft: '15px' }} className={styles.ourServicesArrow}>
+                <img src="/rightArrow.svg" alt="whatwedo" height="20px" width="20px" />
               </span>
             </button>
 
@@ -277,6 +273,7 @@ export default function Home() {
         {/* testimonail section  starts*/}
         <TestimonialSlider />
         {/* testimonail section  ends*/}
+        {/* </div> */}
       </main>
       <ContactUs />
 
