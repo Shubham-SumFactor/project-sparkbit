@@ -99,8 +99,10 @@ const MeetUs = () => {
 
                 <ImageSlider />
 
-                <ContactUs />
             </main>
+
+            <ContactUs />
+
 
         </div>
 
