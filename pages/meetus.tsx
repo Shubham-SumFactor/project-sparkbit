@@ -39,7 +39,7 @@ const MeetUs = () => {
                 <section className={styles.founder}>
                     <h2>FOUNDERS</h2>
                     <span className={styles.founderContent}>
-                        <h3>OUR FOUNDERS</h3>
+                        <h3>Our founders</h3>
                         <p>
                             The idea of Sumfactor came from our founders - alumni of top technical universities in Poland and software engineers with two decades of professional experience. Complementing each other in areas of interest - organizing processes, scientific research, and delivery - they allowed Sumfactor to become a friendly workplace for exceptional developers.
                         </p>
@@ -91,7 +91,7 @@ const MeetUs = () => {
                     <span >
                         {/* <h3>Sumfactor Fellowship</h3> */}
                         <p>
-                            We do serious engineering work but <br /> always try to keep a cozy, informal <br /> atmosphere with room for focus on the <br /> creative side and sharing knowledge with <br /> our teammates.
+                            We do serious engineering work but always try to keep a cozy, informal atmosphere with room for focus on the creative side and sharing knowledge with our teammates.
                         </p>
                     </span>
 

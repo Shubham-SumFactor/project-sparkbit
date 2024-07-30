@@ -10,14 +10,11 @@
   justify-content: flex-start;
   align-items: flex-start;
   min-height: 100vh;
-  /* border: 10px solid cyan; */
   border-left: 1px solid rgb(230, 223, 223);
   border-right: 1px solid rgb(230, 223, 223);
-  /* border-bottom: none; */
   padding-left: 1%;
   padding-right: 1%;
   overflow: hidden;
-  /* overflow: hidden; */
 }
 
 
@@ -27,7 +24,6 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 100%;
-  /* height: calc(100vh - 80px); */
   height: 690px;
   margin-bottom: 3rem;
   position: relative;
@@ -37,7 +33,6 @@
 
 .title {
   line-height: 1;
-  /* font-size: clamp(4rem, 5vw + 3rem, 8rem); */
   letter-spacing: 2px;
   font-size: 125px;
   font-weight: 100;
@@ -61,7 +56,6 @@
   z-index: 2;
   position: absolute;
   right: 0%;
-  /* margin-bottom: 4rem; */
   margin-top: 1rem;
 }
 
@@ -87,7 +81,6 @@
   line-height: 140%;
   color: #000000;
   font-weight: lighter;
-  letter-spacing: 0.05rem;
   overflow-wrap: break-word;
 
 }
@@ -111,17 +104,25 @@
   letter-spacing: 0.05rem;
 }
 
-.founder p {
-  font-size: 28px;
-  line-height: 39.2px;
-  font-weight: 350;
-  line-height: 1.5;
+.founder h3 {
+  font-family: serif;
+  font-size: 48px;
   color: #000000;
-  font-weight: 350;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+.founder p {
+  font-size: 22px;
+  line-height: 39.2px;
+  font-weight: 100;
+  color: #000000;
   width: 68%;
-  /* border: 1px solid green; */
   padding: 1rem 0;
-  word-wrap: break-word;
+  letter-spacing: 0.05rem;
+
 }
 
 
@@ -129,7 +130,6 @@
   margin-top: 8%;
   width: 67%;
   height: 60%;
-  /* object-fit: cover; */
   display: flex;
   justify-content: center;
 }
@@ -176,15 +176,51 @@
     grid-template-columns: 1fr;
   }
 
+  .about h2{
+    font-family: serif;
+    font-size: 13px;
+    color: #737373;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01rem;
+  }
+
+  .about p {
+    font-size: 26px;
+  }
+
   .founder {
     grid-template-columns: 1fr;
     width: 100%;
     margin-bottom: 3rem;
+  }
 
+  .founder h2 {
+    font-family: serif;
+    font-size: 13px;
+    color: #737373;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01rem;
+  }
+
+  .founder h3 {
+    font-family: serif;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01rem;
   }
 
   .founder p {
     width: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 100;
+    color: #000000;
+    padding: 1rem 0;
+    letter-spacing: 0.03rem;
   }
 
   .founderImage {
@@ -227,7 +263,6 @@
   }
 
   .graphicElement {
-    /* border: 1px solid red; */
     left: 74%;
     z-index: 1000;
     height: 624px;
