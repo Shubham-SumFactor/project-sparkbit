@@ -32,12 +32,14 @@
   justify-content: space-between;
   width: 100%;
   flex: 0 0 100%;
+
 }
 
 .teamMember {
-  width: 23%;
+  width: 22%;
   margin-bottom: 20px;
   text-align: left;
+
 }
 
 .memberImage {
@@ -59,7 +61,8 @@
 
 @media (max-width: 768px) {
   .teamMember {
-    width: 48%;
+    width: 100%;
+    /* flex: 0 0 48%; */
   }
 
   .slide {
@@ -70,8 +73,8 @@
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .teamMember {
     width: 100%;
   }
-}
+} */

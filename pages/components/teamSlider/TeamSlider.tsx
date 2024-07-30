@@ -59,44 +59,57 @@ interface TeamSliderProps {
 }
 
 const TeamSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slidesCount = Math.ceil(teamMembers.length / 4);
+const [currentSlide, setCurrentSlide] = useState(0);
+const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slidesCount);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [slidesCount]);
-
-  const handlePrev = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + slidesCount) % slidesCount);
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
   };
+  
+  handleResize();
+  window.addEventListener('resize', handleResize);
+  return () => window.removeEventListener('resize', handleResize);
+}, []);
 
-  const handleNext = () => {
+const itemsPerSlide = isMobile ? 1 : 4;
+const slidesCount = Math.ceil(teamMembers.length / itemsPerSlide);
+
+useEffect(() => {
+  const timer = setInterval(() => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slidesCount);
-  };
+  }, 5000);
+  return () => clearInterval(timer);
+}, [slidesCount]);
 
-  return (
-    <section className={styles.teamSlider}>
-      <div className={styles.navigationButtons}>
-        <button className={styles.navButton} onClick={handlePrev}>←</button>
-        <button className={styles.navButton} onClick={handleNext}>→</button>
-      </div>
-      <div 
-        className={styles.sliderContainer} 
-        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-      >
-        {[...Array(slidesCount)].map((_, index) => (
-          <div key={index} className={styles.slide}>
-            {teamMembers.slice(index * 4, index * 4 + 4).map((member : any) => (
-              <TeamMember key={member.name} {...member} />
-            ))}
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+const handlePrev = () => {
+  setCurrentSlide((prevSlide) => (prevSlide - 1 + slidesCount) % slidesCount);
+};
+
+const handleNext = () => {
+  setCurrentSlide((prevSlide) => (prevSlide + 1) % slidesCount);
+};
+
+return (
+  <section className={styles.teamSlider}>
+    <div className={styles.navigationButtons}>
+      <button className={styles.navButton} onClick={handlePrev}>←</button>
+      <button className={styles.navButton} onClick={handleNext}>→</button>
+    </div>
+    <div 
+      className={styles.sliderContainer} 
+      style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+    >
+      {[...Array(slidesCount)].map((_, index) => (
+        <div key={index} className={styles.slide}>
+          {teamMembers.slice(index * itemsPerSlide, index * itemsPerSlide + itemsPerSlide).map((member) => (
+            <TeamMember key={member.name} {...member} />
+          ))}
+        </div>
+      ))}
+    </div>
+  </section>
+);
 };
 
 export default TeamSlider;

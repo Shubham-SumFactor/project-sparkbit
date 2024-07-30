@@ -4,10 +4,11 @@ import styles from '../styles/MeetUs.module.css'
 import NavBar from './components/navBar/NavBar';
 import TeamSlider from './components/teamSlider/TeamSlider';
 import ContactUs from './components/contactUs/ContactUs';
+import ImageSlider from './components/imageSlider/ImageSlider';
 
 const MeetUs = () => {
 
- 
+
 
     return (
 
@@ -15,6 +16,11 @@ const MeetUs = () => {
 
             <main className={styles.main}>
 
+                <div className="vertical-lines">
+                    <div className="line1"></div>
+                    <div className="line2"></div>
+                    <div className="line3"></div>
+                </div>
                 <NavBar />
                 <div className={styles.hero}>
                     <h1 className={styles.title}>
@@ -33,7 +39,7 @@ const MeetUs = () => {
                 <section className={styles.founder}>
                     <h2>FOUNDERS</h2>
                     <span className={styles.founderContent}>
-                        <h3>OUR FOUNDERS</h3>
+                        <h3>Our founders</h3>
                         <p>
                             The idea of Sumfactor came from our founders - alumni of top technical universities in Poland and software engineers with two decades of professional experience. Complementing each other in areas of interest - organizing processes, scientific research, and delivery - they allowed Sumfactor to become a friendly workplace for exceptional developers.
                         </p>
@@ -46,16 +52,14 @@ const MeetUs = () => {
 
                 </section>
 
-
                 <section className={styles.founder}>
-                    <h2>Sumfactor TEAM</h2>
+                    <h2>SUMFACTOR TEAM</h2>
+
                     <span >
                         <h3>Our Team</h3>
                         <p>
                             We're very careful when choosing our teammates to keep the highest quality of technical skills and match our organizational culture. We hire only the top 1% of candidates with Computer Science or Mathematics degrees. We're a team of geeks, but professional excellence is only the first threshold. We want our people to be honest, take responsibility for their work, and try to go the extra mile to deliver the best solution.
                         </p>
-
-
                     </span>
 
                 </section>
@@ -81,21 +85,21 @@ const MeetUs = () => {
 
                 </section>
 
-
                 <section className={styles.founder}>
                     <h2>OUR CULTURE</h2>
-                    <span >
 
+                    <span >
                         {/* <h3>Sumfactor Fellowship</h3> */}
                         <p>
-                        We do serious engineering work but <br /> always try to keep a cozy, informal <br /> atmosphere with room for focus on the <br /> creative side and sharing knowledge with <br /> our teammates.
+                            We do serious engineering work but always try to keep a cozy, informal atmosphere with room for focus on the creative side and sharing knowledge with our teammates.
                         </p>
-                        
                     </span>
 
                 </section>
 
-                <ContactUs /> 
+                <ImageSlider />
+
+                <ContactUs />
             </main>
 
         </div>

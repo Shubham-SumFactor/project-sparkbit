@@ -7,6 +7,17 @@
   /* max-width: 1440px; */
 }
 
+/* .gridContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1px;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+} */
+
+
 .main {
   display: flex;
   flex-direction: column;
@@ -106,7 +117,7 @@
 
 .scrollButton {
   position: absolute;
-  bottom: 3%;
+  bottom: 18%;
   left: 50%;
   transform: translateX(-50%);
   background: none;
@@ -119,12 +130,11 @@
 
 .scrollCircle {
   position: absolute;
-  bottom: 1%;
+  bottom: 5%;
   left: 48.5%;
   background: none;
   cursor: pointer;
   z-index: 200;
-
   border: 1px solid black;
   width: 40px;
   height: 40px;
@@ -137,6 +147,19 @@
 
 .scrollButton:hover {
   transform: translateX(-50%) translateY(5px);
+}
+
+
+
+
+.contactUsArrow {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contactUsArrow:hover {
+  transform: translateY(10px);
 }
 
 .about,
@@ -185,7 +208,7 @@
 .caseStudies h4 {
   font-size: 65px;
   font-weight: lighter;
-  /* letter-spacing: -3px; */
+  letter-spacing: -3px;
   line-height: 1.1;
 }
 
@@ -257,10 +280,8 @@
 
 .caseStudyContent img {
   width: 100%;
-  /* height: 60%; */
   object-fit: cover;
   margin-top: 1rem;
-
 }
 
 .readThisButton {
@@ -339,14 +360,31 @@
   border-radius: 30px;
   display: flex;
   cursor: pointer;
+  justify-content: center;
   transition: background-color 0.3s, color 0.3s;
   font-size: 18px;
   font-style: italic;
   font-weight: 200;
+  transition: transform 0.3s ease;
+  align-items: center;
+
 }
 
+.ourServicesArrow:hover {
+  transform: translateX(+50%);
+}
+
+.readThisButtonArrow:hover {
+  transform: translateX(+50%);
+}
+
+/* .serviceButton:hover .arrow {
+  transform: translateX(10px); 
+} */
+
 .serviceButton2 {
-  align-self: center;
+  transition: transform 0.3s ease;
+  /* align-self: center; */
   background: none;
   padding: 8px 10px;
   border: 1px solid black;
@@ -354,7 +392,6 @@
   display: flex;
   cursor: pointer;
   font-size: 18px;
-  font-style: italic;
   font-weight: 500;
   margin-left: 10%;
   width: 50%;
@@ -363,6 +400,21 @@
 
 /* services section ends */
 
+.serviceButton2 {
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.serviceButton2 div {
+  display: flex;
+  align-items: center;
+}
 
 /* challenges section starts */
 .challenges {
@@ -394,19 +446,27 @@
 }
 
 .contactUsButton {
-  margin: 2rem 0;
   align-self: flex-start;
-  background: none;
-  border: 1px solid #000;
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
   font-size: 16px;
   font-style: italic;
   font-weight: 350;
   line-height: 20px;
   color: #000000 !important;
+  font-style: italic;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: none;
+  background: none;
+}
+
+.contactUsButton span {
+  display: flex;
+  align-items: center;
 }
 
 /* challenges section ends */
@@ -564,7 +624,7 @@
 
   .about,
   .caseStudies {
-    /* margin-bottom: 5rem; */
+    margin-bottom: 3rem;
     /* margin-top: 5rem; */
     display: grid;
     grid-template-columns: 1fr;
@@ -604,6 +664,7 @@
     font-size: 20px;
     font-weight: 350;
     line-height: normal;
+    height: 90px;
     width: 100%;
   }
 
@@ -629,10 +690,10 @@
   }
 
   .whatWeDoText {
-    font-size: 20px;
+    font-size: 65px;
     font-weight: lighter;
-    /* letter-spacing: -3px; */
-    line-height: 1;
+    letter-spacing: -3px;
+    line-height: 1.1;
   }
 
   .serviceCard {
@@ -739,5 +800,61 @@
 
   }
 
+  .caseStudies h4 {
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: 0px;
+
+
+  }
+
   /* our strength ends */
+}
+
+@media (min-width: 1600px) {
+  .title {
+    font-size: 152px;
+  }
+
+  .graphicContainer {
+    width: 100%;
+    right: 0;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px;
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    overflow: visible;
+  }
+
+  .hero {
+    height: 95vh;
+    overflow: visible;
+  }
+
+  .graphicElement {
+    /* border: 1px solid red; */
+    left: 74%;
+    z-index: 1000;
+    height: 624px;
+    width: 740px;
+  }
+
+  .about h2,
+  .caseStudies h2 {
+    font-size: 14px;
+  }
+
+  .caseStudyContent img {
+    width: 100%;
+    object-fit: none;
+    margin-top: 1rem;
+  }
+
+
 }

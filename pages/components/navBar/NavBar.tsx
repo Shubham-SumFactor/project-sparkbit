@@ -13,26 +13,41 @@ const NavBar = () => {
 
   return (
     <header className={styles.nav}>
-      {/* <nav > */}
 
-      <div className={styles.logo2}>
-        <Link href="/">SUMFACTOR</Link>
+      <div className={styles.menu}>
+        {/* <div className={`${styles.menu} ${isMenuOpen ? styles.showMenu : ''}`} style={{ display: "flex", maxWidth: "1440px", width: "100%", position: 'relative', margin: "0 auto" }}> */}
+
+        <div style={{ width: "25%" }}>
+          <Link href="/" className={styles.logo}>
+            SUMFACTOR
+          </Link>
+        </div>
+
+        <div style={{ width: "27%" }}> <Link href="/caseStudies">CASE STUDIES</Link></div>
+        <div style={{ width: "25%" }}> <Link href="/services">SERVICES</Link></div>
+        <div style={{ width: "23%" }}><Link href="/meetus">MEET US</Link></div>
+
       </div>
-      <div className={`${styles.menu} ${isMenuOpen ? styles.showMenu : ''}`}>
-        <Link href="/" style={{fontSize:'1.2rem', fontWeight:'900', color:"black"}}>
-          {/* <img src="/sumfactor-logo.png" alt="sumfactor" height="55px" width='55px' /> */}
-          SUMFACTOR
-        </Link>
-        <Link href="/caseStudies">CASE STUDIES</Link>
-        <Link href="/services">SERVICES</Link>
-        <Link href="/meetus">MEET US</Link>
-      </div>
+
       <div className={styles.hamburger} onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
+        <div className={styles.logo}>Sumfactor</div>
+        <img src="./hamburger.svg" alt="ham" height="30px" width="30px" />
       </div>
-      {/* </nav> */}
+
+      {isMenuOpen && (
+        <div className={`${isMenuOpen ? styles.showMenu : ''}`} style={{ width: "75%", display: "flex" }}>
+          <div style={{ width: "33.33%" }}>
+            <Link href="/caseStudies">CASE STUDIES</Link>
+          </div>
+          <div style={{ width: "33.33%" }}>
+            <Link href="/services">SERVICES</Link>
+          </div>
+          <div style={{ width: "33.33%" }}>
+            <Link href="/meetus">MEET US</Link>
+          </div>
+        </div>)}
+
+
     </header>
   );
 };

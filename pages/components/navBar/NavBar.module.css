@@ -3,60 +3,45 @@
   position: fixed;
   top: 0;
   left: 0;
-  /* right: 0; */
   z-index: 99;
-  /* border-left: 1px solid rgb(230, 223, 223); */
   background-color: white;
-  /* border-right: 1px solid red; */
   overflow: hidden;
-  /* margin-left: 2rem; */
-  /* margin-right: 2rem; */
   padding: 0 2rem;
-
-
 }
 
 .logo {
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #000;
   text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  align-self: left;
 }
 
-.logo2{
 
-  display: none;
-}
+
 .menu {
-  /* display: flex;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 900;
-    width: 100%;
-    justify-content: space-around;
-    font-family: serif; */
+  display: flex;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 900;
+  width: 100%;
+  justify-content: space-around;
+  font-family: serif;
   width: 100%;
   align-items: center;
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(4, 1fr);
-  /* gap: 4px; */
   border-left: 1.5px solid rgb(230, 223, 223);
   border-right: 1.5px solid rgb(230, 223, 223);
   background-color: #fff;
   position: relative;
   margin: 0 auto;
   height: 60px;
-  /* padding: 0 20px; */
   max-width: 1440px;
 }
 
 .menu a {
-
-
   color: #737373;
-  /* border: 1px solid red; */
-  /* width: 100%; */
   font-family: Neue Haas Grotesk Display Pro, sans-serif;
   font-size: .875rem;
   font-weight: 700;
@@ -65,7 +50,6 @@
   text-transform: uppercase;
   padding: 5px 5px 5px 5px;
   transition: all .3s ease;
-
 }
 
 .menu a:hover {
@@ -91,26 +75,32 @@
 
 @media (max-width: 768px) {
   .nav {
-    /* width: 96%; */
     border: none;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
   }
 
   .menu {
-    /* display: none; */
     flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
-    /* grid-template-columns: 1fr; */
-
     right: 0;
     background-color: #fff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
   }
 
   .menu.showMenu {
     display: flex;
+    z-index: 199;
+    position: absolute;
   }
 
   .menu a {
@@ -118,22 +108,11 @@
   }
 
   .hamburger {
-    display: none;
-    /* display: flex; */
-    /* border: 1px solid red; */
-    /* flex-direction: row-reverse; */
-    justify-content: end;
-    align-content: end;
-    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: visible;
+    z-index: 199;
   }
 
-  .logo2{
-    /* padding: 1rem; */
-    display: flex;
-    padding-top: 3%;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: #000;
-    text-decoration: none;
-  }
 }

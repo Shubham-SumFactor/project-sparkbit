@@ -1,0 +1,53 @@
+.imageSection {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imageWrapper {
+    width: 18%;
+    aspect-ratio: 1;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.navigationButtons {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .imageSection {
+        padding: 0 0px;
+    }
+
+    .imageContainer {
+        flex-wrap: nowrap;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .imageWrapper {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .navigationButtons {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .navButton {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+
+}
