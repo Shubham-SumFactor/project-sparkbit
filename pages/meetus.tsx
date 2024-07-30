@@ -51,16 +51,14 @@ const MeetUs = () => {
 
                 </section>
 
-
                 <section className={styles.founder}>
                     <h2>SUMFACTOR TEAM</h2>
+
                     <span >
                         <h3>Our Team</h3>
                         <p>
                             We're very careful when choosing our teammates to keep the highest quality of technical skills and match our organizational culture. We hire only the top 1% of candidates with Computer Science or Mathematics degrees. We're a team of geeks, but professional excellence is only the first threshold. We want our people to be honest, take responsibility for their work, and try to go the extra mile to deliver the best solution.
                         </p>
-
-
                     </span>
 
                 </section>
@@ -86,16 +84,14 @@ const MeetUs = () => {
 
                 </section>
 
-
                 <section className={styles.founder}>
                     <h2>OUR CULTURE</h2>
-                    <span >
 
+                    <span >
                         {/* <h3>Sumfactor Fellowship</h3> */}
                         <p>
                             We do serious engineering work but <br /> always try to keep a cozy, informal <br /> atmosphere with room for focus on the <br /> creative side and sharing knowledge with <br /> our teammates.
                         </p>
-
                     </span>
 
                 </section>
