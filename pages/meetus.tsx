@@ -4,6 +4,7 @@ import styles from '../styles/MeetUs.module.css'
 import NavBar from './components/navBar/NavBar';
 import TeamSlider from './components/teamSlider/TeamSlider';
 import ContactUs from './components/contactUs/ContactUs';
+import ImageSlider from './components/imageSlider/ImageSlider';
 
 const MeetUs = () => {
 
@@ -95,6 +96,8 @@ const MeetUs = () => {
                     </span>
 
                 </section>
+
+                <ImageSlider />
 
                 <ContactUs />
             </main>
