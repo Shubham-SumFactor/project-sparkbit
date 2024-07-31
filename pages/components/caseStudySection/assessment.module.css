@@ -1,0 +1,121 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "category title graph"
+        "category description graph"
+        "category readMore graph";
+    /* gap: 2rem; */
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    /* height: 100%; */
+    margin-bottom: 7rem;
+}
+
+.category {
+    grid-area: category;
+    font-family: serif;
+    font-size: 16px;
+    color: #737373;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 5rem;
+    color: #737373;
+    text-transform: uppercase;
+    /* border: 1px solid magenta; */
+}
+
+.content {
+    grid-area: title / title / readMore / readMore;
+}
+
+.title {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    color: #E6E6E6;
+    /* border: 1px solid cyan; */
+    letter-spacing: 0.23rem;
+
+}
+
+.description {
+    /* border: 1px solid red; */
+    font-size: 22px;
+    font-weight: 400;
+    width: 78%;
+    line-height: 1.5;
+    color: #E6E6E6;
+    margin-bottom: 1.5rem;
+    align-self: center;
+    letter-spacing: 0.05rem;
+}
+
+.readMore {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    /* border: 1px solid pink; */
+    font-style: italic;
+}
+
+.graph {
+    grid-area: graph;
+    /* border: 1px solid green; */
+    padding-left: 10%;
+}
+
+.graph img {
+    max-width: 100%;
+    height: auto;
+    /* border: 1px solid purple; */
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "graph"
+            "category"
+            "title"
+            "description"
+            "readMore"
+        ;
+        height: auto;
+        padding: 0rem 0.5rem ;
+        padding-bottom: 1rem;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .graph {
+        padding-left: 0%;
+
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 1.5rem;
+        color: #E6E6E6;
+        letter-spacing: 0.1rem;
+        width: 80%;
+    }
+
+    .description {
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        line-height: 1;
+        color: #E6E6E6;
+        margin-bottom: 1.5rem;
+        align-self: center;
+        letter-spacing: 0.05rem;
+    }
+
+}
