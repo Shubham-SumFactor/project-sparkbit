@@ -313,6 +313,7 @@
 }
 
 .serviceCard {
+  font-family: serif;
   background-color: white;
   padding: 2rem 2rem;
   padding-top: 0;
@@ -323,6 +324,7 @@
 }
 
 .serviceCard2 {
+  font-family: serif;
   background-color: white;
   padding: 2rem 2rem;
   padding-left: 2.5rem;
@@ -716,6 +718,11 @@
 
   }
 
+  .serviceCard2 {
+    padding-left: 0;
+
+  }
+
   .readThisAndServiceButton {
     justify-content: center;
     padding: 3rem 0;
@@ -884,7 +891,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .hero {
     height: 550px;
   }
@@ -960,7 +967,7 @@
 
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   .hero {
     height: 600px;
   }
