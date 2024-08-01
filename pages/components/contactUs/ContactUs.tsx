@@ -37,7 +37,7 @@ export default function ContactUs() {
                 <h3 className={styles.sideHeading}>CONTACT FORM</h3>
 
                 <div className={styles.wrapper}>
-                    <h2 className={styles.title}>There's an innovation on your mind? <br></br>Contact us!</h2>
+                    <h2 className={styles.title}>There's an innovation on your mind? Contact us!</h2>
                     <form onSubmit={handleSubmit} className={styles.form}>
                         <div className={styles.inputGroup}>
                             <input
@@ -66,7 +66,7 @@ export default function ContactUs() {
                                 placeholder="START TYPING HERE"
                                 value={formData.message}
                                 onChange={handleChange}
-                                rows={10}
+                                rows={13}
                                 className={styles.textarea}
                                 required
                             ></textarea>
@@ -85,7 +85,7 @@ export default function ContactUs() {
 
 
                         <div className={styles.msgContent} >
-                            <div style={{ display: "flex", justifyContent: "space-between", width: "60%" }}>
+                            <div style={{ display: "flex", justifyContent: "space-between", width: "50%"}}>
                                 <div>
                                     <button type="submit" className={styles.submitButton}>
                                         Send your message
@@ -106,7 +106,7 @@ export default function ContactUs() {
 
                             <div className={styles.checkbox}>
                                 <input
-                                    type="checkbox"
+                                    type="radio"
                                     name="permission"
                                     checked={formData.permission}
                                     onChange={handleChange}
