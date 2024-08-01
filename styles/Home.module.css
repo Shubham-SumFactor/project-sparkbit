@@ -80,7 +80,6 @@
   position: relative;
   margin-bottom: 3rem;
   overflow: hidden;
-
 }
 
 .title {
@@ -886,6 +885,26 @@
 
 
 @media (max-width: 1024px) {
+  .hero {
+    height: 550px;
+  }
+
+  .title {
+    line-height: 1;
+    letter-spacing: 2px;
+    font-size: 96px;
+    font-weight: 100;
+    white-space: nowrap;
+    bottom: 17%;
+    left: 0%;
+    position: absolute;
+    color: #000000 !important;
+    letter-spacing: 4px;
+    z-index: 2;
+  
+  }
+
+
   .serviceSection {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -939,4 +958,19 @@
  
   }
 
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    height: 600px;
+  }
+
+  .title {
+    font-size: 120px;
+    font-weight: 100;
+    bottom: 18%;
+    left: 0%;
+ 
+  
+  }
 }
