@@ -1,6 +1,6 @@
 .testimonialSlider {
     margin-top: 5rem;
-    background-color: white;
+    background: rgb(251, 251, 251);
     height: 700px;
 }
 
@@ -36,14 +36,13 @@
     font-size: 65px;
     font-weight: 350;
     line-height: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     color: #000;
 }
 
 .navigation {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 2rem;
 }
 
 .navButton {
@@ -155,6 +154,16 @@
     display: flex;
 
 }
+
+.sliderArrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 200;
+    transform: rotate(180deg);
+    margin-left: 8px;
+  }
 
 @media (max-width: 768px) {
 

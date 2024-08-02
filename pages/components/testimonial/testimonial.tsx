@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './testimonial.module.css';
+import Image from 'next/image';
 
 const testimonials = [
     {
@@ -91,8 +92,13 @@ const TestimonialSlider = () => {
                 <div className={styles.content}>
                     <h1 className={styles.mainHeading}>Our clients about us</h1>
                     <div className={styles.navigation}>
-                        <button onClick={prevSlide} className={styles.navButton}>←</button>
-                        <button onClick={nextSlide} className={styles.navButton}>→</button>
+                        <button onClick={prevSlide} className={styles.navButton}>
+                            <Image src="/leftArrowImage.svg" alt="whatwedo" height={20} width={20} className={styles.sliderArrow} />
+                        </button>
+                        <button onClick={nextSlide} className={styles.navButton}>
+                            <Image src="/leftArrowImage.svg" alt="whatwedo" height={20} width={20} />
+
+                        </button>
                     </div>
                     <div className={styles.testimonial}>
                         {testimonial.videoSrc ? (
