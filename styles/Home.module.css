@@ -2,21 +2,11 @@
 .container {
   min-height: 100vh;
   padding: 0 2rem;
-  background-color: white;
+  background-color: rgb(251, 251, 251);
+  background: rgb(251, 251, 251);
   overflow-x: hidden;
   /* max-width: 1440px; */
 }
-
-/* .gridContainer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1px;
-  width: 100%;
-  max-width: 1440px;
-  position: relative;
-  margin: 0 auto;
-} */
-
 
 .main {
   display: flex;
@@ -24,14 +14,11 @@
   justify-content: flex-start;
   align-items: flex-start;
   min-height: 100vh;
-  /* border: 10px solid cyan; */
   border-left: 1px solid rgb(230, 223, 223);
   border-right: 1px solid rgb(230, 223, 223);
-  /* border-bottom: none; */
   padding-left: 1%;
   padding-right: 1%;
   overflow: hidden;
-  /* background-color: rebeccapurple; */
 }
 
 .nav {
@@ -98,21 +85,17 @@
 }
 
 .scrollButton {
-  position: absolute;
-  bottom: 18%;
-  left: 50%;
-  transform: translateX(-50%);
   background: none;
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease;
   z-index: 200;
-
+  transform: rotate(90deg);
 }
 
 .scrollCircle {
   position: absolute;
-  bottom: 8%;
+  bottom: 10%;
   left: 48.5%;
   background: none;
   cursor: pointer;
@@ -125,10 +108,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
+  /* margin: 0 auto; */
 }
 
 .scrollButton:hover {
-  transform: translateX(-50%) translateY(5px);
+  transform: rotate(90deg) translateX(5px);
 }
 
 
@@ -234,6 +219,7 @@
 .caseStudyContent {
   display: flex;
   flex-direction: column;
+  /* border: 1px solid red; */
 }
 
 .caseStudyContent h2 {
@@ -259,18 +245,43 @@
 
 }
 
-.caseStudyContent img {
+.caseStudyContentImg {
   width: 100%;
   height: 60%;
   object-fit: cover;
   margin-top: 1rem;
 }
 
+.readThisAndServiceButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border: none;
+}
+
 .readThisButton {
-  font-size: 18px;
-  font-style: italic;
+  font-size: 16px;
+  background: none;
   font-weight: lighter;
-  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-style: italic;
+}
+
+.readThisButtonArrow {
+  margin-left: 8px;
+}
+
+.readThisButtonArrow:hover {
+  transform: translateX(+50%);
+  transition: transform 0.3s ease;
+
+}
+
+.mobileNavigation {
+  display: none;
 }
 
 /* case stidy pics and title ends */
@@ -296,7 +307,7 @@
 }
 
 .serviceCard {
-  background-color: white;
+  background: rgb(251, 251, 251);
   padding: 2rem 2rem;
   padding-top: 0;
   border-radius: 8px;
@@ -305,7 +316,7 @@
 }
 
 .serviceCard2 {
-  background-color: white;
+  background: rgb(251, 251, 251);
   padding: 2rem 2rem;
   padding-left: 2.5rem;
   padding-top: 0;
@@ -338,43 +349,37 @@
 }
 
 
-
-.readThisAndServiceButton {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
-
-
 .serviceButton {
   color: #000000 !important;
   align-self: center;
   background: none;
   border: 1px solid #000;
-  padding: 0px 20px;
+  padding: 10px 20px;
   border-radius: 30px;
   display: flex;
   cursor: pointer;
   justify-content: center;
-  transition: background-color 0.3s, color 0.3s;
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   font-weight: 200;
   transition: transform 0.3s ease;
   align-items: center;
+  height: 42px;
 
 }
 
-
-
-.readThisButtonArrow:hover {
-  transition: transform 0.3s ease;
-
+.ourServicesArrow {
+  margin-left: 8px;
 }
 
-.readThisButtonArrow:hover {
+.ourServicesArrow:hover {
   transform: translateX(+50%);
+  transition: transform 0.3s ease;
 }
+
+
+
+
 
 /* .serviceButton:hover .arrow {
   transform: translateX(10px); 
@@ -389,28 +394,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 10px;
+  /* padding: 10px 18px; */
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 30px;
   cursor: pointer;
   transition: transform 0.3s ease;
   background: none;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 200;
   margin-left: 10%;
   width: 50%;
   color: #000000;
-}
-
-.serviceButton2 div {
-  display: flex;
-  align-items: center;
-}
-
-.ourServicesArrow:hover {
-  transform: translateX(+50%);
-  transition: transform 0.3s ease;
-
+  align-self: center;
+  height: 42px;
 }
 
 /* challenges section starts */
@@ -447,8 +443,7 @@
   align-self: flex-start;
   font-size: 16px;
   font-style: italic;
-  font-weight: 350;
-  line-height: 20px;
+  font-weight: 200;
   color: #000000 !important;
   font-style: italic;
   cursor: pointer;
@@ -457,14 +452,25 @@
   justify-content: center;
   padding: 10px 20px;
   border: 1px solid black;
-  border-radius: 25px;
+  border-radius: 30px;
   background-color: none;
   background: none;
+  height: 42px;
+  transition: transform 0.3s ease;
 }
 
-.contactUsButton span {
-  display: flex;
-  align-items: center;
+.contactUsArrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 200;
+  transform: rotate(90deg);
+  margin-left: 8px;
+}
+
+.contactUsArrow:hover {
+  transform: rotate(90deg) translateX(5px);
 }
 
 /* challenges section ends */
@@ -506,7 +512,7 @@
 .ourApproach {
   margin-top: 5rem;
   margin-bottom: 3rem;
-  background-color: white;
+  background: rgb(251, 251, 251);
 
 }
 
@@ -559,13 +565,14 @@
 }
 
 
+.mainContent {
+  position: relative;
+  min-height: 100vh;
+}
 
 /* testiomial css start */
 
 /* testiomial css end */
-
-
-
 
 
 
@@ -839,6 +846,65 @@
     height: 98%;
   }
 
+  .mobileNavigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .caseStudyContentImg {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    order: -1;
+  }
+
+  .leftArrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .rotatedArrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .leftArrow:hover .rotatedArrow {
+    transform: rotate(180deg) translateX(5px);
+  }
+
+
+  .rightArrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .rightRotatedArrow {
+    transition: transform 0.3s ease;
+  }
+
+  .rightArrow:hover .rightRotatedArrow {
+    transform: translateX(5px);
+  }
+
   /* our strength ends */
 }
 
@@ -880,7 +946,7 @@
     font-size: 14px;
   }
 
-  .caseStudyContent img {
+  .caseStudyContentImg {
     width: 100%;
     object-fit: none;
     margin-top: 1rem;
@@ -894,7 +960,6 @@
     margin-bottom: 1rem;
     color: #000;
   }
-
 
 }
 
