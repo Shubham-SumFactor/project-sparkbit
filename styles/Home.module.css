@@ -46,8 +46,8 @@
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 18px;
+  /* font-weight: 700; */
+  /* font-size: 18px; */
 }
 
 .menu {
@@ -76,7 +76,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 100%;
-  height: 690px;
+  height: 100vh;
   position: relative;
   margin-bottom: 3rem;
   overflow: hidden;
@@ -84,18 +84,21 @@
 }
 
 .title {
+  font-family: GalaxieCopernicusBook;
+
   line-height: 1;
   /* font-size: clamp(4rem, 5vw + 3rem, 8rem); */
-  letter-spacing: 2px;
-  font-size: 125px;
-  font-weight: 100;
+  font-size: 128px;
+  font-weight: normal ;
   white-space: nowrap;
-  bottom: 10%;
+  bottom: 15%;
   left: 0%;
   position: absolute;
   color: #000000 !important;
   letter-spacing: 4px;
   z-index: 2;
+  /* font-style: italic; */
+
 
 }
 
@@ -179,13 +182,13 @@
 
 .about h2,
 .caseStudies h2 {
-  font-family: serif;
-  font-size: 16px;
+  font-family: Neue Haas Grotesk Display Pro;
+  font-size: 14px;
   color: #737373;
-  font-weight: 900;
+  /* font-weight: 900; */
   line-height: 1;
   margin-bottom: 1rem;
-  letter-spacing: 0.05rem;
+  /* letter-spacing: 0.05rem; */
 }
 
 .about p {
@@ -827,7 +830,7 @@
   /* our strength ends */
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .title {
     font-size: 152px;
   }
@@ -849,12 +852,11 @@
   }
 
   .hero {
-    height: 95vh;
+    height: 100vh;
     overflow: visible;
   }
 
   .graphicElement {
-    /* border: 1px solid red; */
     left: 74%;
     z-index: 1000;
     height: 624px;
@@ -882,10 +884,10 @@
   }
 
 
-}
+} */
 
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .serviceSection {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -939,4 +941,4 @@
  
   }
 
-}
+} */

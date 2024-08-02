@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'CopernicusBold';
+    src: url('/fonts/CopernicusSemibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('/fonts/NeueHaasDisplay.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CopernicusRegular';
+    src: url('/fonts/CopernicusRegular.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CopernicusBook;
+    src: url('/fonts/CopernicusBook.ttf') format('truetype');
+    font-weight: 100;
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: display;
+    src: url('/fonts/NeueHaasGroteskDisplay75Bold.ttf') format('truetype');
+    font-weight: 100;
+    /* font-style: normal; */
+}
+
+
+
+@font-face {
+    font-family: GalaxieCopernicusBook;
+    src: url('/fonts/GalaxieCopernicusBook.ttf') format('truetype');
+    /* font-weight: 100; */
+    /* font-style: normal; */
+}
