@@ -147,8 +147,6 @@ body {
   .vertical-lines {
     display: none;
   }
-
-
 }
 
 
@@ -182,4 +180,8 @@ body {
 
 .vertical-lines .line3 {
   left: 75%;
+}
+
+.hide-vertical-lines .vertical-lines {
+  display: none;
 }
