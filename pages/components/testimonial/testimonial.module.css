@@ -89,7 +89,7 @@
     /* font-style: italic; */
     font-weight: lighter;
     line-height: 1.3;
-    letter-spacing: 0.05rem ;
+    letter-spacing: 0.05rem;
 }
 
 .author {
@@ -126,6 +126,7 @@
     position: relative;
     width: 69%;
     margin-bottom: 1rem;
+    /* border: 1px solid red; */
 
 }
 
@@ -216,20 +217,34 @@
         flex-direction: column;
 
     }
+
+    .testimonialContent2 {
+        font-size: 18px;
+
+    }
+
+    .author {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1;
+    }
+    
+    .position {
+        font-size: 12px;
+        font-weight: 700;
+    }
+    
+    .company {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+    }
 }
 
 @media (min-width: 1600px) {
 
     .videoContainer {
-    width: 68%;
+        width: 67.5%;
     }
 
- }
-
- @media (min-width: 1024px) {
-
-    .videoContainer {
-    width: 69.7%;
-    }
-
- }
+}

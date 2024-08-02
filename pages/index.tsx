@@ -181,7 +181,7 @@ export default function Home() {
         </section>
 
         {/* services section */}
-        <section className={styles.serviceSection}>
+        <section className={styles.serviceSection} >
           <div className={styles.serviceCard}>
             <h2>Machine Learning</h2>
             <p>The full ML project life-cycle, from dataset building to model architecture definition and training to deployment (both in the cloud and on edge). Techniques from areas such as CV and NLP and their applications to various business problems.</p>
@@ -234,7 +234,7 @@ export default function Home() {
             <h3 className={styles.sideHeading}>OUR STRENGTHS</h3>
             <div className={styles.content}>
               <h1 className={styles.mainHeading}>What makes us different</h1>
-              <h2 className={styles.subHeading}>Our approach</h2>
+              <h1 className={styles.subHeading}>Our approach</h1>
               <p>
                 We know how to adapt scientific knowledge and academic concepts to business problem-solving on a project level by conducting extensive research and prior-art analysis.
               </p>
@@ -254,7 +254,7 @@ export default function Home() {
             <h3>
               The team
             </h3>
-            <p>We have an experienced team see developers with PhDs and Masters in Mathematics and Computer Science.</p>
+            <p>We have an experienced team of developers with PhDs and Masters in Mathematics and Computer Science.</p>
             <p>We possess a solid mindset shaped by algorithmic and mathematical education based on the renowned Polish scientific school.</p>
 
 

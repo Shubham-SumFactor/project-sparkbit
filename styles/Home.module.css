@@ -46,28 +46,8 @@
 }
 
 .logo {
-  /* font-weight: 700; */
-  /* font-size: 18px; */
-}
-
-.menu {
-  display: flex;
-  gap: 1rem;
-  font-size: 14px;
-  line-height: 14px;
   font-weight: 700;
-  width: 76%;
-  justify-content: space-around;
-}
-
-.menu a {
-  color: #737373;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  color: black;
-  cursor: pointer;
+  font-size: 18px;
 }
 
 .hero {
@@ -84,12 +64,11 @@
 }
 
 .title {
-  font-family: GalaxieCopernicusBook;
-
   line-height: 1;
   /* font-size: clamp(4rem, 5vw + 3rem, 8rem); */
-  font-size: 128px;
-  font-weight: normal ;
+  letter-spacing: 2px;
+  font-size: 125px;
+  font-weight: 100;
   white-space: nowrap;
   bottom: 15%;
   left: 0%;
@@ -97,8 +76,6 @@
   color: #000000 !important;
   letter-spacing: 4px;
   z-index: 2;
-  /* font-style: italic; */
-
 
 }
 
@@ -113,7 +90,9 @@
   position: absolute;
   right: 0%;
   /* margin-bottom: 4rem; */
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  /* border: 1px solid red; */
+  /* bottom: 1%; */
 
 
 }
@@ -133,7 +112,7 @@
 
 .scrollCircle {
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   left: 48.5%;
   background: none;
   cursor: pointer;
@@ -175,20 +154,18 @@
 
 .caseStudies {
   margin-top: 5rem;
-  margin-bottom: 10rem;
-
-
+  margin-bottom: 7rem;
 }
 
 .about h2,
 .caseStudies h2 {
-  font-family: Neue Haas Grotesk Display Pro;
-  font-size: 14px;
+  font-family: serif;
+  font-size: 16px;
   color: #737373;
-  /* font-weight: 900; */
+  font-weight: 900;
   line-height: 1;
   margin-bottom: 1rem;
-  /* letter-spacing: 0.05rem; */
+  letter-spacing: 0.05rem;
 }
 
 .about p {
@@ -222,7 +199,8 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   /* gap: 2rem; */
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  /* border: 1px solid cyan; */
 
 }
 
@@ -283,6 +261,7 @@
 
 .caseStudyContent img {
   width: 100%;
+  height: 60%;
   object-fit: cover;
   margin-top: 1rem;
 }
@@ -300,8 +279,8 @@
 
 .servicesImage {
   margin-top: 5%;
-  width: 93%;
-  height: 60%;
+  width: 98%;
+  height: 70%;
   /* object-fit: cover; */
   /* display: flex; */
   /* justify-content: center; */
@@ -323,7 +302,6 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-
 }
 
 .serviceCard2 {
@@ -339,8 +317,8 @@
 
 .serviceCard h2,
 .serviceCard2 h2 {
-  font-size: 38px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
   color: #000;
@@ -438,18 +416,19 @@
 /* challenges section starts */
 .challenges {
   margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 100%;
+  /* border: 1px solid rebeccapurple; */
 }
 
 .challenges p {
-  margin: 3rem 0rem;
+  margin: 2rem 0rem;
   width: 70%;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 100;
-  line-height: 1.3;
+  line-height: 1.1;
   color: #000000;
 
 }
@@ -516,7 +495,9 @@
   /* letter-spacing: -3px; */
   color: #000;
   width: 70%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 100;
+  line-height: 1;
 
 }
 
@@ -524,15 +505,12 @@
 
 .ourApproach {
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   background-color: white;
 
 }
 
 .containerStrength {
-  /* max-width: 1200px; */
-  /* margin: 0 auto; */
-  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
@@ -554,7 +532,7 @@
 }
 
 .mainHeading {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 60px;
   font-weight: 100;
   line-height: 1;
@@ -564,17 +542,18 @@
 .subHeading {
   font-size: 60px;
   font-weight: 100;
-  line-height: 1.2;
+  line-height: 1;
   margin-bottom: 1rem;
   color: #000000;
 }
 
 .content p {
   width: 70%;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: lighter;
   line-height: 1.3;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  letter-spacing: 0.05rem;
   color: #000000;
 
 }
@@ -622,16 +601,12 @@
 
 
   .title {
-    font-size: 4rem;
+    font-size: 68px;
     white-space: normal;
-    /* align-items: center; */
-    /* display: flex;
-    justify-content: center; */
-    /* padding-top: 50%; */
     text-align: left;
     letter-spacing: 2px;
     line-height: 1;
-    bottom: 26%;
+    bottom: 18%;
   }
 
   .graphicElement {
@@ -643,10 +618,15 @@
 
   .about,
   .caseStudies {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     /* margin-top: 5rem; */
     display: grid;
     grid-template-columns: 1fr;
+    /* border: 1px solid red; */
+  }
+
+  .caseStudies {
+    margin-bottom: 2.5rem;
   }
 
 
@@ -655,7 +635,7 @@
   }
 
   .caseStudies h3 {
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 350;
     letter-spacing: 0;
     line-height: normal;
@@ -666,6 +646,9 @@
   .caseStudiesSection {
     grid-template-columns: 1fr;
     gap: 1rem;
+    /* border: 2px solid cyan; */
+    margin-bottom: 3rem;
+
   }
 
   .caseStudiesList {
@@ -703,9 +686,13 @@
   /* case stidy pics and title ends */
 
   .serviceSection {
+    display: grid;
     grid-template-columns: 1fr;
-    margin-left: 0;
+    /* grid-template-columns: repeat(auto-fit, minmax(0px, 1fr)); */
+
+    margin-left: 0%;
     text-align: left;
+    /* border: 1px solid red; */
   }
 
   .whatWeDoText {
@@ -717,7 +704,23 @@
 
   .serviceCard {
     padding-left: 0;
+    padding: 0;
+  }
 
+  .serviceButton2 {
+    font-size: 15px;
+    width: 100%;
+    margin-left: 0px;
+    align-self: flex-start;
+    margin-left: 0%;
+    width: 35%;
+    /* padding: 8px 6px; */
+    margin: 2rem 0;
+  }
+
+  .serviceCard2 {
+    padding-left: 0;
+    padding: 0;
   }
 
   .readThisAndServiceButton {
@@ -737,7 +740,7 @@
   /* challenge starts */
 
   .ourApproach {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   .challenges h3 {
@@ -750,16 +753,19 @@
 
   .challenges {
     grid-template-columns: 1fr;
+    margin-top: 1rem;
+
   }
 
   .challenges p {
-    margin: 1rem 0rem;
+    margin: 1.5rem 0rem;
     width: 100%;
   }
 
 
   .contactUsButton {
     margin: 0 0;
+    margin-top: 0rem;
   }
 
   /*  challenge ends */
@@ -769,6 +775,8 @@
     font-size: 30px;
     letter-spacing: normal;
     color: #000000;
+    margin-bottom: 1rem;
+
 
   }
 
@@ -776,13 +784,16 @@
     grid-template-columns: 1fr;
     margin-bottom: 0rem;
     margin-top: 0rem;
+    /* border: 1px solid red; */
   }
 
   .team p {
-    margin: 1rem 0rem;
+    margin: 0.5rem 0rem;
+    margin-bottom: 0;
     width: 100%;
     font-size: 24px;
     color: #000000;
+    line-height: 1.2;
   }
 
   /* our strength starts  */
@@ -798,39 +809,40 @@
   }
 
   .mainHeading {
-    font-size: 2rem;
+    font-size: 30px;
     width: 100%;
+    margin-bottom: 3rem;
 
   }
 
   .content p {
     width: 100%;
+    font-size: 22px;
   }
 
   .subHeading {
-    font-size: 2rem;
+    font-size: 30px;
     margin-bottom: 0;
   }
 
-  .serviceButton2 {
-    align-self: flex-start;
-    margin-left: 0%;
-    width: 40%;
 
-  }
 
   .caseStudies h4 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.1;
     letter-spacing: 0px;
+  }
 
-
+  .servicesImage {
+    width: 98%;
+    margin: 3rem 0;
+    height: 98%;
   }
 
   /* our strength ends */
 }
 
-/* @media (min-width: 1600px) {
+@media (min-width: 1600px) {
   .title {
     font-size: 152px;
   }
@@ -884,10 +896,10 @@
   }
 
 
-} */
+}
 
 
-/* @media (max-width: 1024px) {
+/* @media (min-width: 1024px) {
   .serviceSection {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -938,7 +950,7 @@
 
   .serviceButton2 {
     width: 70%;
- 
+
   }
 
 } */
