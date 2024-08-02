@@ -586,7 +586,7 @@
     margin-top: 0;
     margin-bottom: 0;
     grid-template-columns: 1fr;
-    height: 600px;
+    height: 100vh;
   }
 
   .container {
