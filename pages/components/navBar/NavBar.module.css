@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: white;
+  background: rgb(251, 251, 251);
   overflow: hidden;
   padding: 0 2rem;
 }
@@ -38,7 +38,7 @@
   align-items: center;
   border-left: 1.5px solid rgb(230, 223, 223);
   border-right: 1.5px solid rgb(230, 223, 223);
-  background-color: #fff;
+  background: rgb(251, 251, 251);
   position: relative;
   margin: 0 auto;
   height: 60px;
