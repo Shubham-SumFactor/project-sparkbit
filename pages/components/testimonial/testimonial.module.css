@@ -123,7 +123,7 @@
 
 .videoContainer {
     position: relative;
-    width: 69%;
+    width: 67.5%;
     margin-bottom: 1rem;
     /* border: 1px solid red; */
 
@@ -131,7 +131,11 @@
 
 .video {
     width: 100%;
-    height: auto;
+    height: max-content;
+    /* height: 375px; */
+    /* border: 1px solid blue; */
+ 
+
 }
 
 .videoControls {
@@ -163,7 +167,7 @@
     z-index: 200;
     transform: rotate(180deg);
     margin-left: 8px;
-  }
+}
 
 @media (max-width: 768px) {
 
@@ -181,6 +185,8 @@
         font-size: 1.1rem;
         line-height: 1.6;
         /* display: none; */
+        height: 380px;
+
     }
 
     .sideHeading {
@@ -237,16 +243,20 @@
         font-weight: 700;
         line-height: 1;
     }
-    
+
     .position {
         font-size: 12px;
         font-weight: 700;
     }
-    
+
     .company {
         font-size: 12px;
         font-weight: 700;
         line-height: 1;
+    }
+
+    .video {
+        height: max-content;
     }
 }
 
