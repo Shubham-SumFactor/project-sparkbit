@@ -80,6 +80,7 @@
   position: relative;
   margin-bottom: 3rem;
   overflow: hidden;
+
 }
 
 .title {
@@ -313,7 +314,6 @@
 }
 
 .serviceCard {
-  font-family: serif;
   background-color: white;
   padding: 2rem 2rem;
   padding-top: 0;
@@ -324,7 +324,6 @@
 }
 
 .serviceCard2 {
-  font-family: serif;
   background-color: white;
   padding: 2rem 2rem;
   padding-left: 2.5rem;
@@ -718,11 +717,6 @@
 
   }
 
-  .serviceCard2 {
-    padding-left: 0;
-
-  }
-
   .readThisAndServiceButton {
     justify-content: center;
     padding: 3rem 0;
@@ -891,27 +885,7 @@
 }
 
 
-@media (min-width: 1024px) {
-  .hero {
-    height: 550px;
-  }
-
-  .title {
-    line-height: 1;
-    letter-spacing: 2px;
-    font-size: 96px;
-    font-weight: 100;
-    white-space: nowrap;
-    bottom: 17%;
-    left: 0%;
-    position: absolute;
-    color: #000000 !important;
-    letter-spacing: 4px;
-    z-index: 2;
-  
-  }
-
-
+@media (max-width: 1024px) {
   .serviceSection {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -965,19 +939,4 @@
  
   }
 
-}
-
-@media (min-width: 1440px) {
-  .hero {
-    height: 600px;
-  }
-
-  .title {
-    font-size: 120px;
-    font-weight: 100;
-    bottom: 18%;
-    left: 0%;
- 
-  
-  }
 }
