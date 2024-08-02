@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import { useEffect, useRef, useState } from 'react';
 import TestimonialSlider from './components/testimonial/testimonial';
 import ContactUs from './components/contactUs/ContactUs';
-import Link from 'next/link';
+import Image from 'next/image';
 import NavBar from './components/navBar/NavBar';
 
 const caseStudies = [
@@ -57,6 +57,15 @@ export default function Home() {
     setActiveIndex(index);
   };
 
+  const handlePrev = () => {
+    setActiveIndex((prev) => (prev > 0 ? prev - 1 : caseStudies.length - 1));
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prev) => (prev < caseStudies.length - 1 ? prev + 1 : 0));
+  };
+
+
   const aboutRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToAbout = () => {
@@ -76,206 +85,212 @@ export default function Home() {
 
     <div className={styles.container}>
       <Head>
-        <title>Sumfactor</title>
+        <title>Sumfactor - Software Product Development company</title>
         <meta name="description" content="Sumfactor created with Next.js" />
         <link rel="icon" href="/faviconSumfactor.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <NavBar />
+      <div className={styles.mainContent}>
+        <main className={styles.main}>
+          <NavBar />
 
-        {/* <div className={styles.gridContainer}> */}
+          {/* <div className={styles.gridContainer}> */}
 
-        <div className="vertical-lines">
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
-        </div>
-        {/* hero or banner here */}
-
-        <section className={styles.hero}>
-          <h1 className={styles.title}>
-            Your partner<br />in challenging<br />projects
-          </h1>
-          <div className={styles.graphicElement}>
-
+          <div className="vertical-lines">
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
           </div>
+          {/* hero or banner here */}
 
-          <div className={styles.scrollCircle}>
-            <div className={styles.scrollButton} onClick={scrollToAbout}>
-              <img src="/down-arrow1.svg" alt="whatwedo" height="15px" width='40px' />
+          <section className={styles.hero}>
+            <h1 className={styles.title}>
+              Your partner<br />in challenging<br />projects
+            </h1>
+            <div className={styles.graphicElement}>
+
             </div>
-          </div>
-        </section>
-        {/* hero or banner end here */}
 
-        {/* about and case study starts*/}
-        <section className={styles.about} ref={aboutRef}>
-          <h2>ABOUT</h2>
-          <p>
-            At Sumfactor, we leverage our solid engineering background and
-            conceptual work capabilities rooted in academia to partner with
-            innovative companies and develop advanced data-processing systems.
-          </p>
-        </section>
+            <button className={styles.scrollCircle} onClick={scrollToAbout}>
+              <Image src="/leftArrowImage.svg" alt="downArrow" height={18} width={18} className={styles.scrollButton} />
+            </button>
 
-        <section className={styles.caseStudies} >
-          <h2>CASE STUDIES</h2>
-          <h3>
-            Take a look at the diverse challenges we have solved
-          </h3>
-        </section>
-        {/* about and case study ends */}
+          </section>
+          {/* hero or banner end here */}
 
-        <section className={styles.caseStudiesSection}>
-          <div className={styles.caseStudiesList}>
-            {caseStudies.map((study, index) => (
-              <h3
-                key={index}
-                className={`${styles.caseStudyTitle} ${index === activeIndex ? styles.active : ''}`}
-                onClick={() => handleCaseStudyClick(index)}
-              >
-                {study.title}
-              </h3>
-            ))}
-          </div>
-          <div className={styles.caseStudyContent}>
-            <h2>{caseStudies[activeIndex].title}</h2>
-            <p>{caseStudies[activeIndex].description}</p>
-            <img src={caseStudies[activeIndex].image} alt={caseStudies[activeIndex].title} />
+          {/* about and case study starts*/}
+          <section className={styles.about} ref={aboutRef}>
+            <h2>ABOUT</h2>
+            <p>
+              At Sumfactor, we leverage our solid engineering background and
+              conceptual work capabilities rooted in academia to partner with
+              innovative companies and develop advanced data-processing systems.
+            </p>
+          </section>
 
-            <div className={styles.readThisAndServiceButton}>
-              <div style={{ display: 'flex', alignContent: "center", alignItems: 'center' }}>
-                <span className={styles.readThisButton}>
-                  Read this case
-                </span>
-                <span className={styles.readThisButtonArrow} style={{ alignSelf: 'center', alignItems: "center", marginLeft: '15px', paddingBottom: "5px" }}>
-                  <img src="/rightArrow.svg" alt="whatwedo" height="16px" width='20px' />
-                </span>
+          <section className={styles.caseStudies} >
+            <h2>CASE STUDIES</h2>
+            <h3>
+              Take a look at the diverse challenges we have solved
+            </h3>
+          </section>
+          {/* about and case study ends */}
+
+          <section className={styles.caseStudiesSection}>
+            <div className={styles.caseStudiesList}>
+              {caseStudies.map((study, index) => (
+                <h3
+                  key={index}
+                  className={`${styles.caseStudyTitle} ${index === activeIndex ? styles.active : ''}`}
+                  onClick={() => handleCaseStudyClick(index)}
+                >
+                  {study.title}
+                </h3>
+              ))}
+            </div>
+            <div className={styles.caseStudyContent}>
+              <h2>{caseStudies[activeIndex].title}</h2>
+              <p>{caseStudies[activeIndex].description}</p>
+              <img src={caseStudies[activeIndex].image} alt={caseStudies[activeIndex].title} className={styles.caseStudyContentImg} />
+              <div className={styles.mobileNavigation}>
+                <div>
+                  <button onClick={handlePrev} className={styles.leftArrow}>
+                    <Image src="/leftArrowImage.svg" alt="leftArrow" height={15} width={15} className={styles.rotatedArrow} />
+                  </button>
+                </div>
+
+                <div>
+                  <button onClick={handleNext} className={styles.rightArrow}>
+                    <Image src="/leftArrowImage.svg" alt="leftArrow" height={15} width={15} className={styles.rightRotatedArrow} />
+                  </button>
+                </div>
               </div>
 
-              <button className={styles.serviceButton}>
-                <div style={{ alignSelf: "center" }}>
-                  See all case studies
-                </div>
-                <span className={styles.ourServicesArrow} style={{ alignSelf: "center", marginLeft: '15px', paddingBottom: "6px" }}>
-                  <img src="/rightArrow.svg" alt="whatwedo" height="16px" width='20px' />
-                </span>
+              <div className={styles.readThisAndServiceButton}>
+
+                <button className={styles.readThisButton}>
+                  <span> Read this case </span>
+                  <Image src="/leftArrowImage.svg" alt="rightarrow" height={15} width={18} className={styles.readThisButtonArrow} />
+                </button>
+
+
+                <button className={styles.serviceButton}>
+                  <span>See all case studies</span>
+                  <Image src="/leftArrowImage.svg" alt="rightarrow" height={15} width={15} className={styles.ourServicesArrow} />
+                </button>
+
+              </div>
+
+            </div>
+          </section>
+
+
+          <section className={styles.caseStudies} style={{ marginBottom: "0", marginTop: "0px" }} >
+            <h2>SERVICES</h2>
+            <span style={{ display: "flex", flexDirection: "column", position: 'relative' }}>
+              <h4 className={styles.whatWeDoText}>
+                What we do
+              </h4>
+              <img className={styles.servicesImage} src="/3circles.svg" alt="whatwedo" />
+            </span>
+
+          </section>
+
+          {/* services section */}
+          <section className={styles.serviceSection} >
+            <div className={styles.serviceCard}>
+              <h2>Machine Learning</h2>
+              <p>The full ML project life-cycle, from dataset building to model architecture definition and training to deployment (both in the cloud and on edge). Techniques from areas such as CV and NLP and their applications to various business problems.</p>
+            </div>
+
+            <div className={styles.serviceCard}>
+              <h2>Architecture & Backend</h2>
+              <p>Systems for data analysis and processing, including high-frequency data, time-series or IoT data. Focusing on reliability and scalability of solutions while maintaining low operating costs.</p>
+            </div>
+
+            <div className={styles.serviceCard2}>
+              <h2>R&D Prototypes</h2>
+              <p>Unique problems requiring the development of new techniques or algorithms and excellent programming skills. Some of these problems will prove unsolvable, others will lead to the best innovations.</p>
+            </div>
+
+            <button className={styles.serviceButton2}>
+              <span>Our services</span>
+              <Image src="/leftArrowImage.svg" alt="rightArrow" height={15} width={15} className={styles.ourServicesArrow} />
+            </button>
+
+          </section>
+
+
+          {/* services section */}
+
+          {/* challenges section */}
+          <section className={styles.challenges} style={{ marginBottom: "10px" }} >
+            <h2></h2>
+            <span style={{ display: "flex", flexDirection: "column" }}>
+              <h3>
+                Facing other challenges?
+              </h3>
+              <p>There's a technical challenge in a different area you can't quite label? Contact us and work it out together.</p>
+
+              <button className={styles.contactUsButton}>
+                <span> Contact us </span>
+                <Image src="/leftArrowImage.svg" alt="whatwedo" height={15} width={15} className={styles.contactUsArrow} />
               </button>
 
+            </span>
+          </section>
+          {/* challenges section ends*/}
+
+
+          {/* Our strength starts */}
+          <section className={styles.ourApproach}>
+            <div className={styles.containerStrength}>
+              <h3 className={styles.sideHeading}>OUR STRENGTHS</h3>
+              <div className={styles.content}>
+                <h1 className={styles.mainHeading}>What makes us different</h1>
+                <h1 className={styles.subHeading}>Our approach</h1>
+                <p>
+                  We know how to adapt scientific knowledge and academic concepts to business problem-solving on a project level by conducting extensive research and prior-art analysis.
+                </p>
+                <p>
+                  We bring an engineering point of view to the project from day one by implementing CI/CD pipelines, setting up environments and automation, providing data exploration, visualizations, and tracking all the essential metrics.
+                </p>
+              </div>
             </div>
-
-          </div>
-        </section>
-
-
-        <section className={styles.caseStudies} style={{ marginBottom: "0", marginTop: "0px" }} >
-          <h2>SERVICES</h2>
-          <span style={{ display: "flex", flexDirection: "column", position: 'relative' }}>
-            <h4 className={styles.whatWeDoText}>
-              What we do
-            </h4>
-            <img className={styles.servicesImage} src="/3circles.svg" alt="whatwedo" />
-          </span>
-
-        </section>
-
-        {/* services section */}
-        <section className={styles.serviceSection}>
-          <div className={styles.serviceCard}>
-            <h2>Machine Learning</h2>
-            <p>The full ML project life-cycle, from dataset building to model architecture definition and training to deployment (both in the cloud and on edge). Techniques from areas such as CV and NLP and their applications to various business problems.</p>
-          </div>
-          <div className={styles.serviceCard}>
-            <h2>Architecture & Backend</h2>
-            <p>Systems for data analysis and processing, including high-frequency data, time-series or IoT data. Focusing on reliability and scalability of solutions while maintaining low operating costs.</p>
-          </div>
-          <div className={styles.serviceCard2}>
-            <h2>R&D Prototypes</h2>
-            <p>Unique problems requiring the development of new techniques or algorithms and excellent programming skills. Some of these problems will prove unsolvable, others will lead to the best innovations.</p>
-          </div>
-
-          <button className={styles.serviceButton2}>
-            <div>Our services</div>
-            <div style={{ marginLeft: '15px' }} className={styles.ourServicesArrow}>
-              <img src="/rightArrow.svg" alt="whatwedo" height="20px" width="20px" />
-            </div>
-          </button>
-
-        </section>
+          </section>
+          {/* Our strength ends */}
 
 
-        {/* services section */}
-
-        {/* challenges section */}
-        <section className={styles.challenges} style={{ marginBottom: "10px" }} >
-          <h2></h2>
-          <span style={{ display: "flex", flexDirection: "column" }}>
-            <h3>
-              Facing other challenges?
-            </h3>
-            <p>There's a technical challenge in a different area you can't quite label? Contact us and work it out together.</p>
-
-            <button className={styles.contactUsButton}>
-              Contact us
-              <span style={{ marginLeft: '15px' }} className={styles.contactUsArrow}>
-                <img src="/down-arrow1.svg" alt="whatwedo" height="16px" width='20px' />
-
-              </span>
-            </button>
-          </span>
-        </section>
-        {/* challenges section ends*/}
+          {/* the team section starts */}
+          <section className={styles.team} style={{ marginBottom: "10px" }} >
+            <h2></h2>
+            <span style={{ display: "flex", flexDirection: "column" }}>
+              <h3>
+                The team
+              </h3>
+              <p>We have an experienced team of developers with PhDs and Masters in Mathematics and Computer Science.</p>
+              <p>We possess a solid mindset shaped by algorithmic and mathematical education based on the renowned Polish scientific school.</p>
 
 
-        {/* Our strength starts */}
-        <section className={styles.ourApproach}>
-          <div className={styles.containerStrength}>
-            <h3 className={styles.sideHeading}>OUR STRENGTHS</h3>
-            <div className={styles.content}>
-              <h1 className={styles.mainHeading}>What makes us different</h1>
-              <h2 className={styles.subHeading}>Our approach</h2>
-              <p>
-                We know how to adapt scientific knowledge and academic concepts to business problem-solving on a project level by conducting extensive research and prior-art analysis.
-              </p>
-              <p>
-                We bring an engineering point of view to the project from day one by implementing CI/CD pipelines, setting up environments and automation, providing data exploration, visualizations, and tracking all the essential metrics.
-              </p>
-            </div>
-          </div>
-        </section>
-        {/* Our strength ends */}
+              <button className={styles.contactUsButton} style={{ marginTop: "2rem" }}>
+                <span> Meet us </span>
+                <Image src="/leftArrowImage.svg" alt="whatwedo" height={15} width={15} className={styles.ourServicesArrow} />
+              </button>
+
+            </span>
+          </section>
+          {/* the team section ends */}
 
 
-        {/* the team section starts */}
-        <section className={styles.team} style={{ marginBottom: "10px" }} >
-          <h2></h2>
-          <span style={{ display: "flex", flexDirection: "column" }}>
-            <h3>
-              The team
-            </h3>
-            <p>We have an experienced team see developers with PhDs and Masters in Mathematics and Computer Science.</p>
-            <p>We possess a solid mindset shaped by algorithmic and mathematical education based on the renowned Polish scientific school.</p>
-
-
-            <button className={styles.contactUsButton} style={{ marginTop: '2rem' }}>
-              Meet us
-              <span style={{ marginLeft: '15px' }} className={styles.ourServicesArrow}>
-                <img src="/rightArrow.svg" alt="whatwedo" height="20px" width="20px" />
-              </span>
-            </button>
-
-          </span>
-        </section>
-        {/* the team section ends */}
-
-
-        {/* testimonail section  starts*/}
-        <TestimonialSlider />
-        {/* testimonail section  ends*/}
-        {/* </div> */}
-      </main>
-      <ContactUs />
+          {/* testimonail section  starts*/}
+          <TestimonialSlider />
+          {/* testimonail section  ends*/}
+          {/* </div> */}
+        </main>
+      </div>
+      <div className="hide-vertical-lines">
+        <ContactUs />
+      </div>
 
     </div>
   )

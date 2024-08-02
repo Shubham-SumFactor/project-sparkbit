@@ -66,6 +66,8 @@
     border: 1px solid #d1d5db;
     border-radius: 0.25rem;
     background-color: white;
+    font-size: 13px;
+    font-weight: 900;
 }
 
 .textarea {
@@ -112,31 +114,38 @@
 
 }
 
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
 .submitButton {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
     border: 1px solid black;
-    border-radius: 25px;
+    border-radius: 30px;
     cursor: pointer;
-    position: relative;
+    background: none;
     overflow: hidden;
-    transition: background-color 0.3s ease;
     background-color: #e6e6e6;
+    font-size: 16px;
     font-style: italic;
+    font-weight: 200;
+    height: 42px;
 }
 
-
-.submitButton span {
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
+.submitButtonArrow {
+    margin-left: 8px;
 }
 
-.submitButton:hover span {
-    transform: translateX(10px);
+.submitButtonArrow:hover {
+    transform: translateX(+50%);
+    transition: transform 0.3s ease;
 }
+
 
 .icon {
     width: 1.25rem;
@@ -212,8 +221,9 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
     margin: 3px 0;
+    font-weight: 900;
 }
 
 .uploadIcon {
@@ -239,11 +249,12 @@
 
 @media (max-width: 768px) {
 
-.container {
-    max-width: 100%;
-    /* border: 1px solid white; */
+    .container {
+        max-width: 100%;
+        /* border: 1px solid white; */
 
-}
+    }
+
     .wrapper {
         width: 100%;
         /* border: 1px solid gold; */
@@ -265,6 +276,8 @@
         display: grid;
         grid-template-columns: 1fr;
         padding-right: 8px;
+        gap: 2rem;
+        
     }
 
     .container {
@@ -306,17 +319,18 @@
     }
 
     .scrollArrow {
-        transform: translateY(0);
+        /* transform: translateY(0); */
         background: none;
         border: none;
         cursor: pointer;
         transition: transform 0.3s ease;
         z-index: 200;
+        transform: rotate(-90deg);
 
     }
 
     .scrollCircle {
-        transform: rotate(180deg);
+        /* transform: rotate(180deg); */
         position: absolute;
         /* bottom: 5%; */
         left: 88%;
@@ -331,10 +345,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        align-self: center;
     }
 
-    .scrollButton:hover {
-        transform: translateY(50%);
+    .scrollArrow:hover {
+        transform: rotate(-90deg) translateX(5px);
+
+    }
+
+    .submitButton {
+        font-size: 14px;
+    }
+
+    .buttonContainer {
+        padding-top: 1rem;
+
+    }
+
+    .footer {
+        padding-top: 5px ;
     }
 }
 
@@ -346,11 +375,16 @@
     }
 
     .wrapper {
-        margin-bottom: 25rem;
+        margin-bottom: 20rem;
     }
 
     .title {
         font-size: 56px;
+    }
+
+    .footer {
+        max-width: 1440px;
+        margin: 0 auto;
     }
 }
 

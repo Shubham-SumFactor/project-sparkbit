@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './ContactUs.module.css';
+import Image from 'next/image';
 
 export default function ContactUs() {
     const [formData, setFormData] = useState({
@@ -85,22 +86,17 @@ export default function ContactUs() {
 
 
                         <div className={styles.msgContent} >
-                            <div style={{ display: "flex", justifyContent: "space-between", width: "50%"}}>
+                            <div className={styles.buttonContainer}>
                                 <div>
                                     <button type="submit" className={styles.submitButton}>
-                                        Send your message
-                                        <span style={{ alignSelf: "center", marginLeft: '10px', marginTop: "5px" }}>
-                                            <img src="/rightArrow.svg" alt="sendyourmsg" height="15px" width='15px' />
-                                        </span>
-
+                                        <span> Send your message</span>
+                                        <Image src="/leftArrowImage.svg" alt="rightarrow" height={15} width={15} className={styles.submitButtonArrow} />
                                     </button>
                                 </div>
 
-                                <div className={styles.scrollCircle} onClick={scrollToTop}>
-                                    <div className={styles.scrollArrow} >
-                                        <img src="/down-arrow1.svg" alt="whatwedo" height="15px" width='40px' />
-                                    </div>
-                                </div>
+                                <button className={styles.scrollCircle} onClick={scrollToTop}>
+                                        <Image src="/leftArrowImage.svg" alt="downArrow" height={15} width={15} className={styles.scrollArrow} />
+                                </button>
 
                             </div>
 
