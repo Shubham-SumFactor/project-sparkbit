@@ -4,28 +4,28 @@ import Image from 'next/image';
 
 const testimonials = [
     {
-        content: "Our challenging mission to revolutionize the culinary market called for a partner with deep knowledge of algorithms and machine learning techniques, along with solid software engineering skills and flexible thinking. We found all of that in Sparkbit. Their ability to take ownership of a project and their technical capabilities to develop end-to-end solutions are what make them the perfect partner for us.",
+        content: "Our challenging mission to revolutionize the culinary market called for a partner with deep knowledge of algorithms and machine learning techniques, along with solid software engineering skills and flexible thinking. We found all of that in Sumfactor. Their ability to take ownership of a project and their technical capabilities to develop end-to-end solutions are what make them the perfect partner for us.",
         author: "TOMER EDEN",
         position: "CEO & CO-FOUNDER",
         company: "SPICERR",
 
     },
     {
-        content: "After an extensive search and in-depth reference checks, we chose Sparkbit to be our partner in solving previously unsolvable problems. They were able to provide us with AI and ML experts who grasped the complexities of our unique requirements and were able to deliver AI models. But they also found opportunities for us to reduce compute costs by identifying those areas where the answer was just math.",
+        content: "After an extensive search and in-depth reference checks, we chose Sumfactor to be our partner in solving previously unsolvable problems. They were able to provide us with AI and ML experts who grasped the complexities of our unique requirements and were able to deliver AI models. But they also found opportunities for us to reduce compute costs by identifying those areas where the answer was just math.",
         author: "ANNE ZINK",
         position: "CEO & FOUNDER ",
         company: "5X5 TECHNOLOGIES",
         videoSrc: "/testimonial01.mp4"
     },
     {
-        content: "Sparkbit has the intellectual rigor to handle quite difficult problems that are at the intersection of, for example, distributed systems, AI and the specific vertical that your business is.",
+        content: "Sumfactor has the intellectual rigor to handle quite difficult problems that are at the intersection of, for example, distributed systems, AI and the specific vertical that your business is.",
         author: "Tim Mansfield",
         position: "CTO",
         company: "ITALIST",
         videoSrc: "/testimonial2.mp4"
     },
     {
-        content: "The app that Sparkbit developed was met with a great reaction, including a significant number of users. The product was successful and the project is in its next phase. Throughout the partnership, the attentive team has completed their work while ensuring as much accuracy as possible.",
+        content: "The app that Sumfactor developed was met with a great reaction, including a significant number of users. The product was successful and the project is in its next phase. Throughout the partnership, the attentive team has completed their work while ensuring as much accuracy as possible.",
         author: "Laszlo Toeroek",
         position: "CTO & Co-Founder",
         company: "Altermobili"
