@@ -87,10 +87,10 @@ const TestimonialSlider = () => {
     return (
         <section className={styles.testimonialSlider}>
             <div className={styles.container}>
-                <h3 className={styles.sideHeading}>TESTIMONIALS</h3>
+                <h2 className={styles.sideHeading}>TESTIMONIALS</h2>
 
                 <div className={styles.content}>
-                    <h1 className={styles.mainHeading}>Our clients about us</h1>
+                    <h3 className={styles.mainHeading}>Our clients about us</h3>
                     <div className={styles.navigation}>
                         <button onClick={prevSlide} className={styles.navButton}>
                             <Image src="/leftArrowImage.svg" alt="whatwedo" height={20} width={20} className={styles.sliderArrow} />

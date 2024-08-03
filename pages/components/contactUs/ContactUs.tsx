@@ -35,10 +35,10 @@ export default function ContactUs() {
     return (
         <section className={styles.contactSection}>
             <div className={styles.container}>
-                <h3 className={styles.sideHeading}>CONTACT FORM</h3>
+                <h2 className={styles.sideHeading}>CONTACT FORM</h2>
 
                 <div className={styles.wrapper}>
-                    <h2 className={styles.title}>There's an innovation on your mind? Contact us!</h2>
+                    <h2 >There's an innovation on your mind? Contact us!</h2>
                     <form onSubmit={handleSubmit} className={styles.form}>
                         <div className={styles.inputGroup}>
                             <input

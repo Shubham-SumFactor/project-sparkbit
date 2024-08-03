@@ -17,12 +17,12 @@
     padding-top: 16.5rem;
     /* justify-content: center; */
     font-family: serif;
-    font-size: 16px;
+    font-size: 12px;
     color: #737373;
     font-weight: 900;
     line-height: 1;
     margin-bottom: 1rem;
-    letter-spacing: 0.05rem;
+    /* letter-spacing: 0.05rem; */
 
 }
 
@@ -31,20 +31,17 @@
     margin-bottom: 5rem;
 }
 
-.title {
-    color: black;
+.wrapper h2 {
     font-weight: bold;
     margin-bottom: 2rem;
     margin-top: 2rem;
     text-align: center;
     font-size: 54px;
-    font-weight: 350;
-    /* letter-spacing: -3px; */
-    line-height: 1.2;
+    font-weight: 100;
+    line-height: 1;
     word-break: normal;
     text-align: left;
-    /* border: 1px solid red; */
-    /* max-width: 1440px; */
+    width: 90%;
 }
 
 .form {
@@ -131,7 +128,7 @@
     background: none;
     overflow: hidden;
     background-color: #e6e6e6;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
     font-weight: 200;
     height: 42px;
@@ -171,11 +168,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 900;
     line-height: 1.2;
     text-decoration: rgb(115, 115, 115);
     color: rgb(80, 77, 77);
+    align-items: flex-end;
 }
 
 .fullInfo>div {
@@ -189,7 +187,7 @@
 .mobileInfo {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 1;
     text-decoration: rgb(189, 189, 189);
@@ -260,7 +258,7 @@
         /* border: 1px solid gold; */
     }
 
-    .title {
+    .wrapper h2 {
         font-weight: bold;
         text-align: left;
         font-size: 26px;
@@ -277,7 +275,7 @@
         grid-template-columns: 1fr;
         padding-right: 8px;
         gap: 2rem;
-        
+
     }
 
     .container {
@@ -312,6 +310,9 @@
         padding-top: 1rem;
         padding-left: 8px;
         margin-bottom: 0;
+        font-size: 12px;
+        color: #737373;
+        font-weight: 900;
     }
 
     .textareaContainer {
@@ -363,7 +364,7 @@
     }
 
     .footer {
-        padding-top: 5px ;
+        padding-top: 5px;
     }
 }
 
@@ -378,7 +379,7 @@
         margin-bottom: 20rem;
     }
 
-    .title {
+    .wrapper h2 {
         font-size: 56px;
     }
 
@@ -388,17 +389,16 @@
     }
 }
 
-@media (min-width: 1024px) {
+/* @media (max-width: 1024px) {
 
-    .title {
-        color: black;
+    .wrapper h2 {
         font-weight: bold;
         margin-bottom: 2rem;
         margin-top: 2rem;
         text-align: center;
-        font-size: 54px;
-        font-weight: 350;
-        line-height: 1.2;
+        font-size: 50px;
+        font-weight: 100;
+        line-height: 1;
         word-break: normal;
         text-align: left;
     }
@@ -407,4 +407,4 @@
         width: 61.5%;
     }
 
-}
+} */
