@@ -29,7 +29,7 @@
 @font-face {
     font-family: display;
     src: url('/fonts/NeueHaasGroteskDisplay75Bold.ttf') format('truetype');
-    font-weight: 100;
+    /* font-weight: 100; */
     /* font-style: normal; */
 }
 

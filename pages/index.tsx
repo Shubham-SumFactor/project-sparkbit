@@ -245,7 +245,7 @@ export default function Home() {
           {/* Our strength starts */}
           <section className={styles.ourApproach}>
             <div className={styles.containerStrength}>
-              <h3 className={styles.sideHeading}>OUR STRENGTHS</h3>
+              <h2 className={styles.sideHeading}>OUR STRENGTHS</h2>
               <div className={styles.content}>
                 <h1 className={styles.mainHeading}>What makes us different</h1>
                 <h1 className={styles.subHeading}>Our approach</h1>
