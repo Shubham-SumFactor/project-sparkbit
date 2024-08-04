@@ -187,40 +187,49 @@ export default function Home() {
 
           <section className={styles.caseStudies} style={{ marginBottom: "0", marginTop: "0px" }} >
             <h2>SERVICES</h2>
-            <span style={{ display: "flex", flexDirection: "column", position: 'relative' }}>
-              <h4 className={styles.whatWeDoText}>
-                What we do
-              </h4>
-              <img className={styles.servicesImage} src="/3circles.svg" alt="whatwedo" />
+            <span >
+              <div>
+                <h4 className={styles.whatWeDoText}>
+                  What we do
+                </h4>
+              </div>
+              <div>
+                <img className={styles.servicesImage} src="/3circles.svg" alt="whatwedo" />
+              </div>
             </span>
 
           </section>
 
           {/* services section */}
-          <section className={styles.serviceSection} >
-            <div className={styles.serviceCard}>
-              <h2>Machine Learning</h2>
-              <p>The full ML project life-cycle, from dataset building to model architecture definition and training to deployment (both in the cloud and on edge). Techniques from areas such as CV and NLP and their applications to various business problems.</p>
-            </div>
+          <div>
+            <section className={styles.serviceSection} >
+              <div className={styles.serviceCard}>
+                <h2>Machine Learning</h2>
+                <p>The full ML project life-cycle, from dataset building to model architecture definition and training to deployment (both in the cloud and on edge). Techniques from areas such as CV and NLP and their applications to various business problems.</p>
+              </div>
 
-            <div className={styles.serviceCard}>
-              <h2>Architecture & Backend</h2>
-              <p>Systems for data analysis and processing, including high-frequency data, time-series or IoT data. Focusing on reliability and scalability of solutions while maintaining low operating costs.</p>
-            </div>
+              <div className={styles.serviceCard}>
+                <h2>Architecture & Backend</h2>
+                <p>Systems for data analysis and processing, including high-frequency data, time-series or IoT data. Focusing on reliability and scalability of solutions while maintaining low operating costs.</p>
+              </div>
 
-            <div className={styles.serviceCard2}>
-              <h2>R&D Prototypes</h2>
-              <p>Unique problems requiring the development of new techniques or algorithms and excellent programming skills. Some of these problems will prove unsolvable, others will lead to the best innovations.</p>
-            </div>
+              <div className={styles.serviceCard2}>
+                <h2>R&D Prototypes</h2>
+                <p>Unique problems requiring the development of new techniques or algorithms and excellent programming skills. Some of these problems will prove unsolvable, others will lead to the best innovations.</p>
+              </div>
 
-            <button className={styles.serviceButton2}>
+              {/* <button className={styles.serviceButton2}>
+              <span>Our services</span>
+              <Image src="/leftArrowImage.svg" alt="rightArrow" height={15} width={15} className={styles.ourServicesArrow} />
+            </button> */}
+
+            </section>
+
+            <button className={styles.serviceButton3}>
               <span>Our services</span>
               <Image src="/leftArrowImage.svg" alt="rightArrow" height={15} width={15} className={styles.ourServicesArrow} />
             </button>
-
-          </section>
-
-
+          </div>
           {/* services section */}
 
           {/* challenges section */}
