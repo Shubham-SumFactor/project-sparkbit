@@ -127,11 +127,12 @@
     cursor: pointer;
     background: none;
     overflow: hidden;
-    background-color: #e6e6e6;
     font-size: 14px;
     font-style: italic;
     font-weight: 200;
     height: 42px;
+    color: #000000 !important;
+
 }
 
 .submitButtonArrow {

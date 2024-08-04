@@ -48,7 +48,7 @@ export default function ContactUs() {
                                 value={formData.name}
                                 onChange={handleChange}
                                 className={styles.input}
-                                required
+                                // required
                             />
                             <input
                                 type="email"
@@ -57,7 +57,7 @@ export default function ContactUs() {
                                 value={formData.email}
                                 onChange={handleChange}
                                 className={styles.input}
-                                required
+                                // required
                             />
                         </div>
 
@@ -69,7 +69,7 @@ export default function ContactUs() {
                                 onChange={handleChange}
                                 rows={13}
                                 className={styles.textarea}
-                                required
+                                // required
                             ></textarea>
                             <label htmlFor="file-input" className={styles.fileLabel}>
                                 <img src="/uploadIcon.svg" alt="Upload" className={styles.uploadIcon} />
@@ -106,7 +106,7 @@ export default function ContactUs() {
                                     name="permission"
                                     checked={formData.permission}
                                     onChange={handleChange}
-                                    required
+                                    // required
                                 />
                                 <span className={styles.checkboxLabel}>
                                     I declare that I give my permission to Sumfactor sp z.o. for the processing of my personal data in order to receive an answer to this inquiry.
