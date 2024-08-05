@@ -47,6 +47,7 @@
   position: relative;
   margin-bottom: 3rem;
   overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 .title {
@@ -291,9 +292,9 @@
 /* services section satrts  */
 
 .servicesImage {
-  /* margin-top: 1%; */
-  width: 650px;
-  height: 550px;
+  margin: 5% 0;
+  width: 730px;
+  /* height: 550px; */
 
   object-fit: contain;
   display: flex;
@@ -1017,21 +1018,26 @@
     color: #000;
   }
 
-  .serviceButton3{
+  .serviceButton3 {
     align-items: normal;
+  }
+
+  .servicesImage {
+  left: 18%;
+
   }
 
 }
 
 @media (min-width: 1440px) and (max-width: 2560px) {
-  
-  .title{
+
+  .title {
     font-size: 143px;
     /* letter-spacing: 2px; */
     line-height: 1;
   }
 
- .main{
+  .main {
     /* max-width: 1440px; */
     max-width: 1440px;
     position: relative;
