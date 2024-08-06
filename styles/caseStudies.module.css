@@ -97,9 +97,12 @@
   
   }
   
-  @media (min-width: 1600px) {
+  @media (min-width: 2560px) {
     .title {
-      font-size: 152px;
+      font-size: 135px;
+      /* border: 1px solid red; */
+      bottom:12%;
+      letter-spacing: 4px;
     }
   
     .main {
@@ -114,14 +117,16 @@
     }
   
     .hero {
-      height: 95vh;
+      height: 100vh;
       overflow: visible;
     }
   
     .graphicElement {
-      left: 74%;
+      left: 65%;
+      bottom: 22%;
       z-index: 1000;
-      height: 624px;
-      width: 740px;
+      height: 45rem;
+      width: 55rem;
+      /* border: 1px solid red; */
     }
   }
