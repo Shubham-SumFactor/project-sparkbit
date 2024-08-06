@@ -171,14 +171,12 @@
     flex-wrap: wrap;
     font-size: 12px;
     font-weight: 900;
-    line-height: 1.2;
+    /* line-height: 1.2; */
     text-decoration: rgb(115, 115, 115);
     color: rgb(80, 77, 77);
     align-items: flex-end;
-}
+    /* border: 1px solid yellow; */
 
-.fullInfo>div {
-    margin-bottom: 10px;
 }
 
 .fullInfo div:hover {
@@ -193,6 +191,8 @@
     line-height: 1;
     text-decoration: rgb(189, 189, 189);
     color: #737373;
+    margin-top: 1.5rem;
+    /* border: 1px solid red; */
 
     /* text-align: center; */
 }
