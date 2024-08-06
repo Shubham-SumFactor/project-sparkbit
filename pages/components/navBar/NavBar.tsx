@@ -23,7 +23,7 @@ const NavBar = () => {
           </Link>
         </div>
 
-        <div style={{ width: "27%" }}> <Link href="/caseStudies">CASE STUDIES</Link></div>
+        <div style={{ width: "27%" }}> <Link href="/caseStudies">Projects</Link></div>
         <div style={{ width: "25%" }}> <Link href="/services">SERVICES</Link></div>
         <div style={{ width: "23%" }}><Link href="/meetus">MEET US</Link></div>
 
