@@ -4,6 +4,7 @@ import styles from '../styles/services.module.css'
 import NavBar from './components/navBar/NavBar';
 import ServicesCard from './components/servicesCard/servicesCard';
 import MLProcessSection from './components/mlCard/MLProcessSection';
+import ProjectYear from './components/projectYear/projectYear';
 
 const Services = () => {
 
@@ -92,6 +93,8 @@ const Services = () => {
                 </section>
 
                 <MLProcessSection />
+
+                <ProjectYear />
             </main>
 
             {/* <ContactUs /> */}
