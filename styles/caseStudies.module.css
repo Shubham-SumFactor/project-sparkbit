@@ -34,13 +34,13 @@
   .title {
     line-height: 1;
     letter-spacing: 2px;
-    font-size: 125px;
+    font-size: 136px;
     font-weight: 100;
     bottom: 10%;
     left: 0%;
     position: absolute;
     color: #E6E6E6 !important;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     z-index: 2;
   
   }
@@ -50,12 +50,13 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
-    width: 46.25rem;
-    height: 39rem;
+    width: 50rem;
+    height: 60rem;
     z-index: 2;
     position: absolute;
     right: 0%;
     margin-top: 1rem;
+    /* border:1px solid red; */
   }
 
 

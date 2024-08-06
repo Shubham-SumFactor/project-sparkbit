@@ -31,48 +31,48 @@ const CaseStudies = () => {
 
                 <AutomatedAssessment
                     sideHeading="Operational Transformation for Sonoma Valley Transport"
-                    title="Develop web and mobile applications to replace outdated systems and enhance functionality."
-                    description="Managing operations with Excel sheets, hindering scalability and adaptability"
+                    title="Web & Mobile solutions"
+                    description="Develop web & mobile solutions to replace outdated systems with enhance functionality."
                     readMoreLink="/caseStudies"
-                    graphImage="/sumfactor/SVTLOGO.jpeg"
+                    graphImage="/sumfactor/SVT.jpeg"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="Infrastructure Migration at BookAirportCab"
-                    title="Migrating BookAirportCab's infrastructure to Docker-based architecture V1 for enhanced scalability and performance."
-                    description="Create a robust new architecture and migrate existing services seamlessly without downtime."
+                    sideHeading="Infrastructure transformation (DevOps)"
+                    title=" Infrastructure Migration at BookAirportCab"
+                    description="Migrating BookAirportCab's infrastructure to Docker-based architecture V1 for enhanced scalability and performance."
                     readMoreLink="/meetus"
                     graphImage="/sumfactor/bookCab.png"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="Infrastructure Transformation for In-Flight Entertainment in Spicejet and Yeti Airlines"
-                    title="Enhance in-flight entertainment using Android-based IFE devices."
-                    description="Driving innovative upgrades for in-flight entertainment at Spicejet and Yeti Airlines with cutting-edge Android-based IFE technology."
+                    sideHeading=" Mobile solutions for IFE"
+                    title=" Infrastructure Transformation for In-Flight Entertainment in Spicejet and Yeti Airlines"
+                    description="Enhance in-flight entertainment using Android-based IFE devices."
                     readMoreLink="/case-study"
                     graphImage="/sumfactor/spiceScreen.png"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="Pagan Almanac Android & iOS Adaptation"
-                    title="Expanding the iOS-based Pagan Almanac to Android while maintaining seamless functionality and user experience."
-                    description="The project involves the technical conversion and adaptation of Pagan Almanac to the Android platform, ensuring feature parity and client satisfaction."
+                    sideHeading="Pagan Almanac Android & iOS Application"
+                    title="Pagan Almanac Android & iOS Application"
+                    description="Expanding the iOS-based Pagan Almanac to Android while maintaining seamless functionality and user experience."
                     readMoreLink="/case-study"
                     graphImage="/sumfactor/paganLogo.webp"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="Prev.- iOS Application"
-                    title="The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics."
-                    description="Utilize UIKit technology to create a user-friendly iOS app with patented backend logic."
+                    sideHeading="IOS application"
+                    title="Prev."
+                    description="The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics."
                     readMoreLink="/case-study"
                     graphImage="/sumfactor/prev.jpeg"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="Labnear iOS Application"
-                    title="Bringing Labnear's innovative vision to life through a fully functional iOS app."
-                    description="The project aims to convert a startup vision into a robust and user-friendly iOS application to support critical patient care, especially during the COVID-19 pandemic."
+                    sideHeading="Mobile Application"
+                    title="Labiner mobile application "
+                    description="Bringing Labnear's innovative vision to life through a fully functional iOS app."
                     readMoreLink="/case-study"
                     graphImage="/sumfactor/labNear.png"
                 />
