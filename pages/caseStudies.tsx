@@ -30,54 +30,54 @@ const CaseStudies = () => {
 
 
                 <AutomatedAssessment
-                    sideHeading="Machine Learning"
-                    title="Automated human body assessment"
-                    description="Recognizing postural disorders and assigning corrective exercises based on a 3D scan"
-                    readMoreLink="/case-study"
-                    graphImage="/caseStudy/mlImage1.svg"
+                    sideHeading="Operational Transformation for Sonoma Valley Transport"
+                    title="Develop web and mobile applications to replace outdated systems and enhance functionality."
+                    description="Managing operations with Excel sheets, hindering scalability and adaptability"
+                    readMoreLink="/caseStudies"
+                    graphImage="/sumfactor/SVTLOGO.jpeg"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="R&D PROTOTYPES"
-                    title="AI Camera-based driving analysis tool"
-                    description="Analyzing a high volume of multi-sensorial time-series data to detect hazardous driver behavior"
-                    readMoreLink="/case-study"
-                    graphImage="/caseStudy/image2.svg"
+                    sideHeading="Infrastructure Migration at BookAirportCab"
+                    title="Migrating BookAirportCab's infrastructure to Docker-based architecture V1 for enhanced scalability and performance."
+                    description="Create a robust new architecture and migrate existing services seamlessly without downtime."
+                    readMoreLink="/meetus"
+                    graphImage="/sumfactor/bookCab.png"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="ARCHITECTURE & BACKEND"
-                    title="Unique E-commerce System"
-                    description="Migration and development of a luxury Italian brands E-commerce to support global sales and shipping"
+                    sideHeading="Infrastructure Transformation for In-Flight Entertainment in Spicejet and Yeti Airlines"
+                    title="Enhance in-flight entertainment using Android-based IFE devices."
+                    description="Driving innovative upgrades for in-flight entertainment at Spicejet and Yeti Airlines with cutting-edge Android-based IFE technology."
                     readMoreLink="/case-study"
-                    graphImage="/caseStudy/image3.svg"
+                    graphImage="/sumfactor/spiceScreen.png"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="ARCHITECTURE & BACKEND"
-                    title="Backend of a prototype telematics system"
-                    description="Collecting and processing various data to translate it into individual user score"
+                    sideHeading="Pagan Almanac Android & iOS Adaptation"
+                    title="Expanding the iOS-based Pagan Almanac to Android while maintaining seamless functionality and user experience."
+                    description="The project involves the technical conversion and adaptation of Pagan Almanac to the Android platform, ensuring feature parity and client satisfaction."
                     readMoreLink="/case-study"
-                    graphImage="/caseStudy/image4.svg"
+                    graphImage="/sumfactor/paganLogo.webp"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="R&D PROTOTYPES"
-                    title="Military-grade communication tool"
-                    description="Distributed system to support maritime missions operating offline at sea with data exchange based on custom military protocols"
+                    sideHeading="Prev.- iOS Application"
+                    title="The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics."
+                    description="Utilize UIKit technology to create a user-friendly iOS app with patented backend logic."
                     readMoreLink="/case-study"
-                    graphImage="/caseStudy/image5.svg"
+                    graphImage="/sumfactor/prev.jpeg"
                 />
 
                 <AutomatedAssessment
-                    sideHeading="MACHINE LEARNING"
-                    title="Supporting business scalability with Machine Learning"
-                    description="Cutting the development and operations costs by implementing ML-heavy automation and introducing modern system architecture"
+                    sideHeading="Labnear iOS Application"
+                    title="Bringing Labnear's innovative vision to life through a fully functional iOS app."
+                    description="The project aims to convert a startup vision into a robust and user-friendly iOS application to support critical patient care, especially during the COVID-19 pandemic."
                     readMoreLink="/case-study"
-                    graphImage="/caseStudy/image6.svg"
+                    graphImage="/sumfactor/labNear.png"
                 />
 
-                <AutomatedAssessment
+                {/* <AutomatedAssessment
                     sideHeading="MACHINE LEARNING"
                     title="Machine learning for recipe recommendation"
                     description="Building an NLP-based system to understand cooking ingredients and refine users’ dishes"
@@ -107,7 +107,7 @@ const CaseStudies = () => {
                     description="Modular. white-labeled telematics application to detect dangerous driving habits with a set o complex algorithms for processing high-frequency & IoT data"
                     readMoreLink="/case-study"
                     graphImage="/caseStudy/image10.svg"
-                />
+                /> */}
 
             </main>
 
