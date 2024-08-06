@@ -56,7 +56,7 @@ const NavBar = () => {
           style={{ width: "75%", display: "flex" }}
         >
           <div style={{ width: "33.33%" }}>
-            <Link href="/caseStudies">CASE STUDIES</Link>
+            <Link href="/caseStudies">PROJECTS</Link>
           </div>
           <div style={{ width: "33.33%" }}>
             <Link href="/services">SERVICES</Link>

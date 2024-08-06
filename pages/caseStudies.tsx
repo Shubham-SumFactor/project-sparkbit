@@ -41,7 +41,7 @@ const CaseStudies = () => {
                     sideHeading="Infrastructure transformation (DevOps)"
                     title=" Infrastructure Migration at BookAirportCab"
                     description="Migrating BookAirportCab's infrastructure to Docker-based architecture V1 for enhanced scalability and performance."
-                    readMoreLink="/meetus"
+                    readMoreLink="/caseStudies"
                     graphImage="/sumfactor/bookCab.png"
                 />
 
@@ -49,7 +49,7 @@ const CaseStudies = () => {
                     sideHeading=" Mobile solutions for IFE"
                     title=" Infrastructure Transformation for In-Flight Entertainment in Spicejet and Yeti Airlines"
                     description="Enhance in-flight entertainment using Android-based IFE devices."
-                    readMoreLink="/case-study"
+                    readMoreLink="/caseStudies"
                     graphImage="/sumfactor/spiceScreen.png"
                 />
 
@@ -57,7 +57,7 @@ const CaseStudies = () => {
                     sideHeading="Pagan Almanac Android & iOS Application"
                     title="Pagan Almanac Android & iOS Application"
                     description="Expanding the iOS-based Pagan Almanac to Android while maintaining seamless functionality and user experience."
-                    readMoreLink="/case-study"
+                    readMoreLink="/caseStudies"
                     graphImage="/sumfactor/paganLogo.webp"
                 />
 
@@ -65,7 +65,7 @@ const CaseStudies = () => {
                     sideHeading="IOS application"
                     title="Prev."
                     description="The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics."
-                    readMoreLink="/case-study"
+                    readMoreLink="/caseStudies"
                     graphImage="/sumfactor/prev.jpeg"
                 />
 
@@ -73,7 +73,7 @@ const CaseStudies = () => {
                     sideHeading="Mobile Application"
                     title="Labiner mobile application "
                     description="Bringing Labnear's innovative vision to life through a fully functional iOS app."
-                    readMoreLink="/case-study"
+                    readMoreLink="/caseStudies"
                     graphImage="/sumfactor/labNear.png"
                 />
 
