@@ -76,6 +76,11 @@
   border-radius: 2px;
 }
 
+.activeLink {
+  color: black !important; 
+  font-weight: bold; 
+}
+
 
 @media (max-width: 768px) {
   .nav {
