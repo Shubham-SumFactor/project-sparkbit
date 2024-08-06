@@ -12,15 +12,18 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const isActiveRoute = (route: any) => {
+    return router.pathname === route;
+  };
 
   return (
-    <header className={styles.nav}>
+    <header className={`${styles.nav} ${isActiveRoute('/caseStudies') ? styles.activeBackground : ''}`}
+    >
 
-      <div className={styles.menu}>
-        {/* <div className={`${styles.menu} ${isMenuOpen ? styles.showMenu : ''}`} style={{ display: "flex", maxWidth: "1440px", width: "100%", position: 'relative', margin: "0 auto" }}> */}
+      <div className={`${styles.menu} ${isActiveRoute('/caseStudies') ? styles.activeMenuBackground : ''}`}>
 
         <div style={{ width: "25%" }}>
-          <Link href="/" className={router.pathname === '/' ? styles.activeLink : ''} style={{fontSize:'1.2rem', fontWeight:'700'}}>
+          <Link href="/" className={router.pathname === '/' ? styles.activeLink : ''} style={{ fontSize: '1.2rem', fontWeight: '700' }}>
             SUMFACTOR
           </Link>
         </div>
@@ -32,12 +35,26 @@ const NavBar = () => {
       </div>
 
       <div className={styles.hamburger} onClick={toggleMenu}>
-        <div className={styles.logo}>Sumfactor</div>
-        <img src="./hamburger.svg" alt="ham" height="30px" width="30px" />
+        <div >
+          <Link href="/" className={router.pathname === '/' ? styles.activeLink : ''} style={{ fontSize: '1.2rem', fontWeight: '400' }}>
+            SUMFACTOR
+          </Link>
+        </div>
+        <img
+          src={isActiveRoute('/caseStudies') ? "./hamburgerWhite.svg" : "./hamburger.svg"}
+          alt="ham"
+          height="30px"
+          width="30px"
+        />
       </div>
 
       {isMenuOpen && (
-        <div className={`${isMenuOpen ? styles.showMenu : ''}`} style={{ width: "75%", display: "flex" }}>
+        // <div className={`${isMenuOpen ? styles.showMenu : ''}`} style={{ width: "75%", display: "flex" }}>
+        <div
+          className={`${isMenuOpen ? styles.showMenu : ''} ${isActiveRoute('/caseStudies') ? styles.activeBackground : ''
+            }`}
+          style={{ width: "75%", display: "flex" }}
+        >
           <div style={{ width: "33.33%" }}>
             <Link href="/caseStudies">CASE STUDIES</Link>
           </div>

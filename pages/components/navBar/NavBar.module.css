@@ -24,14 +24,10 @@
 
 
 .menu {
-  /* font-family: sans-serif !important; */
   display: flex;
-  /* font-size: 14px; */
-  /* line-height: 14px; */
   font-weight: 900 !important;
   width: 100%;
   justify-content: space-around;
-  /* font-family: 'Neue'; */
   width: 100%;
   align-items: center;
   /* border-left: 1.5px solid rgb(230, 223, 223); */
@@ -44,13 +40,9 @@
 }
 
 .menu a {
-  /* font-family: display !important; */
   font-family: sans-serif !important;
   color: #737373;
   font-size: 13px;
-  /* font-weight: 900 !important; */
-  /* line-height: 1; */
-  /* letter-spacing: .01em; */
   text-transform: uppercase;
   padding: 5px 5px 5px 5px;
   transition: all .3s ease;
@@ -81,6 +73,27 @@
   font-weight: bold; 
 }
 
+.activeBackground {
+  background-color: black;
+  color: white;
+}
+
+.activeBackground .activeLink {
+  color: white;
+}
+
+.activeMenuBackground {
+  background: black;
+}
+
+.activeMenuBackground .activeLink {
+  color: white !important; 
+  font-weight: 900;
+}
+
+.activeBackground .menu a:hover {
+  color: white !important; 
+}
 
 @media (max-width: 768px) {
   .nav {
