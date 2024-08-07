@@ -10,14 +10,14 @@
 }
 
 .heading {
+  font-family: serif;
   /* text-align: center; */
   font-size: 16px;
   color: #737373;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 1;
   margin-bottom: 1rem;
-  letter-spacing: 0.05rem;
-  font-weight: lighter;
+  /* letter-spacing: 0.05rem; */
 }
 
 /* .technologySection {
