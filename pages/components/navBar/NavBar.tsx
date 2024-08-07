@@ -17,8 +17,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className={`${styles.nav} ${isActiveRoute('/caseStudies') ? styles.activeBackground : ''}`}
-    >
+    <header className={`${styles.nav} ${isActiveRoute('/caseStudies') ? styles.activeBackground : ''}`}>
 
       <div className={`${styles.menu} ${isActiveRoute('/caseStudies') ? styles.activeMenuBackground : ''}`}>
 
@@ -40,12 +39,14 @@ const NavBar = () => {
             SUMFACTOR
           </Link>
         </div>
-        <img
-          src={isActiveRoute('/caseStudies') ? "./hamburgerWhite.svg" : "./hamburger.svg"}
-          alt="ham"
-          height="30px"
-          width="30px"
-        />
+        <div>
+          <img
+            src={isActiveRoute('/caseStudies') ? "./hamburgerWhite.svg" : "./hamburger.svg"}
+            alt="ham"
+            height="30px"
+            width="30px"
+          />
+        </div>
       </div>
 
       {isMenuOpen && (
