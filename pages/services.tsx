@@ -27,7 +27,7 @@ const Services = () => {
 
                 <div className={styles.hero}>
                     <h1 className={styles.title}>
-                        Software development solutions
+                    Solutions we provide
                     </h1>
                     <div className={styles.graphicElement}></div>
                 </div>
