@@ -235,13 +235,13 @@
     }
 
     .title {
-        font-size: 4.1rem;
+        font-size: 58px;
         white-space: normal;
         text-align: left;
         letter-spacing: 1px;
         line-height: 1;
         bottom: 12%;
-        left: 4%;
+        /* left: 0%; */
     }
 
     .graphicElement {
