@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './TeamSlider.module.css';
+import Image from 'next/image';
 
 interface TeamMemberProps {
   name: string;
@@ -92,10 +93,19 @@ const handleNext = () => {
 
 return (
   <section className={styles.teamSlider}>
-    <div className={styles.navigationButtons}>
+    {/* <div className={styles.navigationButtons}>
       <button className={styles.navButton} onClick={handlePrev}>←</button>
       <button className={styles.navButton} onClick={handleNext}>→</button>
-    </div>
+    </div> */}
+     <div className={styles.navigationButtons}>
+          <button onClick={handlePrev} className={styles.navButton}>
+            <Image src="/leftArrowImage.svg" alt="whatwedo" height={20} width={20} className={styles.sliderArrow} />
+          </button>
+          <button onClick={handleNext} className={styles.navButton}>
+            <Image src="/leftArrowImage.svg" alt="whatwedo" height={20} width={20} />
+
+          </button>
+        </div>
     <div 
       className={styles.sliderContainer} 
       style={{ transform: `translateX(-${currentSlide * 100}%)` }}

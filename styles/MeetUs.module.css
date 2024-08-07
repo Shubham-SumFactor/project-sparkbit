@@ -1,7 +1,7 @@
 .container {
   min-height: 100vh;
   padding: 0 2rem;
-  background-color: white;
+  background-color: rgb(251, 251, 251);
 }
 
 .main {
@@ -10,8 +10,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   min-height: 100vh;
-  border-left: 1px solid rgb(230, 223, 223);
-  border-right: 1px solid rgb(230, 223, 223);
+  /* border-left: 1px solid rgb(230, 223, 223); */
+  /* border-right: 1px solid rgb(230, 223, 223); */
   padding-left: 1%;
   padding-right: 1%;
   overflow: hidden;
@@ -24,7 +24,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 100%;
-  height: 690px;
+  height: 100vh;
   margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
@@ -34,14 +34,14 @@
 .title {
   line-height: 1;
   letter-spacing: 2px;
-  font-size: 125px;
+  font-size: 140px;
   font-weight: 100;
   white-space: nowrap;
   bottom: 10%;
   left: 0%;
   position: absolute;
   color: #000000 !important;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   z-index: 2;
 
 }
@@ -159,17 +159,18 @@
 
   .title {
     white-space: normal;
-    font-size: 4rem;
+    font-size: 64px;
     text-align: left;
     letter-spacing: 2px;
     line-height: 1;
-    bottom: 26%;
+    bottom: 10%;
+    /* font-weight: 400; */
 
   }
 
   .graphicElement {
     width: 100%;
-    height: 85%;
+    height: 100%;
     background-position: bottom-left;
     background-size: cover;
   }
@@ -237,10 +238,11 @@
 }
 
 
-@media (min-width: 1600px) {
+@media (min-width: 2560px) {
   .title {
     left: 0;
-    font-size: 152px;
+    font-size: 140px;
+    bottom: 9%;
   }
 
   .graphicContainer {
@@ -260,15 +262,16 @@
   }
 
   .hero {
-    height: 95vh;
+    height: 100vh;
     overflow: visible;
   }
 
   .graphicElement {
-    left: 74%;
+    left: 63.5%;
     z-index: 1000;
-    height: 624px;
-    width: 740px;
+    height: 680px;
+    width: 880px;
+    bottom: 21%;
   }
 
   .about h2,

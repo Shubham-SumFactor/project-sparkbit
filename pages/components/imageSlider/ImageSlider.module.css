@@ -50,4 +50,14 @@
         padding: 5px 10px;
     }
 
+    .sliderArrow {
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        z-index: 200;
+        transform: rotate(180deg);
+        /* margin-left: 8px; */
+    }
+
 }
