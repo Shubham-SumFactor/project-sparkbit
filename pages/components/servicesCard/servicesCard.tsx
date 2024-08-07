@@ -17,34 +17,36 @@ const ServicesCard = () => {
 
     const steps = [
         {
-            title: "01. Defining the technical problem for a specific business need",
-            content: "We work with a clients to achieve a high-level overview of the ML application and classify possible technical areas, always considering various approaches to building the infrastructure and developing the ML model."
+            title: "Cross-platform",
+            content: "We specialize in building cross-platform (Flutter) apps from one codebase, building mobile and tablet apps for iOS, Android, desktop, and web applications."
         },
         {
-            title: "02. Conducting in-depth research/prior art analysis",
-            content: "We don't reinvent the wheel; we identify state-of-the-art research papers for related problems and analyze the strengths and limitations of the described approaches."
+            title: "Native Android & iOS",
+            content: "We build high-performance native apps for iOS (Swift) and Android (Kotlin/Java) to ensure complex requirements convert to seamless user experiences."
         },
         {
-            title: "03. Selecting the solution technology",
-            content: "We identify the most efficient approach based on the problem, the research, and constraints (such as a limited data set). We don't strive for the fanciest solution: sometimes, a heuristic approach may be a better choice than sophisticated deep learning."
+            title: "Concept & prototyping",
+            content: "We help you conceptualize your app ideas in a discovery phase to design and visualize the core features and functions in UX in an interactive prototype."
         },
         {
-            title: "04. Developing and managing the data set",
-            content: "The importance of a good data set is quite often underestimated. It is often expensive and time-consuming to build. It is also difficult to manage it and ensure the data is consistent. We bring creativity in designing data augmentations and experience in data governance and management."
+            title: "App UI/UX design",
+            content: "Our design team balances beautiful aesthetics with meaningful experiences that are easy to use and focused on user retention and conversions."
         },
         {
-            title: "05. Designing, building, and training the model",
-            content: "It's common to validate dozens of model variations and run hundreds of training experiments. We combine ML skills with engineering excellence and passion for automation to keep this dynamic and highly experimental work under control."
+            title: "Testing & QA",
+            content: "We provide quality assurance testing from unit, integration, and system testing to performance, usability, and compatibility testing to meet the highest standards."
         },
         {
-            title: "06. Deploying and integrating the model",
-            content: "ML research results are only useful if they deliver business value to users. We deploy the models and expose APIs that other engineers can use without any knowledge of ML."
+            title: "App Store management",
+            content: "We publish and distribute your apps to various Android app stores in China, iOS Appstore, and the Google Play Store, helping you navigate compliance."
         }
     ];
 
+
+
     return (
         <div className={styles.container}>
-            <h2 className={styles.heading}>SCOPE OF AN ML PROJECT</h2>
+            <h2 className={styles.heading}>Mobile app development services</h2>
 
             <div className={isMobile ? styles.sliderContainer : styles.grid}>
                 {isMobile ? (
@@ -66,7 +68,7 @@ const ServicesCard = () => {
                 )}
             </div>
 
-        
+
         </div>
     );
 };
