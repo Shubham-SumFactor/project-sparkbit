@@ -49,7 +49,7 @@ useEffect(() => {
   return () => window.removeEventListener('resize', handleResize);
 }, []);
 
-const itemsPerSlide = isMobile ? 1 : 4;
+const itemsPerSlide = isMobile ? 1 : 3;
 const slidesCount = Math.ceil(teamMembers.length / itemsPerSlide);
 
 useEffect(() => {

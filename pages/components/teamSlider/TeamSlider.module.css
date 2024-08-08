@@ -46,9 +46,10 @@
 }
 
 .teamMember {
-  width: 22%;
+  width: 28%;
   margin-bottom: 20px;
   text-align: left;
+  /* border: 1px solid red; */
 
 }
 
