@@ -18,23 +18,23 @@ const ServicesCardWeb = () => {
     const steps = [
         {
             title: "Cross-platform",
-            content: "We create websites that deliver a consistent experience across various operating systems, browsers, and devices. Our goal is to ensure that users can access and interact with the website seamlessly, regardless of the platform they are using."
+            content: "We create websites with a consistent experience across various operating systems, browsers, and devices, ensuring seamless user access and interaction regardless of the platform."
         },
         {
             title: "UI/UX Design",
-            content: "We focus on intuitive design, seamless user interaction, and efficient user experience. We maintain a clear visual structure with proper spacing and margins, use a color palette that reflects the brand and enhances readability, and employ tools like Sketch, Figma, and Adobe XD for wireframing and prototyping."
+            content: "We prioritize intuitive design and efficient user experience, utilizing tools like Sketch, Figma, and Adobe XD for wireframing and prototyping, with a clear visual structure, brand-reflective color palettes, and proper spacing."
         },
         {
             title: "Live websites",
-            content: "We have deployed websites on various platforms with careful planning, configuration, and testing. We choose the right platform and follow best practices, distribute content across global networks to reduce latency with CDN, and provide advanced services for high performance and security. We also minify CSS, JavaScript, and HTML files to improve load time."
+            content: "We deploy websites with meticulous planning, configuration, and testing, utilizing CDN for reduced latency, and ensuring high performance and security through best practices and file minification."
         },
         {
             title: "Testing & QA",
-            content: "We ensure that websites function as expected by testing their speed, scalability, and stability under various conditions. We verify compatibility across different browsers, devices, and operating systems, and ensure that new code changes do not adversely affect existing functionalities."
+            content: "We verify website functionality, speed, scalability, and stability under various conditions, ensuring compatibility across browsers, devices, and operating systems while safeguarding existing functionalities with thorough testing"
         },
         {
             title: "Concept & prototyping",
-            content: "We conduct user research to understand the needs, preferences, and behaviors of your target audience and determine industry trends and best practices. Based on this research, we plan the type and structure of content to be presented on the website, organize the content into categories and hierarchies for easy navigation, and prioritize features based on their importance and feasibility."
+            content: "We conduct user research to understand target audience needs, plan content structure, organize content for easy navigation, and prioritize features based on importance and feasibility."
         },
         // {
         //     title: "App Store management",
