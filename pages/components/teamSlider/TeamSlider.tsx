@@ -10,40 +10,16 @@ interface TeamMemberProps {
 
 
 const teamMembers = [
-  { name: 'Jędrek Fulara', role: 'cto  & co–founder', image: '/JedrekFulara.webp' },
-  { name: 'Kornel Kania', role: 'AI Delivery Consultant', image: '/KornelKania.webp' },
-  { name: 'Dominika Kaczmarczyk', role: 'ux designer', image: '/DominikaKaczmarczyk.webp' },
-  { name: 'Piotr Wojnarowski', role: 'SENIOR DEVELOPER', image: '/PiotrWojnarowski.svg' },
+  { name: 'Mr. Choji', role: 'Director', image: '/sumfactorTeam/choji.jpg' },
+  { name: 'Ajay Sharma', role: 'CEO', image: '/sumfactorTeam/ajay.jpg' },
+  { name: 'Rohit Thakur', role: 'Tech Lead', image: '/sumfactorTeam/rohit.jpg' },
+  { name: 'Pradeep Singh', role: 'HR Admin', image: '/sumfactorTeam/pradeep.jpg' },
 
-  { name: 'Ola Pawlak ', role: 'Project Manager ', image: '/OlaPawlak.svg' },
-  { name: 'Bartek Różański ', role: 'Senior Developer ', image: '/Bartek.webp' },
-  { name: 'Mateusz Gołuchowski ', role: 'QA ', image: '/Mateusz.webp' },
-  { name: 'Maciek Wikira ', role: 'Tech Lead ', image: '/Maciek.webp' },
-
-  { name: 'Marcin Kamionowski ', role: 'Senior Developer ', image: '/Marcin.svg' },
-  { name: 'kacper jabłoński', role: 'developer', image: '/Mateusz.webp' },
-  { name: 'Justyna Bobińska', role: 'Office Manager ', image: '/Justyna.webp' },
-  { name: 'Jan Pułtorak', role: 'Junior Developer ', image: '/Jan.webp' },
-
-  { name: 'Jakub Skupień ', role: 'Project Manager ', image: '/Jakub.svg' },
-  { name: 'filip czaplicki', role: 'senior developer', image: '/filip.webp' },
-  { name: 'Bartosz Wojciechowski', role: 'Product Manager', image: '/Bartos.webp' },
-  { name: 'Yaroslava Tkachuk', role: 'Developer ', image: '/Yaroslava.webp' },
-
-  { name: 'Szymon Bemowski', role: 'Tech Lead', image: '/Szymon.svg' },
-  { name: 'Mateusz Zalewski', role: 'developer', image: '/MateusZale.webp' },
-  { name: 'Tomek Pieszczek', role: 'developer', image: '/Tomek.webp' },
-  { name: 'Arek Ziehm', role: 'Senoir Developer ', image: '/Arek.webp' },
-
-  { name: 'michał kręglewski', role: 'ceo & co–founder', image: '/michal.webp' },
-  { name: 'kornelia frankowska', role: 'project manager', image: '/kornelia.webp' },
-  { name: 'mikołaj czapp', role: 'Developer ', image: '/mikola.webp' },
-  { name: 'Kuba Grondziowski', role: 'developer', image: '/Kuba.svg' },
-
-  { name: 'łukasz pejas', role: 'senior developer', image: '/lukas.webp' },
-  { name: 'marek krasowski', role: 'senior developer', image: '/marek.webp' },
-  { name: 'kasia fulara', role: 'coo & co–founder ', image: '/kasia.webp' },
-  { name: 'Rafał Starypan', role: 'developer', image: '/Rafal.webp' },
+  { name: 'Neeraj Sharma', role: 'Project Co-ordinator', image: '/sumfactorTeam/neeraj.jpg' },
+  { name: 'Sucheta Verma', role: 'Senior UI/UX Designer', image: '/sumfactorTeam/sucheta.jpg' },
+  { name: 'Prashant Yadav', role: 'Senior Android Developer ', image: '/sumfactorTeam/prashantsir.jpg' },
+  { name: 'Vikas Rana', role: 'Quality Analyst', image: '/sumfactorTeam/vikas.jpg' },
+  { name: 'Shubham Thakur', role: 'Junior Software Engineer', image: '/sumfactorTeam/shubhamPic.jpg' },
 
 ];
 

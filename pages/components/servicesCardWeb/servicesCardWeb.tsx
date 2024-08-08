@@ -18,28 +18,28 @@ const ServicesCardWeb = () => {
     const steps = [
         {
             title: "Cross-platform",
-            content: "We create websites that deliver a consistent experience across various operating systems, browsers, and devices. The goal is to ensure that users can access and interact with the website seamlessly, regardless of the platform they are using."
+            content: "We create websites that deliver a consistent experience across various operating systems, browsers, and devices. Our goal is to ensure that users can access and interact with the website seamlessly, regardless of the platform they are using."
         },
         {
             title: "UI/UX Design",
-            content: "We focused on intuitive design, seamless user interaction, and efficient user experience. Maintain a clear visual structure with proper spacing and margins. We used a color palette that reflects the brand and enhances readability and used tools like Sketch, Figma, and Adobe XD for wireframing and prototyping."
+            content: "We focus on intuitive design, seamless user interaction, and efficient user experience. We maintain a clear visual structure with proper spacing and margins, use a color palette that reflects the brand and enhances readability, and employ tools like Sketch, Figma, and Adobe XD for wireframing and prototyping."
         },
         {
             title: "Live websites",
-            content: "We have deployed websites on various platforms with careful planning, configuration, and testing by choosing the right platform and following best practices. Distributes content across global networks to reduce latency with CDN. Provides advanced services for high performance and security. Minify CSS, JavaScript, and HTML files to improve load time."
+            content: "We have deployed websites on various platforms with careful planning, configuration, and testing. We choose the right platform and follow best practices, distribute content across global networks to reduce latency with CDN, and provide advanced services for high performance and security. We also minify CSS, JavaScript, and HTML files to improve load time."
         },
         {
             title: "Testing & QA",
-            content: "We have tested the number of websites Ensure that whole website functions work as expected. Evaluate the website's speed, scalability, and stability under various conditions. Verifies that the website works across different browsers, devices, and operating systems. Whenever new code changes do not adversely affect existing functionalities."
+            content: "We ensure that websites function as expected by testing their speed, scalability, and stability under various conditions. We verify compatibility across different browsers, devices, and operating systems, and ensure that new code changes do not adversely affect existing functionalities."
         },
         {
             title: "Concept & prototyping",
-            content: "We conducted user research to understand the needs, preferences, and behaviors of your target audience and determine industry trends and best practices. Based on that, plan the type and structure of content to be presented on the website. Organize the content into categories and hierarchies for easy navigation and then prioritize the features based on their importance and feasibility."
+            content: "We conduct user research to understand the needs, preferences, and behaviors of your target audience and determine industry trends and best practices. Based on this research, we plan the type and structure of content to be presented on the website, organize the content into categories and hierarchies for easy navigation, and prioritize features based on their importance and feasibility."
         },
-        {
-            title: "App Store management",
-            content: "We publish and distribute your apps to various Android app stores in China, iOS Appstore, and the Google Play Store, helping you navigate compliance."
-        }
+        // {
+        //     title: "App Store management",
+        //     content: "We publish and distribute your apps to various Android app stores in China, iOS Appstore, and the Google Play Store, helping you navigate compliance."
+        // }
     ];
 
 
