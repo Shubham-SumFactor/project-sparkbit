@@ -12,12 +12,13 @@ interface TeamMemberProps {
 const teamMembers = [
   { name: 'Mr. Choji', role: 'Director', image: '/sumfactorTeam/choji.jpg' },
   { name: 'Ajay Sharma', role: 'CEO', image: '/sumfactorTeam/ajay.jpg' },
-  { name: 'Rohit Thakur', role: 'Tech Lead', image: '/sumfactorTeam/rohit.jpg' },
-  { name: 'Pradeep Singh', role: 'HR Admin', image: '/sumfactorTeam/pradeep.jpg' },
+  { name: 'Rohit Thakur', role: 'Project TechLead', image: '/sumfactorTeam/rohit.jpg' },
 
+  { name: 'Pradeep Singh', role: 'Senior HR Admin', image: '/sumfactorTeam/pradeep.jpg' },
   { name: 'Neeraj Sharma', role: 'Project Co-ordinator', image: '/sumfactorTeam/neeraj.jpg' },
   { name: 'Sucheta Verma', role: 'Senior UI/UX Designer', image: '/sumfactorTeam/sucheta.jpg' },
-  { name: 'Prashant Yadav', role: 'Senior Android Developer ', image: '/sumfactorTeam/prashantsir.jpg' },
+
+  { name: 'Prashant Yadav', role: 'Senior Android Developer', image: '/sumfactorTeam/prashantsir.jpg' },
   { name: 'Vikas Rana', role: 'Quality Analyst', image: '/sumfactorTeam/vikas.jpg' },
   { name: 'Shubham Thakur', role: 'Junior Software Engineer', image: '/sumfactorTeam/shubhamPic.jpg' },
 
