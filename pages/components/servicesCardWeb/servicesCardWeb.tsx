@@ -46,7 +46,7 @@ const ServicesCardWeb = () => {
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.heading}>Website development</h2>
+            <h2 className={styles.heading}>WEBSITE DEVELOPMENT</h2>
 
             <div className={isMobile ? styles.sliderContainer : styles.grid}>
                 {isMobile ? (

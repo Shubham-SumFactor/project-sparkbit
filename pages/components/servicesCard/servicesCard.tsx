@@ -46,7 +46,7 @@ const ServicesCard = () => {
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.heading}>Mobile app development</h2>
+            <h2 className={styles.heading}>MOBILE APP DEVELOPMENT</h2>
 
             <div className={isMobile ? styles.sliderContainer : styles.grid}>
                 {isMobile ? (
