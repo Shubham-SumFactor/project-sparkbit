@@ -46,7 +46,7 @@ const MeetUs = () => {
                         <p>
                             Through the last eight years, they have run numerous challenging projects for various clients, from ML scaleups to one of the Big Four companies, telematics enterprises, blockchain startups, and governmental military organizations.
                         </p>
-                        <img className={styles.founderImage} src="/founders.webp" alt="founders" />
+                        <img className={styles.founderImage} src="/sumfactorTeam/SFfounders.jpg" alt="founders" />
 
                     </span>
 
