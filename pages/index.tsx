@@ -9,35 +9,35 @@ import NavBar from './components/navBar/NavBar';
 
 const caseStudies = [
   {
-    title: "Automated human body assessment",
-    description: "Recognizing postural disorders and assigning corrective exercises based on a 3D scan",
-    image: "/humanAssesment.webp"
+    title: "Web & Mobile solutions",
+    description: "Operational Transformation for Sonoma Valley Transport. Develop web & mobile solutions to replace outdated systems with enhance functionality.",
+    image: "/sumfactor/SVTLOGO1.png"
   },
   {
-    title: "AI camera-based driving analysis tool",
-    description: "Analyzing a high volume of multi-sensorial time-series data to detect hazardous driver behavior",
-    image: "/driving.webp"
+    title: "Prev. mobile application",
+    description: "The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics.",
+    image: "/sumfactor/prevImage.jpg"
   },
   {
-    title: "Unique E-commerce system",
-    description: "Migration and development of a luxury Italian brands E-commerce to support global sales and shipping",
-    image: "/Ecommerce.webp"
+    title: "Labiner mobile application",
+    description: "Bringing Labnear's innovative vision to life through a fully functional iOS app.",
+    image: "/sumfactor/labNear.png"
   },
-  {
-    title: "Military-grade communication tool",
-    description: "Distributed system to support maritime missions operating offline at sea with data exchange based on custom military protocols",
-    image: "/military.webp"
-  },
-  {
-    title: "Supporting business scalability with machine learning",
-    description: "Cutting the development and operations costs by implementing ML-heavy automation and introducing modern system architecture",
-    image: "/supportingBusiness.webp"
-  },
-  {
-    title: "Machine Learning for receipe recommendation",
-    description: "Building an NLP-based system to understand cooking ingredients and refine users’ dishes",
-    image: "/receipe.webp"
-  },
+  // {
+  //   title: "Military-grade communication tool",
+  //   description: "Distributed system to support maritime missions operating offline at sea with data exchange based on custom military protocols",
+  //   image: "/military.webp"
+  // },
+  // {
+  //   title: "Supporting business scalability with machine learning",
+  //   description: "Cutting the development and operations costs by implementing ML-heavy automation and introducing modern system architecture",
+  //   image: "/supportingBusiness.webp"
+  // },
+  // {
+  //   title: "Machine Learning for receipe recommendation",
+  //   description: "Building an NLP-based system to understand cooking ingredients and refine users’ dishes",
+  //   image: "/receipe.webp"
+  // },
 ];
 
 
@@ -169,13 +169,13 @@ export default function Home() {
               <div className={styles.readThisAndServiceButton}>
 
                 <button className={styles.readThisButton}>
-                  <span> Read this case </span>
-                  <Image src="/leftArrowImage.svg" alt="rightarrow" height={15} width={18} className={styles.readThisButtonArrow} />
+                  {/* <span> Read this case </span>
+                  <Image src="/leftArrowImage.svg" alt="rightarrow" height={15} width={18} className={styles.readThisButtonArrow} /> */}
                 </button>
 
 
                 <button className={styles.serviceButton}>
-                  <span>See all case studies</span>
+                  <span>See all projects</span>
                   <Image src="/leftArrowImage.svg" alt="rightarrow" height={15} width={15} className={styles.ourServicesArrow} />
                 </button>
 
