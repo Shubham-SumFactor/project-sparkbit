@@ -8,6 +8,7 @@ import ProjectYear from './components/projectYear/projectYear';
 import TechnologyCard from './components/technologyCard/technologyCard';
 import TeamAddOns from './components/teamAddOns/teamAddOns';
 import ContactUs from './components/contactUs/ContactUs';
+import ServicesCardWeb from './components/servicesCardWeb/servicesCardWeb';
 
 const Services = () => {
 
@@ -33,6 +34,8 @@ const Services = () => {
                 </div>
 
                 <ServicesCard />
+
+                <ServicesCardWeb />
 
                 <TechnologyCard />
 
