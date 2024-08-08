@@ -10,7 +10,7 @@
 }
 
 .heading {
-  font-family: serif;
+  font-family: sans-serif !important;
   /* text-align: center; */
   font-size: 16px;
   color: #737373;

@@ -25,7 +25,7 @@ const TechnologyCard = () => {
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.heading}>Technologies</h2>
+            <h2 className={styles.heading}>TECHNOLOGIES</h2>
 
 
             <div className={styles.technologyGrid}>

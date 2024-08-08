@@ -24,7 +24,7 @@ const TeamAddOns = () => {
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.heading}>Team add-ons</h2>
+            <h2 className={styles.heading}>TEAM ADD-ONS</h2>
 
 
             <div className={styles.technologyGrid}>
