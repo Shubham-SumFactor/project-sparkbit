@@ -48,7 +48,7 @@ export default function ContactUs() {
                                 value={formData.name}
                                 onChange={handleChange}
                                 className={styles.input}
-                                // required
+                            // required
                             />
                             <input
                                 type="email"
@@ -57,7 +57,7 @@ export default function ContactUs() {
                                 value={formData.email}
                                 onChange={handleChange}
                                 className={styles.input}
-                                // required
+                            // required
                             />
                         </div>
 
@@ -69,7 +69,7 @@ export default function ContactUs() {
                                 onChange={handleChange}
                                 rows={13}
                                 className={styles.textarea}
-                                // required
+                            // required
                             ></textarea>
                             <label htmlFor="file-input" className={styles.fileLabel}>
                                 <img src="/uploadIcon.svg" alt="Upload" className={styles.uploadIcon} />
@@ -95,7 +95,7 @@ export default function ContactUs() {
                                 </div>
 
                                 <button className={styles.scrollCircle} onClick={scrollToTop}>
-                                        <Image src="/leftArrowImage.svg" alt="downArrow" height={15} width={15} className={styles.scrollArrow} />
+                                    <Image src="/leftArrowImage.svg" alt="downArrow" height={15} width={15} className={styles.scrollArrow} />
                                 </button>
 
                             </div>
@@ -106,7 +106,7 @@ export default function ContactUs() {
                                     name="permission"
                                     checked={formData.permission}
                                     onChange={handleChange}
-                                    // required
+                                // required
                                 />
                                 <span className={styles.checkboxLabel}>
                                     I declare that I give my permission to Sumfactor sp z.o. for the processing of my personal data in order to receive an answer to this inquiry.
@@ -125,10 +125,12 @@ export default function ContactUs() {
 
             <footer className={styles.footer}>
                 <div className={styles.fullInfo}>
-                    <div>CONTACT@Sumfactor.PL</div>
+                    <div>CONTACT@info@sumfactor.com</div>
                     <div>
-                        MELCHIORA WANKOWICZA 5/30<br />
-                        02-796 WARSZAWA
+                        The Hive Co-working and Business Centre,
+                        Plot 191, 
+                        <br />
+                        Industrial Area Phase 2, Chandigarh, India – 160002
                     </div>
                     <div>
                         CLUTCH<br />
@@ -136,11 +138,11 @@ export default function ContactUs() {
                         LINKEDIN<br />
                         FACEBOOK
                     </div>
-                    <div>AI CONSULTATION</div>
+                    <div>CONSULTATION</div>
                     <div>PRIVACY POLICY</div>
                 </div>
                 <div className={styles.mobileInfo}>
-                    <div>DESIGNED BY BALSAMSTUDIO.COM</div>
+                    <div>Designed and Developed in India</div>
                     <div>© 2024 Sumfactor. ALL RIGHTS RESERVED.</div>
                 </div>
             </footer>

@@ -90,7 +90,7 @@ const CaseStudies = () => {
 
                 <AutomatedAssessment
                     sideHeading="Mobile Application"
-                    title="Labiner mobile application "
+                    title="Labnear mobile application "
                     description="Bringing Labnear's innovative vision to life through a fully functional iOS app."
                     readMoreLink="/caseStudies"
                     graphImage="/sumfactor/labNear.png"
