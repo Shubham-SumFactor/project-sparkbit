@@ -45,9 +45,9 @@
 }
 
 .graphicElement {
-    background-image: url('/services.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-image: url('/services.svg'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
     background-size: contain;
     width: 66rem;
     height: 39rem;
@@ -57,6 +57,55 @@
     margin-top: 1rem;
     /* border: 1px solid red; */
 }
+
+
+@keyframes drawPath {
+    0% {
+      stroke-dashoffset: 500;
+    }
+    100% {
+      stroke-dashoffset: 20;
+    }
+  }
+  
+  @keyframes movePoint {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(100px, 100px);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      fill: #000;
+    }
+    /* 50% {
+      transform: scale(1.5);
+      fill: #FF0000;
+    } */
+  }
+  
+  .animationPath {
+    animation: drawPath 4s infinite;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+  
+  .animationPathS1 {
+    animation-delay: 1s;
+  }
+  
+  .animationPathS2 {
+    animation-delay: 2s;
+  }
+  
+  .animationPoint {
+    animation: pulse 2s infinite;
+  }
+
 
 
 /* about section */
