@@ -6,6 +6,7 @@ import TestimonialSlider from './components/testimonial/testimonial';
 import ContactUs from './components/contactUs/ContactUs';
 import Image from 'next/image';
 import NavBar from './components/navBar/NavBar';
+import { useRouter } from 'next/router';
 
 const caseStudies = [
   {
@@ -79,6 +80,20 @@ export default function Home() {
         behavior: 'smooth'
       });
     }
+  };
+
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push('/caseStudies');
+  };
+
+  const handleServices = () => {
+    router.push('/services');
+  };
+
+  const handleMeetUs = () => {
+    router.push('/meetus');
   };
 
   return (
@@ -174,7 +189,7 @@ export default function Home() {
                 </button>
 
 
-                <button className={styles.serviceButton}>
+                <button className={styles.serviceButton} onClick={handleNavigation}>
                   <span>See all projects</span>
                   <Image src="/leftArrowImage.svg" alt="rightarrow" height={15} width={15} className={styles.ourServicesArrow} />
                 </button>
@@ -225,7 +240,7 @@ export default function Home() {
 
             </section>
 
-            <button className={styles.serviceButton3}>
+            <button className={styles.serviceButton3} onClick={handleServices}>
               <span>Our services</span>
               <Image src="/leftArrowImage.svg" alt="rightArrow" height={15} width={15} className={styles.ourServicesArrow} />
             </button>
@@ -281,7 +296,7 @@ export default function Home() {
               <p>We possess a solid mindset shaped by algorithmic and mathematical education based on the renowned Polish scientific school.</p>
 
 
-              <button className={styles.contactUsButton} style={{ marginTop: "2rem" }}>
+              <button className={styles.contactUsButton} style={{ marginTop: "2rem" }} onClick={handleMeetUs}>
                 <span> Meet us </span>
                 <Image src="/leftArrowImage.svg" alt="whatwedo" height={15} width={15} className={styles.ourServicesArrow} />
               </button>
