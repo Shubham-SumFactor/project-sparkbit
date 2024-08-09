@@ -82,6 +82,21 @@ export default function Home() {
     }
   };
 
+  const contactUsRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToContactUs = () => {
+    if (contactUsRef.current) {
+      const offset = 80; 
+      const elementPosition = contactUsRef.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const router = useRouter();
 
   const handleNavigation = () => {
@@ -256,7 +271,7 @@ export default function Home() {
               </h3>
               <p>There's a technical challenge in a different area you can't quite label? Contact us and work it out together.</p>
 
-              <button className={styles.contactUsButton}>
+              <button className={styles.contactUsButton} onClick={scrollToContactUs}>
                 <span> Contact us </span>
                 <Image src="/leftArrowImage.svg" alt="whatwedo" height={15} width={15} className={styles.contactUsArrow} />
               </button>
@@ -312,7 +327,7 @@ export default function Home() {
           {/* </div> */}
         </main>
       </div>
-      <div className="hide-vertical-lines">
+      <div className="hide-vertical-lines" ref={contactUsRef}>
         <ContactUs />
       </div>
 
