@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styles from './ContactUs.module.css';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function ContactUs() {
     const [formData, setFormData] = useState({
@@ -31,6 +33,11 @@ export default function ContactUs() {
         });
     };
 
+    const router = useRouter();
+
+    const handlePrivatePolicy = () => {
+        router.push('/privacyPolicy');
+    };
 
     return (
         <section className={styles.contactSection}>
@@ -125,21 +132,27 @@ export default function ContactUs() {
 
             <footer className={styles.footer}>
                 <div className={styles.fullInfo}>
-                    <div>CONTACT@info@sumfactor.com</div>
                     <div>
-                        The Hive Co-working and Business Centre,
-                        Plot 191, 
-                        <br />
-                        Industrial Area Phase 2, Chandigarh, India – 160002
+                        <Link href="mailto:contact@info@sumfactor.com">CONTACT@info@sumfactor.com</Link>
                     </div>
                     <div>
-                        CLUTCH<br />
-                        PANGEA<br />
-                        LINKEDIN<br />
-                        FACEBOOK
+                        <Link href="https://maps.app.goo.gl/Upx4xf84eKRRWu5H7" target="_blank" rel="noopener noreferrer">
+                            The Hive Co-working and Business Centre,
+                            Plot 191,
+                            <br />
+                            Industrial Area Phase 2, Chandigarh, India – 160002
+                        </Link>
+                    </div>
+                    <div>
+                        {/* CLUTCH<br /> */}
+                        {/* PANGEA<br /> */}
+                        <Link href="https://in.linkedin.com/company/sumfactor" target="_blank" rel="noopener noreferrer">
+                            LINKEDIN
+                        </Link>
+                        {/* FACEBOOK */}
                     </div>
                     <div>CONSULTATION</div>
-                    <div>PRIVACY POLICY</div>
+                    <div className={styles.privatePolicy} onClick={handlePrivatePolicy}>PRIVACY POLICY</div>
                 </div>
                 <div className={styles.mobileInfo}>
                     <div>Designed and Developed in India</div>
