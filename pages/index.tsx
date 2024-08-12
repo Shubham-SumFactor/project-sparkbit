@@ -114,11 +114,6 @@ export default function Home() {
   return (
 
     <div className={styles.container}>
-      <Head>
-        <title>Sumfactor - Software Product Development company</title>
-        <meta name="description" content="Sumfactor created with Next.js" />
-        <link rel="icon" href="/faviconSumfactor.ico" />
-      </Head>
 
       <div className={styles.mainContent}>
         <main className={styles.main}>
