@@ -50,7 +50,7 @@ const CaseStudies = () => {
 
                 <AutomatedAssessment
                     sideHeading="Operational Transformation for Sonoma Valley Transport"
-                    title="Web & Mobile solutions"
+                    title="Web & Mobile Solutions"
                     description="Develop web & mobile solutions to replace outdated systems with enhance functionality."
                     readMoreLink="/caseStudies"
                     graphImage="/sumfactor/SVT.jpeg"
@@ -58,15 +58,15 @@ const CaseStudies = () => {
 
                 <AutomatedAssessment
                     sideHeading="Infrastructure transformation (DevOps)"
-                    title=" Infrastructure Migration at BookAirportCab"
+                    title=" Infrastructure Migration At BookAirportCab"
                     description="Migrating BookAirportCab's infrastructure to Docker-based architecture V1 for enhanced scalability and performance."
                     readMoreLink="/caseStudies"
                     graphImage="/sumfactor/bookCab.png"
                 />
 
                 <AutomatedAssessment
-                    sideHeading=" Mobile solutions for IFE"
-                    title=" Infrastructure Transformation for In-Flight Entertainment in Spicejet and Yeti Airlines"
+                    sideHeading=" Mobile Solutions For IFE"
+                    title=" Infrastructure Transformation For In-Flight Entertainment In Spicejet And Yeti Airlines"
                     description="Enhance in-flight entertainment using Android-based IFE devices."
                     readMoreLink="/caseStudies"
                     graphImage="/sumfactor/spiceScreen.png"
@@ -81,7 +81,7 @@ const CaseStudies = () => {
                 />
 
                 <AutomatedAssessment
-                    sideHeading="IOS application"
+                    sideHeading="iOS Application"
                     title="Prev."
                     description="The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics."
                     readMoreLink="/caseStudies"
@@ -90,7 +90,7 @@ const CaseStudies = () => {
 
                 <AutomatedAssessment
                     sideHeading="Mobile Application"
-                    title="Labnear mobile application "
+                    title="Labnear Mobile Application "
                     description="Bringing Labnear's innovative vision to life through a fully functional iOS app."
                     readMoreLink="/caseStudies"
                     graphImage="/sumfactor/labNear.png"

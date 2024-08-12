@@ -133,7 +133,7 @@ export default function ContactUs() {
             <footer className={styles.footer}>
                 <div className={styles.fullInfo}>
                     <div>
-                        <Link href="mailto:contact@info@sumfactor.com">CONTACT@info@sumfactor.com</Link>
+                        <Link href="mailto:info@sumfactor.com">CONTACT@info@sumfactor.com</Link>
                     </div>
                     <div>
                         <Link href="https://maps.app.goo.gl/Upx4xf84eKRRWu5H7" target="_blank" rel="noopener noreferrer">
