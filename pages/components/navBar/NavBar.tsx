@@ -27,9 +27,9 @@ const NavBar = () => {
           </Link>
         </div>
 
-        <div style={{ width: "27%" }}> <Link href="/caseStudies" className={router.pathname === '/caseStudies' ? styles.activeLink : ''}>Projects</Link></div>
+        <div style={{ width: "25%" }}> <Link href="/caseStudies" className={router.pathname === '/caseStudies' ? styles.activeLink : ''}>Projects</Link></div>
         <div style={{ width: "25%" }}> <Link href="/services" className={router.pathname === '/services' ? styles.activeLink : ''}>SERVICES</Link></div>
-        <div style={{ width: "23%" }}><Link href="/meetus" className={router.pathname === '/meetus' ? styles.activeLink : ''}>MEET US</Link></div>
+        <div style={{ width: "25%" }}><Link href="/meetus" className={router.pathname === '/meetus' ? styles.activeLink : ''}>MEET US</Link></div>
 
       </div>
 

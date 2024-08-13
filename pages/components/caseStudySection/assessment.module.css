@@ -11,6 +11,9 @@
     color: #fff;
     /* height: 100%; */
     margin-bottom: 7rem;
+    /* border: 1px solid cyan; */
+    /* gap: 5px; */
+
 }
 
 .category {
@@ -25,10 +28,13 @@
     text-transform: uppercase;
     /* border: 1px solid magenta; */
     width: 72%;
+    padding-left: 3px;
 }
 
 .content {
     grid-area: title / title / readMore / readMore;
+    /* border: 1px solid gold; */
+
 }
 
 .title {
@@ -91,7 +97,7 @@
 .graph {
     grid-area: graph;
     /* border: 1px solid green; */
-    padding-left: 10%;
+    padding-left: 3px;
 }
 
 .graph img {
