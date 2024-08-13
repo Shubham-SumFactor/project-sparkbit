@@ -228,6 +228,7 @@ export default function Home() {
           {/* services section */}
           <div>
             <section className={styles.serviceSection} >
+              <div></div>
               <div className={styles.serviceCard}>
                 <h2>Machine Learning</h2>
                 <p>The full ML project life-cycle, from dataset building to model architecture definition and training to deployment (both in the cloud and on edge). Techniques from areas such as CV and NLP and their applications to various business problems.</p>
@@ -238,7 +239,7 @@ export default function Home() {
                 <p>Systems for data analysis and processing, including high-frequency data, time-series or IoT data. Focusing on reliability and scalability of solutions while maintaining low operating costs.</p>
               </div>
 
-              <div className={styles.serviceCard2}>
+              <div className={styles.serviceCard}>
                 <h2>R&D Prototypes</h2>
                 <p>Unique problems requiring the development of new techniques or algorithms and excellent programming skills. Some of these problems will prove unsolvable, others will lead to the best innovations.</p>
               </div>
