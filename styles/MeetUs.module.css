@@ -12,8 +12,8 @@
   min-height: 100vh;
   /* border-left: 1px solid rgb(230, 223, 223); */
   /* border-right: 1px solid rgb(230, 223, 223); */
-  padding-left: 1%;
-  padding-right: 1%;
+  /* padding-left: 1%; */
+  /* padding-right: 1%; */
   overflow: hidden;
 }
 
@@ -64,11 +64,13 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 100%;
+  /* border: 1px solid red; */
+  padding-left: 3px;
 }
 
 .about h2 {
   font-family: sans-serif !important;
-  font-size: 16px;
+  font-size: 14px;
   color: #737373;
   font-weight: 900;
   line-height: 1;
@@ -92,16 +94,20 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 100%;
+  /* border: 1px solid pink; */
+  padding-left: 3px;
+
+
 }
 
 .founder h2 {
   font-family: sans-serif !important;
-  font-size: 16px;
+  font-size: 14px;
   color: #737373;
   font-weight: 900;
   line-height: 1;
   margin-bottom: 1rem;
-  letter-spacing: 0.05rem;
+  /* letter-spacing: 0.05rem; */
 }
 
 .founder h3 {
@@ -198,7 +204,7 @@
   }
 
   .founder h2 {
-    font-family: serif;
+    font-family: sans-serif !important;
     font-size: 13px;
     color: #737373;
     font-weight: 900;
