@@ -77,7 +77,7 @@ const CaseStudies = () => {
                     title="Pagan Almanac Android & iOS Application"
                     description="Expanding the iOS-based Pagan Almanac to Android while maintaining seamless functionality and user experience."
                     readMoreLink="/caseStudies"
-                    graphImage="/sumfactor/paganLogo.webp"
+                    graphImage="/sumfactor/pagan-app.png"
                 />
 
                 <AutomatedAssessment
@@ -85,7 +85,7 @@ const CaseStudies = () => {
                     title="Prev."
                     description="The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics."
                     readMoreLink="/caseStudies"
-                    graphImage="/sumfactor/prev-port-folio.png"
+                    graphImage="/sumfactor/prev-project-image.png"
                 />
 
                 <AutomatedAssessment

@@ -18,7 +18,7 @@ const caseStudies = [
   {
     title: "Prev. mobile application",
     description: "The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics.",
-    image: "/sumfactor/prevImage.jpeg"
+    image: "/sumfactor/prev-homepage.png"
     // image: "/sumfactor/prevImage.jpg"
   },
   {
