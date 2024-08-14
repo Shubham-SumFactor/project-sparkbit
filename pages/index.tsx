@@ -18,12 +18,14 @@ const caseStudies = [
   {
     title: "Prev. mobile application",
     description: "The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics.",
-    image: "/sumfactor/prevImage.jpg"
+    image: "/sumfactor/prevImage.jpeg"
+    // image: "/sumfactor/prevImage.jpg"
   },
   {
     title: "Labnear mobile application",
     description: "Bringing Labnear's innovative vision to life through a fully functional iOS app.",
-    image: "/sumfactor/labNear.png"
+    image: "/sumfactor/labnearImage.jpeg"
+    // image: "/sumfactor/labNear.png"
   },
   // {
   //   title: "Military-grade communication tool",
