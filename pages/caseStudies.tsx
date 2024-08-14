@@ -61,7 +61,7 @@ const CaseStudies = () => {
                     title=" Infrastructure Migration At BookAirportCab"
                     description="Migrating BookAirportCab's infrastructure to Docker-based architecture V1 for enhanced scalability and performance."
                     readMoreLink="/caseStudies"
-                    graphImage="/sumfactor/bookCab.png"
+                    graphImage="/sumfactor/book-ride.png"
                 />
 
                 <AutomatedAssessment
@@ -69,7 +69,7 @@ const CaseStudies = () => {
                     title=" Infrastructure Transformation For In-Flight Entertainment In Spicejet And Yeti Airlines"
                     description="Enhance in-flight entertainment using Android-based IFE devices."
                     readMoreLink="/caseStudies"
-                    graphImage="/sumfactor/spiceScreen.png"
+                    graphImage="/sumfactor/spice-screen.png"
                 />
 
                 <AutomatedAssessment
@@ -85,7 +85,7 @@ const CaseStudies = () => {
                     title="Prev."
                     description="The project focuses on developing Prev, an innovative app that delivers pregnancy-avoidance pills based on health metrics."
                     readMoreLink="/caseStudies"
-                    graphImage="/sumfactor/prev.jpeg"
+                    graphImage="/sumfactor/prev-port-folio.png"
                 />
 
                 <AutomatedAssessment
@@ -93,7 +93,7 @@ const CaseStudies = () => {
                     title="Labnear Mobile Application "
                     description="Bringing Labnear's innovative vision to life through a fully functional iOS app."
                     readMoreLink="/caseStudies"
-                    graphImage="/sumfactor/labNear.png"
+                    graphImage="/sumfactor/labnear.png"
                 />
 
                 {/* <AutomatedAssessment
