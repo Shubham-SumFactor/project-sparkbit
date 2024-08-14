@@ -53,7 +53,7 @@ const CaseStudies = () => {
                     title="Web & Mobile Solutions"
                     description="Develop web & mobile solutions to replace outdated systems with enhance functionality."
                     readMoreLink="/caseStudies"
-                    graphImage="/sumfactor/SVT.jpeg"
+                    graphImage="/sumfactor/svtProject.jpeg"
                 />
 
                 <AutomatedAssessment
