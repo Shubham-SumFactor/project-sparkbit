@@ -12,7 +12,8 @@ const caseStudies = [
   {
     title: "Web & Mobile solutions",
     description: "Operational Transformation for Sonoma Valley Transport. Develop web & mobile solutions to replace outdated systems with enhance functionality.",
-    image: "/sumfactor/SVTLOGO1.png"
+    image: "https://suttabazaar.com/wp-content/uploads/2024/08/svt-1.png"
+    // image: "/sumfactor/SVTLOGO1.png"
   },
   {
     title: "Prev. mobile application",
