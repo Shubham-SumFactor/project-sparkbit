@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './NavBar.module.css'
 import { useState } from 'react';
+import Image from 'next/image';
 
 const NavBar = () => {
 
@@ -14,6 +15,13 @@ const NavBar = () => {
 
   const isActiveRoute = (route: any) => {
     return router.pathname === route;
+  };
+
+  const handlePrivatePolicy = () => {
+    router.push('/privacyPolicy');
+  };
+  const handleContactUs = () => {
+    router.push('/meetus');
   };
 
   return (
@@ -50,20 +58,56 @@ const NavBar = () => {
       </div>
 
       {isMenuOpen && (
-        // <div className={`${isMenuOpen ? styles.showMenu : ''}`} style={{ width: "75%", display: "flex" }}>
-        <div
-          className={`${isMenuOpen ? styles.showMenu : ''} ${isActiveRoute('/caseStudies') ? styles.activeBackground : ''
-            }`}
-          style={{ width: "75%", display: "flex" }}
+        <div className={`${isMenuOpen ? styles.showMenu : ''} ${isActiveRoute('/caseStudies') ? styles.activeBackground : ''}`}
+        // style={{ width: "75%", display: "flex", flexDirection: "column" }}
         >
-          <div style={{ width: "33.33%" }}>
+          <div style={{ width: "33.33%", padding: "2rem 0" }}>
             <Link href="/caseStudies">PROJECTS</Link>
           </div>
-          <div style={{ width: "33.33%" }}>
+          <div style={{ width: "33.33%", padding: "2rem 0" }}>
             <Link href="/services">SERVICES</Link>
           </div>
-          <div style={{ width: "33.33%" }}>
+          <div style={{ width: "33.33%", padding: "2rem 0" }}>
             <Link href="/meetus">MEET US</Link>
+
+            <button className={styles.contactUsButton} onClick={handleContactUs}>
+              <span style={{ whiteSpace: "nowrap" }}> Contact us </span>
+              <Image src="/leftArrowImage.svg" alt="contactUs" height={15} width={15} className={styles.contactUsArrow} />
+            </button>
+          </div>
+
+          <div className={styles.smLinks}>
+            <div>
+              <Link href="https://in.linkedin.com/company/sumfactor" target="_blank" rel="noopener noreferrer">
+                LINKEDIN
+              </Link>
+            </div>
+            <div>CONSULTATION</div>
+
+          </div>
+
+
+          <div style={{width:"100%", display:"flex", fontSize:"13px", marginTop:"3rem"}}>
+            
+            <div style={{ display: "flex", width: '50%', flexDirection: 'column',  paddingTop: "3rem" }}>
+
+              <div className={styles.privatePolicy} onClick={handlePrivatePolicy}>PRIVACY POLICY</div>
+
+              <div>
+                <Link href="mailto:info@sumfactor.com"> <span style={{fontSize:"13px"}}> CONTACT@info@sumfactor.com</span></Link>
+              </div>
+
+
+            </div>
+
+            <div style={{width:"50%",  paddingTop: "3rem"}}>
+              <Link href="https://maps.app.goo.gl/Upx4xf84eKRRWu5H7" target="_blank" rel="noopener noreferrer">
+                The Hive Co-working and Business Centre,
+                Plot 191,
+                Industrial Area Phase 2, Chandigarh, India – 160002
+              </Link>
+            </div>
+
           </div>
         </div>)}
 

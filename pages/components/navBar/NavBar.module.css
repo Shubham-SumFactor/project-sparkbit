@@ -145,4 +145,52 @@
   }
 
 
+  .showMenu{
+    /* width: 75%; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .contactUsButton {
+    align-self: flex-start;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 200;
+    /* color: #000000 !important; */
+    font-style: italic;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid #737373;
+    border-radius: 30px;
+    /* background-color: none; */
+    /* background: none; */
+    height: 42px;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .contactUsArrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 200;
+    margin-left: 8px;
+  }
+
+  .smLinks {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .privatePolicy {
+    cursor: pointer;
+    /* padding: 1rem 0; */
+}
+
 }
