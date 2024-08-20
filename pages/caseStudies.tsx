@@ -96,23 +96,23 @@ const CaseStudies = () => {
                     graphImage="/sumfactor/labnear.png"
                 />
 
+                <AutomatedAssessment
+                    sideHeading="Web Application"
+                    title="Increff"
+                    description="Developed a web app for Increff, a retail SaaS company, simplifying complex inventory management and supply chain challenges."
+                    readMoreLink="/case-study"
+                    graphImage="/sumfactor/increff.png"
+                />
+
+                <AutomatedAssessment
+                    sideHeading="Web Application"
+                    title="Sutta bazaar"
+                    description="Developed a web application for Sutta Bazaar, the ultimate destination for premium smoke shop products."
+                    readMoreLink="/case-study"
+                    graphImage="/sumfactor/suttabazaar.png"
+                />
+
                 {/* <AutomatedAssessment
-                    sideHeading="MACHINE LEARNING"
-                    title="Machine learning for recipe recommendation"
-                    description="Building an NLP-based system to understand cooking ingredients and refine users’ dishes"
-                    readMoreLink="/case-study"
-                    graphImage="/caseStudy/image7.svg"
-                />
-
-                <AutomatedAssessment
-                    sideHeading="R&D PROTOTYPES"
-                    title="Smart Parking System"
-                    description="Designing advanced data analysis algorithms for calculating the probability of finding a parking spot."
-                    readMoreLink="/case-study"
-                    graphImage="/caseStudy/image8.svg"
-                />
-
-                <AutomatedAssessment
                     sideHeading="R&D PROTOTYPES"
                     title="Personalized Videos For Marketing Campaigns"
                     description="Developing a system to support creating personalized video advertisements and embedding them on various digital media"

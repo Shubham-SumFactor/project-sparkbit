@@ -87,14 +87,14 @@ const NavBar = () => {
           </div>
 
 
-          <div style={{width:"100%", display:"flex", fontSize:"13px", marginTop:"3rem"}}>
+    <div style={{width:"100%", display:"flex", fontSize:"13px", marginTop:"3rem", justifyContent:"space-between"}}>
             
             <div style={{ display: "flex", width: '50%', flexDirection: 'column',  paddingTop: "3rem" }}>
 
               <div className={styles.privatePolicy} onClick={handlePrivatePolicy}>PRIVACY POLICY</div>
 
-              <div>
-                <Link href="mailto:info@sumfactor.com"> <span style={{fontSize:"13px"}}> CONTACT@info@sumfactor.com</span></Link>
+              <div style={{paddingTop:"5px"}}>
+                <Link href="mailto:info@sumfactor.com"> <span style={{fontSize:"13px"}}> CONTACT: <br></br>info@sumfactor.com</span></Link>
               </div>
 
 
