@@ -3,11 +3,18 @@ import styles from './testimonial.module.css';
 import Image from 'next/image';
 
 const testimonials = [
+    // {
+    //     content: "Our challenging mission to revolutionize the culinary market called for a partner with deep knowledge of algorithms and machine learning techniques, along with solid software engineering skills and flexible thinking. We found all of that in Sumfactor. Their ability to take ownership of a project and their technical capabilities to develop end-to-end solutions are what make them the perfect partner for us.",
+    //     author: "TOMER EDEN",
+    //     position: "CEO & CO-FOUNDER",
+    //     company: "SPICERR",
+
+    // },
     {
-        content: "Our challenging mission to revolutionize the culinary market called for a partner with deep knowledge of algorithms and machine learning techniques, along with solid software engineering skills and flexible thinking. We found all of that in Sumfactor. Their ability to take ownership of a project and their technical capabilities to develop end-to-end solutions are what make them the perfect partner for us.",
-        author: "TOMER EDEN",
-        position: "CEO & CO-FOUNDER",
-        company: "SPICERR",
+        content: "Working with the Sumfactor team on the Sonoma Valley Transport web application was a fantastic experience. They delivered a sleek, user-friendly platform that perfectly meets our needs. Their attention to detail and ability to understand our requirements were outstanding. Highly recommended!",
+        author: "SONNY SOHAL",
+        position: "PRESIDENT",
+        company: "SONOMA VALLEY TRANSPORT INC.",
 
     },
     {
