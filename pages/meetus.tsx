@@ -41,10 +41,11 @@ const MeetUs = () => {
                     <span className={styles.founderContent}>
                         <h3>Our founders</h3>
                         <p>
-                            The idea of Sumfactor came from our founders - alumni of top technical universities in Poland and software engineers with two decades of professional experience. Complementing each other in areas of interest - organizing processes, scientific research, and delivery - they allowed Sumfactor to become a friendly workplace for exceptional developers.
+                            Sumfactor Software Inc. has been founded by Ajay Sharma. Ajay previously co-founded Trigma Inc., a software services company based out of India and the US. He brings together his experience of creating great customer centric products along with a young and enthusiastic team at Sumfactor.
                         </p>
                         <p>
-                            Through the last eight years, they have run numerous challenging projects for various clients, from ML scaleups to one of the Big Four companies, telematics enterprises, blockchain startups, and governmental military organizations.
+
+                            Sumfactor Software Inc., founded in 2019, has been a pioneer in IT solutions, combining innovative strategies with a dynamic, young team to deliver exceptional, customer-centric products
                         </p>
                         <img className={styles.founderImage} src="/sumfactorTeam/SFfounders.jpg" alt="founders" />
 

@@ -10,7 +10,7 @@ interface TeamMemberProps {
 
 
 const teamMembers = [
-  { name: 'Mr. Choji', role: 'Director', image: '/sumfactorTeam/choji.jpg' },
+  { name: 'Sukhdev Chadha', role: 'Director', image: '/sumfactorTeam/choji.jpg' },
   { name: 'Ajay Sharma', role: 'CEO', image: '/sumfactorTeam/ajay.jpg' },
   { name: 'Rohit Thakur', role: 'Project TechLead', image: '/sumfactorTeam/rohit.jpg' },
 
