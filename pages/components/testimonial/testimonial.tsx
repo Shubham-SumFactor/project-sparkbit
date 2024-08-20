@@ -11,7 +11,7 @@ const testimonials = [
 
     // },
     {
-        content: "Working with the Sumfactor team on the Sonoma Valley Transport web application was a fantastic experience. They delivered a sleek, user-friendly platform that perfectly meets our needs. Their attention to detail and ability to understand our requirements were outstanding. Highly recommended!",
+        content: "Working with the Sumfactor team on the “Sonoma Valley Transport” project was a fantastic experience. They developed a robust and user-friendly web, Android, and iOS application that perfectly meets our needs. Their attention to detail and ability to understand our requirements were outstanding. Highly recommended!",
         author: "SONNY SOHAL",
         position: "PRESIDENT",
         company: "SONOMA VALLEY TRANSPORT INC.",
